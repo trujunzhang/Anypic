@@ -10,3 +10,5 @@ pod 'MBProgressHUD'
 pod 'Reachability'
 pod 'FormatterKit'
 pod 'UIImageEffects'
+
+pod 'Reveal-iOS-SDK'
