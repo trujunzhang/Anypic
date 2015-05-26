@@ -17,6 +17,8 @@
 		09ABC07613A1D52D009C3FCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */; };
 		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
 		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
+		5E0A0BB51B1478B000F7EB96 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0A0BB31B1478B000F7EB96 /* main.storyboard */; };
+		5E0A0BB81B14795C00F7EB96 /* StoryboardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A0BB71B14795C00F7EB96 /* StoryboardUtils.m */; };
 		6A8214C1351C3110D3BB7520 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6ADC6E04D663DE26EB5105 /* libPods.a */; };
 		74636BF31578281E00B44132 /* PAPFindFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74636BF21578281E00B44132 /* PAPFindFriendsCell.m */; };
 		747FC485156FFF74003349E1 /* PAPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 747FC484156FFF74003349E1 /* PAPConstants.m */; };
@@ -96,6 +98,9 @@
 		09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		09BEF34B13D51C3F001BBCDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2FCDD6AF14A573F500295AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5E0A0BB41B1478B000F7EB96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Anypic/en.lproj/main.storyboard; sourceTree = SOURCE_ROOT; };
+		5E0A0BB61B14795C00F7EB96 /* StoryboardUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryboardUtils.h; path = Anypic/StoryboardUtils.h; sourceTree = SOURCE_ROOT; };
+		5E0A0BB71B14795C00F7EB96 /* StoryboardUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryboardUtils.m; path = Anypic/StoryboardUtils.m; sourceTree = SOURCE_ROOT; };
 		74636BF11578281E00B44132 /* PAPFindFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = PAPFindFriendsCell.h; path = AnyPic/PAPFindFriendsCell.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		74636BF21578281E00B44132 /* PAPFindFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = PAPFindFriendsCell.m; path = AnyPic/PAPFindFriendsCell.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		747FC484156FFF74003349E1 /* PAPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPConstants.m; path = AnyPic/PAPConstants.m; sourceTree = SOURCE_ROOT; };
@@ -299,6 +304,7 @@
 				C4A6D87B157859AA009FE621 /* PAPCache.m */,
 				C4B60864155B085600EFA90C /* Resources */,
 				E77D8A351A2EA1060039D40D /* Images.xcassets */,
+				5E0A0BB31B1478B000F7EB96 /* main.storyboard */,
 				09ABC07813A1D52D009C3FCF /* Supporting Files */,
 			);
 			name = Anypic;
@@ -434,6 +440,8 @@
 				C4A894931558796400DC57D3 /* Settings */,
 				C4F102BA156C57CD0061BC3E /* PAPTabBarController.h */,
 				C4F102BB156C57CD0061BC3E /* PAPTabBarController.m */,
+				5E0A0BB61B14795C00F7EB96 /* StoryboardUtils.h */,
+				5E0A0BB71B14795C00F7EB96 /* StoryboardUtils.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -595,6 +603,7 @@
 				E77D8A361A2EA1060039D40D /* Images.xcassets in Resources */,
 				C47DDDE915927631002114F6 /* iTunesArtwork@2x.png in Resources */,
 				C42500DC159939940087C4F4 /* Icon-Small-50@2x.png in Resources */,
+				5E0A0BB51B1478B000F7EB96 /* main.storyboard in Resources */,
 				C49F586216028A980027383F /* Default-568h@2x.png in Resources */,
 				C4DE99CB1603D11600BC968A /* Default-fb231265150320768-568h@2x.png in Resources */,
 				E77D8A3D1A2EAB9E0039D40D /* Default-667h@2x.png in Resources */,
@@ -675,6 +684,7 @@
 				C4F102C3156C57DA0061BC3E /* PAPWelcomeViewController.m in Sources */,
 				C4F102CB156C57EE0061BC3E /* PAPActivityFeedViewController.m in Sources */,
 				E7ADD51B17BEA36800E975E2 /* UIImage+ResizeAdditions.m in Sources */,
+				5E0A0BB81B14795C00F7EB96 /* StoryboardUtils.m in Sources */,
 				C4F102CC156C57EE0061BC3E /* PAPHomeViewController.m in Sources */,
 				C4F102CD156C57EE0061BC3E /* PAPPhotoTimelineViewController.m in Sources */,
 				C4F102D2156C57FD0061BC3E /* PAPAccountViewController.m in Sources */,
@@ -693,6 +703,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5E0A0BB31B1478B000F7EB96 /* main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E0A0BB41B1478B000F7EB96 /* en */,
+			);
+			name = main.storyboard;
+			sourceTree = "<group>";
+		};
 		C4F102E5156C58570061BC3E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
