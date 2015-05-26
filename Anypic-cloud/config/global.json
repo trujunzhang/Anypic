@@ -1,14 +1,14 @@
 {
-    "applications": {
-        "Anypic": {
-            "applicationId": "YOUR_PARSE_APP_ID", 
-            "masterKey": "YOUR_PARSE_APP_MASTER_KEY"
-        }, 
-        "_default": {
-            "link": "Anypic"
-        }
-    }, 
     "global": {
-        "parseVersion": "1.2.16"
+        "parseVersion": "1.4.2"
+    },
+    "applications": {
+        "PictureParse": {
+            "applicationId": "cFOCgoE6v77JoeGXkF5cK5az4FLM5twfdOCGBphU",
+            "masterKey": "Gzphed6fJeUwf3Ji7D59hGsu8FnL6HHJ1E453Wno"
+        },
+        "_default": {
+            "link": "PictureParse"
+        }
     }
 }
