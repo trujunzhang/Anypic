@@ -56,7 +56,7 @@
                                 <state key="highlighted" backgroundImage="fb_login_pressed"/>
                             </button>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovS-e5-YvP" userLabel="usernameContainer">
-                                <rect key="frame" x="140" y="213" width="320" height="43"/>
+                                <rect key="frame" x="140" y="205" width="320" height="43"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_user" translatesAutoresizingMaskIntoConstraints="NO" id="FRZ-oQ-kZo">
                                         <rect key="frame" x="20" y="14" width="16" height="16"/>
@@ -75,7 +75,7 @@
                                 </constraints>
                             </view>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWf-KO-g6n" userLabel="passwordContainer">
-                                <rect key="frame" x="140" y="278" width="320" height="43"/>
+                                <rect key="frame" x="140" y="249" width="320" height="43"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_lock" translatesAutoresizingMaskIntoConstraints="NO" id="Tl5-oz-oWa">
                                         <rect key="frame" x="20" y="13" width="12" height="18"/>
@@ -94,7 +94,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oud-T1-RBS" userLabel="loginContainer">
-                                <rect key="frame" x="239" y="349" width="123" height="34"/>
+                                <rect key="frame" x="239" y="304" width="123" height="34"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="ePn-tq-sMg">
                                         <rect key="frame" x="20" y="8" width="19" height="19"/>
@@ -125,15 +125,15 @@
                             <constraint firstAttribute="centerX" secondItem="MYa-E4-eWg" secondAttribute="centerX" id="THJ-wd-D6b"/>
                             <constraint firstItem="P4U-Gr-5Dp" firstAttribute="top" secondItem="BCr-uI-gz5" secondAttribute="bottom" constant="10" id="Uw5-HX-o9d"/>
                             <constraint firstAttribute="trailing" secondItem="Mf0-Nu-dcw" secondAttribute="trailing" id="Xfx-tp-cWk"/>
-                            <constraint firstItem="Oud-T1-RBS" firstAttribute="top" secondItem="XWf-KO-g6n" secondAttribute="bottom" constant="28" id="Y6D-Yh-Xya"/>
+                            <constraint firstItem="Oud-T1-RBS" firstAttribute="top" secondItem="XWf-KO-g6n" secondAttribute="bottom" constant="12" id="Y6D-Yh-Xya"/>
                             <constraint firstAttribute="trailing" secondItem="Q1N-42-8Rk" secondAttribute="trailing" id="a5a-Fx-uIR"/>
                             <constraint firstAttribute="centerX" secondItem="P4U-Gr-5Dp" secondAttribute="centerX" id="aoP-vA-lDl"/>
                             <constraint firstItem="BCr-uI-gz5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="d9U-Iq-coB"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MYa-E4-eWg" secondAttribute="bottom" constant="80" id="dpj-io-aRi"/>
-                            <constraint firstItem="XWf-KO-g6n" firstAttribute="top" secondItem="ovS-e5-YvP" secondAttribute="bottom" constant="22" id="ktH-TL-eoQ"/>
+                            <constraint firstItem="XWf-KO-g6n" firstAttribute="top" secondItem="ovS-e5-YvP" secondAttribute="bottom" constant="1" id="ktH-TL-eoQ"/>
                             <constraint firstAttribute="centerX" secondItem="ovS-e5-YvP" secondAttribute="centerX" id="oji-U0-icM"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Q1N-42-8Rk" secondAttribute="bottom" id="paf-eo-Oyu"/>
-                            <constraint firstItem="ovS-e5-YvP" firstAttribute="top" secondItem="P4U-Gr-5Dp" secondAttribute="bottom" constant="54" id="wnP-mE-Zup"/>
+                            <constraint firstItem="ovS-e5-YvP" firstAttribute="top" secondItem="P4U-Gr-5Dp" secondAttribute="bottom" constant="46" id="wnP-mE-Zup"/>
                             <constraint firstItem="Mf0-Nu-dcw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="x9j-bH-8XU"/>
                         </constraints>
                     </view>
