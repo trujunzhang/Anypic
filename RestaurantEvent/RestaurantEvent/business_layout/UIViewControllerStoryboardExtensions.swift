@@ -9,3 +9,12 @@
 import Foundation
 
 
+
+extension PAWLoginViewController {
+    
+    class func instance() -> PAWLoginViewController {
+        let storyboard = UIStoryboard(name: "main", bundle: nil)
+        
+        return storyboard.instantiateViewControllerWithIdentifier("PAWLoginViewController") as! PAWLoginViewController
+    }
+}
