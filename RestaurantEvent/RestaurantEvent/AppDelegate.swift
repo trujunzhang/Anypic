@@ -42,7 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
         
-        
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
             //            [self presentWallViewControllerAnimated:NO];
@@ -51,6 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
             self.presentLoginViewController()
         }
         
+
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = self.navigationController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
     
@@ -58,26 +62,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
     }
     
-
+    
     // MARK: WallViewController
     func presentWallViewControllerAnimated(animated: Bool){
-//        let wallViewController: PAWWallViewController = PAWWallViewController()
-//        wallViewController.delegate = self
-//        this.navigationController
-//        [self.navigationController setViewControllers:@[ wallViewController ] animated:animated];
+        //        let wallViewController: PAWWallViewController = PAWWallViewController()
+        //        wallViewController.delegate = self
+        //        this.navigationController
+        //        [self.navigationController setViewControllers:@[ wallViewController ] animated:animated];
     }
     
     // MARK: PAWLoginViewControllerDelegate
     func loginViewControllerDidLogin(controller: PAWLoginViewController!) {
-        //    [self presentWallViewControllerAnimated:YES];
+        self.presentWallViewControllerAnimated(true)
     }
     
     // MARK: LoginViewController
     func presentLoginViewController() {
         // Go to the welcome screen and have them log in or create an account.
-        let viewController: PAWLoginViewController
-        //        viewController.delegate = self
-        //        [self.navigationController setViewControllers:@[ viewController ] animated:NO];
+        let viewController: PAWLoginViewController =  PAWLoginViewController(nibName: nil, bundle: nil)
+        viewController.delegate = self
+        self.navigationController.setViewControllers([viewController], animated: false)
     }
     
     func applicationWillResignActive(application: UIApplication) {
