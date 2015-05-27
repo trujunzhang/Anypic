@@ -210,6 +210,9 @@
                                                                              categories:nil];
     [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     [[UIApplication sharedApplication] registerForRemoteNotifications];
+    
+      UITabBarItem *tabBarItem123 = [[self.tabBarController.viewControllers objectAtIndex:PAPActivityTabBarItemIndex] tabBarItem];
+    tabBarItem123.badgeValue =  @"3";
 }
 
 - (void)logOut {

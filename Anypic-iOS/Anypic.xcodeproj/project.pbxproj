@@ -526,9 +526,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		09ABC06C13A1D52D009C3FCF /* Anypic */ = {
+		09ABC06C13A1D52D009C3FCF /* PictureParse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "Anypic" */;
+			buildConfigurationList = 09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "PictureParse" */;
 			buildPhases = (
 				2E15790DA3ADCD669F89A960 /* Check Pods Manifest.lock */,
 				09ABC06913A1D52D009C3FCF /* Sources */,
@@ -541,7 +541,7 @@
 			);
 			dependencies = (
 			);
-			name = Anypic;
+			name = PictureParse;
 			productName = ParseStarterProject;
 			productReference = 09ABC06D13A1D52D009C3FCF /* Anypic.app */;
 			productType = "com.apple.product-type.application";
@@ -576,7 +576,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				09ABC06C13A1D52D009C3FCF /* Anypic */,
+				09ABC06C13A1D52D009C3FCF /* PictureParse */,
 			);
 		};
 /* End PBXProject section */
@@ -985,7 +985,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Distribution;
 		};
-		09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "Anypic" */ = {
+		09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "PictureParse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09ABC08F13A1D52E009C3FCF /* Debug */,

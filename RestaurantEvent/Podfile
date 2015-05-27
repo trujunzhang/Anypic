@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+workspace 'RestaurantEvent'
+
+pod 'Parse'
+pod 'ParseFacebookUtils'
+pod 'ParseCrashReporting'
+pod 'ParseUI'
+pod 'MBProgressHUD'
+pod 'Reachability'
+pod 'FormatterKit'
+pod 'UIImageEffects'
+
+pod 'JASidePanels'
+
+pod 'Reveal-iOS-SDK'
