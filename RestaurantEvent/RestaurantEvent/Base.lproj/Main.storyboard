@@ -67,12 +67,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="P4U-Gr-5Dp">
                                 <rect key="frame" x="258" y="199" width="85" height="20"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYa-E4-eWg">
-                                <rect key="frame" x="171" y="444" width="256" height="46"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <state key="normal" title="Log in with Facebook" backgroundImage="fb_login"/>
-                                <state key="highlighted" backgroundImage="fb_login_pressed"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="BCr-uI-gz5">
                                 <rect key="frame" x="251" y="73" width="99" height="99"/>
                                 <constraints>
@@ -80,6 +74,16 @@
                                     <constraint firstAttribute="width" constant="99" id="dSg-20-CRo"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYa-E4-eWg">
+                                <rect key="frame" x="172" y="433" width="256" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="C7i-U5-pyP"/>
+                                    <constraint firstAttribute="height" constant="46" id="Eev-OI-xJl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Log in with Facebook" backgroundImage="fb_login"/>
+                                <state key="highlighted" backgroundImage="fb_login_pressed"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -88,9 +92,11 @@
                             <constraint firstItem="Q1N-42-8Rk" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Adh-EN-YCn"/>
                             <constraint firstItem="Q1N-42-8Rk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Co9-94-Y9H"/>
                             <constraint firstAttribute="centerX" secondItem="BCr-uI-gz5" secondAttribute="centerX" id="SoW-CA-Vng"/>
+                            <constraint firstAttribute="centerX" secondItem="MYa-E4-eWg" secondAttribute="centerX" id="THJ-wd-D6b"/>
                             <constraint firstAttribute="centerX" secondItem="P4U-Gr-5Dp" secondAttribute="centerX" id="XPk-95-oEf"/>
                             <constraint firstAttribute="trailing" secondItem="Q1N-42-8Rk" secondAttribute="trailing" id="a5a-Fx-uIR"/>
                             <constraint firstItem="BCr-uI-gz5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="53" id="d9U-Iq-coB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MYa-E4-eWg" secondAttribute="bottom" constant="121" id="dpj-io-aRi"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Q1N-42-8Rk" secondAttribute="bottom" id="paf-eo-Oyu"/>
                             <constraint firstAttribute="trailing" secondItem="P4U-Gr-5Dp" secondAttribute="trailing" constant="257" id="xrG-F3-dKV"/>
                         </constraints>
