@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
             self.presentLoginViewController()
         }
         
-
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = self.navigationController
         self.window?.makeKeyAndVisible()
@@ -79,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
     // MARK: LoginViewController
     func presentLoginViewController() {
         // Go to the welcome screen and have them log in or create an account.
-        let viewController: PAWLoginViewController =  PAWLoginViewController.instance()
+        let viewController: PAWLoginViewController =  PAWLoginViewController(nibName: nil, bundle: nil)
         viewController.delegate = self
         self.navigationController.setViewControllers([viewController], animated: false)
     }
