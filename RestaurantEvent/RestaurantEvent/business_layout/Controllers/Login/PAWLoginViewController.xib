@@ -9,7 +9,6 @@
                 <outlet property="backgroundView" destination="21" id="XP6-Jg-wLh"/>
                 <outlet property="loginButton" destination="IxI-bV-GKa" id="KeD-Id-a5h"/>
                 <outlet property="passwordField" destination="11" id="13"/>
-                <outlet property="scrollView" destination="tQY-7q-iEj" id="Ow2-4N-3y9"/>
                 <outlet property="usernameField" destination="6" id="9"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -19,99 +18,123 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tQY-7q-iEj">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_picture" translatesAutoresizingMaskIntoConstraints="NO" id="21">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6BF-bi-RAa">
+                    <rect key="frame" x="250" y="22" width="99" height="99"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="99" id="PCI-Li-GCU"/>
+                        <constraint firstAttribute="height" constant="99" id="nde-aw-Eok"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="V9U-As-q4K">
+                    <rect key="frame" x="257" y="151" width="85" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="Xhc-SA-DyW"/>
+                        <constraint firstAttribute="height" constant="20" id="lmU-Lq-a7v"/>
+                    </constraints>
+                </imageView>
+                <view alpha="0.49999999999999961" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Lu-d6-VSp">
+                    <rect key="frame" x="140" y="201" width="320" height="43"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="bg_picture" translatesAutoresizingMaskIntoConstraints="NO" id="21">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_user" translatesAutoresizingMaskIntoConstraints="NO" id="f7Z-OF-sSS">
+                            <rect key="frame" x="22" y="14" width="16" height="16"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="V9U-As-q4K">
-                            <rect key="frame" x="118" y="170" width="85" height="20"/>
-                        </imageView>
-                        <view alpha="0.49999999999999961" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Lu-d6-VSp">
-                            <rect key="frame" x="0.0" y="236" width="320" height="43"/>
-                            <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_user" translatesAutoresizingMaskIntoConstraints="NO" id="f7Z-OF-sSS">
-                                    <rect key="frame" x="22" y="14" width="16" height="16"/>
-                                </imageView>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6">
-                                    <rect key="frame" x="44" y="7" width="256" height="30"/>
-                                    <color key="textColor" red="0.29411764709999999" green="0.34509803919999998" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="-1" id="14"/>
-                                    </connections>
-                                </textField>
-                            </subviews>
-                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
-                        <view alpha="0.49999999999999994" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVI-k2-s7P">
-                            <rect key="frame" x="0.0" y="280" width="320" height="43"/>
-                            <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_lock" translatesAutoresizingMaskIntoConstraints="NO" id="CAi-4g-Lj7">
-                                    <rect key="frame" x="22" y="13" width="12" height="18"/>
-                                </imageView>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="11">
-                                    <rect key="frame" x="44" y="7" width="256" height="30"/>
-                                    <color key="textColor" red="0.29411764709999999" green="0.34509803919999998" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="-1" id="15"/>
-                                    </connections>
-                                </textField>
-                            </subviews>
-                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9t-p8-ToN">
-                            <rect key="frame" x="32" y="418" width="256" height="46"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                            <state key="normal" title="Log in with Facebook" backgroundImage="fb_login"/>
-                            <state key="highlighted" backgroundImage="fb_login_pressed"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                            <rect key="frame" x="44" y="7" width="256" height="30"/>
+                            <color key="textColor" red="0.29411764709999999" green="0.34509803919999998" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             <connections>
-                                <action selector="loginWithFacebookPressed:" destination="-1" eventType="touchUpInside" id="3JR-SR-zUI"/>
+                                <outlet property="delegate" destination="-1" id="14"/>
                             </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zg-VG-8ef">
-                            <rect key="frame" x="0.0" y="506" width="320" height="62"/>
-                            <color key="backgroundColor" red="0.42745098039215684" green="0.69411764705882351" blue="0.29803921568627451" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                            <state key="normal" title="Sign up">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view alpha="0.49999999999999994" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVI-k2-s7P">
+                    <rect key="frame" x="140" y="245" width="320" height="43"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_lock" translatesAutoresizingMaskIntoConstraints="NO" id="CAi-4g-Lj7">
+                            <rect key="frame" x="22" y="13" width="12" height="18"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                            <rect key="frame" x="44" y="7" width="256" height="30"/>
+                            <color key="textColor" red="0.29411764709999999" green="0.34509803919999998" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="15"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o87-JO-zxm">
+                    <rect key="frame" x="243" y="302" width="114" height="34"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="3Jr-XC-stB">
+                            <rect key="frame" x="20" y="7" width="19" height="19"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-bV-GKa">
+                            <rect key="frame" x="47" y="0.0" width="47" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
-                                <action selector="signUpPressed:" destination="-1" eventType="touchUpInside" id="9ud-di-hgR"/>
+                                <action selector="loginPressed:" destination="-1" eventType="touchUpInside" id="awQ-Nm-ryt"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6BF-bi-RAa">
-                            <rect key="frame" x="111" y="63" width="99" height="99"/>
-                        </imageView>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o87-JO-zxm">
-                            <rect key="frame" x="103" y="335" width="114" height="34"/>
-                            <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="3Jr-XC-stB">
-                                    <rect key="frame" x="20" y="7" width="19" height="19"/>
-                                </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-bV-GKa">
-                                    <rect key="frame" x="47" y="0.0" width="47" height="34"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                    <state key="normal" title="Login">
-                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="loginPressed:" destination="-1" eventType="touchUpInside" id="awQ-Nm-ryt"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.42745098040000001" green="0.69411764710000001" blue="0.29803921570000003" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
-                </scrollView>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9t-p8-ToN">
+                    <rect key="frame" x="172" y="466" width="256" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="256" id="UtN-cm-ZCX"/>
+                        <constraint firstAttribute="height" constant="46" id="bg8-vZ-QIm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="Log in with Facebook" backgroundImage="fb_login"/>
+                    <state key="highlighted" backgroundImage="fb_login_pressed"/>
+                    <connections>
+                        <action selector="loginWithFacebookPressed:" destination="-1" eventType="touchUpInside" id="3JR-SR-zUI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zg-VG-8ef">
+                    <rect key="frame" x="0.0" y="538" width="600" height="62"/>
+                    <color key="backgroundColor" red="0.42745098039215684" green="0.69411764705882351" blue="0.29803921568627451" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="r3b-it-U78"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Sign up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signUpPressed:" destination="-1" eventType="touchUpInside" id="9ud-di-hgR"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8Zg-VG-8ef" secondAttribute="bottom" id="118-pV-tzG"/>
+                <constraint firstItem="6BF-bi-RAa" firstAttribute="top" secondItem="1" secondAttribute="top" constant="22" id="44i-lH-R8W"/>
+                <constraint firstItem="V9U-As-q4K" firstAttribute="top" secondItem="6BF-bi-RAa" secondAttribute="bottom" constant="30" id="7ok-bw-h8y"/>
+                <constraint firstAttribute="centerX" secondItem="6BF-bi-RAa" secondAttribute="centerX" id="G3A-31-zS2"/>
+                <constraint firstAttribute="trailing" secondItem="8Zg-VG-8ef" secondAttribute="trailing" id="KaR-F3-D35"/>
+                <constraint firstItem="8Zg-VG-8ef" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="VJe-ap-oL6"/>
+                <constraint firstAttribute="trailing" secondItem="21" secondAttribute="trailing" id="X3x-cR-FW1"/>
+                <constraint firstItem="21" firstAttribute="top" secondItem="1" secondAttribute="top" id="bDt-hj-DLN"/>
+                <constraint firstItem="8Zg-VG-8ef" firstAttribute="top" secondItem="d9t-p8-ToN" secondAttribute="bottom" constant="26" id="fds-gt-py5"/>
+                <constraint firstItem="21" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="nmc-rz-6D2"/>
+                <constraint firstAttribute="centerX" secondItem="V9U-As-q4K" secondAttribute="centerX" id="oDr-VT-QPS"/>
+                <constraint firstAttribute="centerX" secondItem="d9t-p8-ToN" secondAttribute="centerX" id="rYu-V9-Eeo"/>
+                <constraint firstAttribute="bottom" secondItem="21" secondAttribute="bottom" id="wG1-1U-z9u"/>
+            </constraints>
             <point key="canvasLocation" x="0.0" y="2"/>
         </view>
     </objects>
