@@ -2,6 +2,8 @@
 //  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
+// Our project object-c headers
+#import "RESources.h"
 
 // Library : JASidePanels
 #import "JASidePanelController.h"
