@@ -51,9 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         }
         
 
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = self.navigationController
-        self.window?.makeKeyAndVisible()
+//        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        self.window?.rootViewController = self.navigationController
+//        self.window?.makeKeyAndVisible()
         
         return true
     }
