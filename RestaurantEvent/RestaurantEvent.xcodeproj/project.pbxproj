@@ -26,6 +26,7 @@
 		5E58C4D01B17296A004BC883 /* RETabbarGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58C4CF1B17296A004BC883 /* RETabbarGenerator.swift */; };
 		5E58C4D31B1729B4004BC883 /* Cent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E58C4D11B1729B4004BC883 /* Cent.framework */; };
 		5E58C4D41B1729B4004BC883 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E58C4D21B1729B4004BC883 /* Dollar.framework */; };
+		5E58C4D61B172BF7004BC883 /* StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58C4D51B172BF7004BC883 /* StoryboardExtensions.swift */; };
 		5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */; };
 		5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F71B156A2500A0B4E8 /* ViewController.swift */; };
 		5ECA62FB1B156A2500A0B4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECA62F91B156A2500A0B4E8 /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		5E58C4CF1B17296A004BC883 /* RETabbarGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RETabbarGenerator.swift; path = tabbar/RETabbarGenerator.swift; sourceTree = "<group>"; };
 		5E58C4D11B1729B4004BC883 /* Cent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cent.framework; path = Carthage/Cent.framework; sourceTree = "<group>"; };
 		5E58C4D21B1729B4004BC883 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = Carthage/Dollar.framework; sourceTree = "<group>"; };
+		5E58C4D51B172BF7004BC883 /* StoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardExtensions.swift; sourceTree = "<group>"; };
 		5ECA62F01B156A2500A0B4E8 /* RestaurantEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECA62F41B156A2500A0B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -256,7 +258,7 @@
 				5ECA62FC1B156A2500A0B4E8 /* Images.xcassets */,
 				5ECA62FE1B156A2500A0B4E8 /* LaunchScreen.xib */,
 				5ECA62F31B156A2500A0B4E8 /* Supporting Files */,
-				5E0D48871B157001005ECFB2 /* RestaurantEvent-Bridging-Header.h */,
+				5E58C4D51B172BF7004BC883 /* StoryboardExtensions.swift */,
 			);
 			path = RestaurantEvent;
 			sourceTree = "<group>";
@@ -264,6 +266,7 @@
 		5ECA62F31B156A2500A0B4E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5E0D48871B157001005ECFB2 /* RestaurantEvent-Bridging-Header.h */,
 				5ECA62F41B156A2500A0B4E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -466,6 +469,7 @@
 				5E58C4D01B17296A004BC883 /* RETabbarGenerator.swift in Sources */,
 				5E18FF531B170D590012FD2A /* UIViewExtentsions.swift in Sources */,
 				5E170F981B15B63D007EDE70 /* PAWActivityView.m in Sources */,
+				5E58C4D61B172BF7004BC883 /* StoryboardExtensions.swift in Sources */,
 				5E18FF511B170D590012FD2A /* UITableViewExtensions.swift in Sources */,
 				5E58C4CB1B1728B4004BC883 /* RETabbarViewController.swift in Sources */,
 				5E58C4CE1B172937004BC883 /* REUserInfoViewController.swift in Sources */,
