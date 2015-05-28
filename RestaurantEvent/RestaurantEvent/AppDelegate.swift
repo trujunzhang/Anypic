@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         return  UINavigationController(rootViewController:  UIViewController())
         }()
     
+    let viewController:JASidePanelController = JASidePanelController()
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -62,7 +63,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
     }
     
     func presentTabBarController(){
+        self.viewController.shouldDelegateAutorotateToVisiblePanel = false
         
+        
+        
+//        self.viewController.leftPanel = [[JALeftViewController alloc] init];
+//        self.viewController.centerPanel = [[UINavigationController alloc] initWithRootViewController:[[JACenterViewController alloc] init]];
     }
     
     

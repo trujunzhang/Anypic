@@ -34,6 +34,8 @@
 		5ECA62FD1B156A2500A0B4E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECA62FC1B156A2500A0B4E8 /* Images.xcassets */; };
 		5ECA63001B156A2500A0B4E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ECA62FE1B156A2500A0B4E8 /* LaunchScreen.xib */; };
 		5ECA630C1B156A2500A0B4E8 /* RestaurantEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA630B1B156A2500A0B4E8 /* RestaurantEventTests.swift */; };
+		5EEBC2CB1B1733F1005D85D9 /* RECenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEBC2CA1B1733F1005D85D9 /* RECenterViewController.swift */; };
+		5EEBC2CD1B173404005D85D9 /* RELeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEBC2CC1B173404005D85D9 /* RELeftViewController.swift */; };
 		E20891F980262F9B1EBDDD2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3DC49AAA39E561943DC899 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,8 @@
 		5ECA63051B156A2500A0B4E8 /* RestaurantEventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantEventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECA630A1B156A2500A0B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ECA630B1B156A2500A0B4E8 /* RestaurantEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEventTests.swift; sourceTree = "<group>"; };
+		5EEBC2CA1B1733F1005D85D9 /* RECenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RECenterViewController.swift; path = Reveal/RECenterViewController.swift; sourceTree = "<group>"; };
+		5EEBC2CC1B173404005D85D9 /* RELeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RELeftViewController.swift; path = Reveal/RELeftViewController.swift; sourceTree = "<group>"; };
 		C6CAE07539DD58B4FB1C7AD0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EB3DC49AAA39E561943DC899 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -250,6 +254,7 @@
 		5ECA62F21B156A2500A0B4E8 /* RestaurantEvent */ = {
 			isa = PBXGroup;
 			children = (
+				5EEBC2C91B1733D1005D85D9 /* Reveal */,
 				5E18FF451B170D590012FD2A /* UIKit */,
 				5E18FF411B170D540012FD2A /* third */,
 				5E18FF401B170C6F0012FD2A /* tabbar */,
@@ -290,6 +295,15 @@
 				5ECA630A1B156A2500A0B4E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EEBC2C91B1733D1005D85D9 /* Reveal */ = {
+			isa = PBXGroup;
+			children = (
+				5EEBC2CC1B173404005D85D9 /* RELeftViewController.swift */,
+				5EEBC2CA1B1733F1005D85D9 /* RECenterViewController.swift */,
+			);
+			name = Reveal;
 			sourceTree = "<group>";
 		};
 		946B17E26E2D31B4B0E3B5B6 /* Pods */ = {
@@ -476,10 +490,12 @@
 				5E58C4D61B172BF7004BC883 /* StoryboardExtensions.swift in Sources */,
 				5E18FF511B170D590012FD2A /* UITableViewExtensions.swift in Sources */,
 				5E58C4CB1B1728B4004BC883 /* RETabBarViewController.swift in Sources */,
+				5EEBC2CB1B1733F1005D85D9 /* RECenterViewController.swift in Sources */,
 				5E58C4CE1B172937004BC883 /* REUserInfoViewController.swift in Sources */,
 				5E18FF4F1B170D590012FD2A /* UIControlExtensions.swift in Sources */,
 				5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */,
 				5E170F951B15B63D007EDE70 /* PAWNewUserViewController.m in Sources */,
+				5EEBC2CD1B173404005D85D9 /* RELeftViewController.swift in Sources */,
 				5E170F931B15B63D007EDE70 /* PAWLoginViewController.m in Sources */,
 				5E170F971B15B63D007EDE70 /* PAWPost.m in Sources */,
 				5E18FF4E1B170D590012FD2A /* UIConstants.swift in Sources */,
