@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
-            //            [self presentWallViewControllerAnimated:NO];
+            self.presentWallViewControllerAnimated(false)
         } else {
             // Go to the welcome screen and have them log in or create an account.
             self.presentLoginViewController()
@@ -65,6 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
     
     // MARK: WallViewController
     func presentWallViewControllerAnimated(animated: Bool){
+        let x = 0
         //        let wallViewController: PAWWallViewController = PAWWallViewController()
         //        wallViewController.delegate = self
         //        this.navigationController
