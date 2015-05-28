@@ -55,6 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         self.window?.rootViewController = self.navigationController
         self.window?.makeKeyAndVisible()
         
+        // test
+        let xxx:RETabBarViewController = RETabBarViewController.instance()
+        
         return true
     }
     
