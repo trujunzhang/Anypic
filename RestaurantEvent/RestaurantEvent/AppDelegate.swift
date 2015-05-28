@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
-            self.presentTabBarController()
+            self.presentWallViewControllerAnimated(false)
         } else {
             // Go to the welcome screen and have them log in or create an account.
             self.presentLoginViewController()
@@ -62,6 +62,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
     }
     
     func presentTabBarController(){
+
+    }
+    
+    
+    // MARK: WallViewController
+    func presentWallViewControllerAnimated(animated: Bool){
         self.viewController.shouldDelegateAutorotateToVisiblePanel = false
         
         self.viewController.leftPanel = RELeftViewController()
@@ -70,12 +76,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         self.viewController.centerPanel = UINavigationController(rootViewController: viewController)
         
         self.window?.rootViewController = self.viewController
-    }
-    
-    
-    // MARK: WallViewController
-    func presentWallViewControllerAnimated(animated: Bool){
-        
     }
     
     // MARK: PAWLoginViewControllerDelegate
