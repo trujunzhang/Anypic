@@ -43,21 +43,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
         
+         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
-            self.presentWallViewControllerAnimated(false)
+            self.presentTabBarController()
         } else {
             // Go to the welcome screen and have them log in or create an account.
             self.presentLoginViewController()
+            self.window?.rootViewController = self.navigationController
         }
-        
-        
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = self.navigationController
         self.window?.makeKeyAndVisible()
         
         // test
-        let xxx:RETabBarViewController = RETabBarViewController.instance()
+//        let xxx:RETabBarViewController = RETabBarViewController.instance()
         
         return true
     }
@@ -65,20 +64,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
     func presentTabBarController(){
         self.viewController.shouldDelegateAutorotateToVisiblePanel = false
         
+        self.viewController.leftPanel = RELeftViewController()
         
+        let viewController: RECenterViewController =  RECenterViewController()
+        self.viewController.centerPanel = UINavigationController(rootViewController: viewController)
         
-//        self.viewController.leftPanel = [[JALeftViewController alloc] init];
-//        self.viewController.centerPanel = [[UINavigationController alloc] initWithRootViewController:[[JACenterViewController alloc] init]];
+        self.window?.rootViewController = self.viewController
     }
     
     
     // MARK: WallViewController
     func presentWallViewControllerAnimated(animated: Bool){
-        let x = 0
-        //        let wallViewController: PAWWallViewController = PAWWallViewController()
-        //        wallViewController.delegate = self
-        //        this.navigationController
-        //        [self.navigationController setViewControllers:@[ wallViewController ] animated:animated];
+        
     }
     
     // MARK: PAWLoginViewControllerDelegate
