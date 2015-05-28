@@ -10,9 +10,16 @@ import Foundation
 
 class RECenterViewController: UIViewController {
     
+    let tabBarViewController: RETabBarViewController = RETabBarViewController.instance()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Center Panel"
+        
+        //self.tabBarViewControlle
+        self.addChildViewController(self.tabBarViewController)
+        self.view.addSubview(self.tabBarViewController.view)
+        self.tabBarViewController.view.layoutPanelBottomMargin(50)
     }
 }

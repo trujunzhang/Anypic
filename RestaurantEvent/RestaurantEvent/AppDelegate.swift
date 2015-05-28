@@ -71,9 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         self.viewController.shouldDelegateAutorotateToVisiblePanel = false
         
         self.viewController.leftPanel = RELeftViewController()
-        
-        let viewController: RECenterViewController =  RECenterViewController()
-        self.viewController.centerPanel = UINavigationController(rootViewController: viewController)
+        self.viewController.centerPanel = UINavigationController(rootViewController: RECenterViewController())
         
         self.window?.rootViewController = self.viewController
     }

@@ -18,14 +18,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44b-R5-tsV">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVL-Jg-rlg">
-                                        <rect key="frame" x="4" y="8" width="46" height="30"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.28528585950000002" blue="0.05965722281" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N6s-FD-wh7">
@@ -63,7 +55,6 @@
                         <outlet property="cameraTabBarContainer" destination="N6s-FD-wh7" id="csC-ds-FcS"/>
                         <outlet property="cameraTabBarItem" destination="nhr-84-93D" id="Tt8-8g-Vqs"/>
                         <outlet property="homeTabBarContainer" destination="44b-R5-tsV" id="zhb-nD-oP4"/>
-                        <outlet property="homeTabBarItem" destination="MVL-Jg-rlg" id="bfx-Vu-4lT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="942-rn-6s9" userLabel="First Responder" sceneMemberID="firstResponder"/>

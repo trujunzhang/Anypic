@@ -13,4 +13,6 @@ pod 'UIImageEffects'
 
 pod 'JASidePanels'
 
+pod "AZCenterLabelButton"
+
 pod 'Reveal-iOS-SDK'

@@ -9,6 +9,9 @@
 #import "JASidePanelController.h"
 #import "UIViewController+JASidePanel.h"
 
+// Library: AZCenterLabelButton
+#import "AZCenterLabelButton.h"
+
 // Library : parse and facebook
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>

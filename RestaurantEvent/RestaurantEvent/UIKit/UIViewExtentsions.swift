@@ -37,6 +37,15 @@ extension UIView {
         }
     }
     
+    func LayoutCenter() {
+        layout(self) {
+            view in
+
+            view.size   == view.size
+            view.center == view.superview!.center
+        }
+    }
+    
     func LayoutRelatedView(relatedView:UIView,height: CGFloat) {
         layout(self,relatedView) {
             view1,view2 in
@@ -82,6 +91,19 @@ extension UIView {
             view1.width == view1.superview!.width
 
             view1.top == view1.superview!.top + topMargin
+            view1.height == height
+        }
+    }
+    
+    func layoutPanelBottomMargin(height:CGFloat){
+        layout(self) {
+            view1 in
+            
+            view1.leading == view1.superview!.leading
+            view1.trailing == view1.superview!.trailing
+            
+            view1.bottom == view1.superview!.bottom
+            
             view1.height == height
         }
     }
