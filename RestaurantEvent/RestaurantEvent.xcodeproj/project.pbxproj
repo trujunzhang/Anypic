@@ -14,6 +14,12 @@
 		5E170F961B15B63D007EDE70 /* PAWNewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E170F8B1B15B63D007EDE70 /* PAWNewUserViewController.xib */; };
 		5E170F971B15B63D007EDE70 /* PAWPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E170F8E1B15B63D007EDE70 /* PAWPost.m */; };
 		5E170F981B15B63D007EDE70 /* PAWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E170F921B15B63D007EDE70 /* PAWActivityView.m */; };
+		5E18FF441B170D540012FD2A /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18FF431B170D540012FD2A /* SwiftyUserDefaults.swift */; };
+		5E18FF4D1B170D590012FD2A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18FF461B170D590012FD2A /* UIColorExtensions.swift */; };
+		5E18FF4E1B170D590012FD2A /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18FF471B170D590012FD2A /* UIConstants.swift */; };
+		5E18FF4F1B170D590012FD2A /* UIControlExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18FF481B170D590012FD2A /* UIControlExtensions.swift */; };
+		5E18FF511B170D590012FD2A /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18FF4A1B170D590012FD2A /* UITableViewExtensions.swift */; };
+		5E18FF531B170D590012FD2A /* UIViewExtentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18FF4C1B170D590012FD2A /* UIViewExtentsions.swift */; };
 		5E475B711B15D8F40073EED4 /* UIViewControllerStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E475B701B15D8F40073EED4 /* UIViewControllerStoryboardExtensions.swift */; };
 		5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */; };
 		5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F71B156A2500A0B4E8 /* ViewController.swift */; };
@@ -50,6 +56,12 @@
 		5E170F8F1B15B63D007EDE70 /* RESources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESources.h; sourceTree = "<group>"; };
 		5E170F911B15B63D007EDE70 /* PAWActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWActivityView.h; sourceTree = "<group>"; };
 		5E170F921B15B63D007EDE70 /* PAWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWActivityView.m; sourceTree = "<group>"; };
+		5E18FF431B170D540012FD2A /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaults.swift; sourceTree = "<group>"; };
+		5E18FF461B170D590012FD2A /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		5E18FF471B170D590012FD2A /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		5E18FF481B170D590012FD2A /* UIControlExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlExtensions.swift; sourceTree = "<group>"; };
+		5E18FF4A1B170D590012FD2A /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		5E18FF4C1B170D590012FD2A /* UIViewExtentsions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtentsions.swift; sourceTree = "<group>"; };
 		5E475B701B15D8F40073EED4 /* UIViewControllerStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerStoryboardExtensions.swift; sourceTree = "<group>"; };
 		5ECA62F01B156A2500A0B4E8 /* RestaurantEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECA62F41B156A2500A0B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,6 +165,41 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		5E18FF401B170C6F0012FD2A /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = tabbar;
+			sourceTree = "<group>";
+		};
+		5E18FF411B170D540012FD2A /* third */ = {
+			isa = PBXGroup;
+			children = (
+				5E18FF421B170D540012FD2A /* SwiftyUserDefaults */,
+			);
+			path = third;
+			sourceTree = "<group>";
+		};
+		5E18FF421B170D540012FD2A /* SwiftyUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				5E18FF431B170D540012FD2A /* SwiftyUserDefaults.swift */,
+			);
+			path = SwiftyUserDefaults;
+			sourceTree = "<group>";
+		};
+		5E18FF451B170D590012FD2A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E18FF461B170D590012FD2A /* UIColorExtensions.swift */,
+				5E18FF471B170D590012FD2A /* UIConstants.swift */,
+				5E18FF481B170D590012FD2A /* UIControlExtensions.swift */,
+				5E18FF4A1B170D590012FD2A /* UITableViewExtensions.swift */,
+				5E18FF4C1B170D590012FD2A /* UIViewExtentsions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		5ECA62E71B156A2500A0B4E8 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +223,9 @@
 		5ECA62F21B156A2500A0B4E8 /* RestaurantEvent */ = {
 			isa = PBXGroup;
 			children = (
+				5E18FF451B170D590012FD2A /* UIKit */,
+				5E18FF411B170D540012FD2A /* third */,
+				5E18FF401B170C6F0012FD2A /* tabbar */,
 				5E170F801B15B63D007EDE70 /* business_layout */,
 				5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */,
 				5ECA62F71B156A2500A0B4E8 /* ViewController.swift */,
@@ -384,11 +434,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E18FF4D1B170D590012FD2A /* UIColorExtensions.swift in Sources */,
+				5E18FF441B170D540012FD2A /* SwiftyUserDefaults.swift in Sources */,
+				5E18FF531B170D590012FD2A /* UIViewExtentsions.swift in Sources */,
 				5E170F981B15B63D007EDE70 /* PAWActivityView.m in Sources */,
+				5E18FF511B170D590012FD2A /* UITableViewExtensions.swift in Sources */,
+				5E18FF4F1B170D590012FD2A /* UIControlExtensions.swift in Sources */,
 				5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */,
 				5E170F951B15B63D007EDE70 /* PAWNewUserViewController.m in Sources */,
 				5E170F931B15B63D007EDE70 /* PAWLoginViewController.m in Sources */,
 				5E170F971B15B63D007EDE70 /* PAWPost.m in Sources */,
+				5E18FF4E1B170D590012FD2A /* UIConstants.swift in Sources */,
 				5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */,
 				5E475B711B15D8F40073EED4 /* UIViewControllerStoryboardExtensions.swift in Sources */,
 			);
