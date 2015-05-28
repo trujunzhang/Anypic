@@ -8,6 +8,30 @@
 
 import Foundation
 
-class RETabbarViewController: UIViewController{
+class RETabBarViewController: UIViewController{
+    
+    @IBOutlet weak var homeTabBarContainer: UIView!
+    @IBOutlet weak var homeTabBarItem: UIButton!
+    
+    @IBOutlet weak var cameraTabBarContainer: UIView!
+    @IBOutlet weak var cameraTabBarItem: UIButton!
+    
+    @IBOutlet weak var activityFeedTabBarContainer: UIView!
+    @IBOutlet weak var activityFeedTabBarItem: UIButton!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+    }
+    
     
 }
