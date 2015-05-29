@@ -21,13 +21,13 @@
 		5E18FF511B170D590012FD2A /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18FF4A1B170D590012FD2A /* UITableViewExtensions.swift */; };
 		5E18FF531B170D590012FD2A /* UIViewExtentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18FF4C1B170D590012FD2A /* UIViewExtentsions.swift */; };
 		5E475B711B15D8F40073EED4 /* UIViewControllerStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E475B701B15D8F40073EED4 /* UIViewControllerStoryboardExtensions.swift */; };
-		5E58C4CB1B1728B4004BC883 /* RETabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58C4CA1B1728B4004BC883 /* RETabBarViewController.swift */; };
-		5E58C4CE1B172937004BC883 /* REUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58C4CD1B172937004BC883 /* REUserInfoViewController.swift */; };
-		5E58C4D01B17296A004BC883 /* RETabBarGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58C4CF1B17296A004BC883 /* RETabBarGenerator.swift */; };
 		5E58C4D31B1729B4004BC883 /* Cent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E58C4D11B1729B4004BC883 /* Cent.framework */; };
 		5E58C4D41B1729B4004BC883 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E58C4D21B1729B4004BC883 /* Dollar.framework */; };
 		5E58C4D61B172BF7004BC883 /* StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58C4D51B172BF7004BC883 /* StoryboardExtensions.swift */; };
 		5E58C4D91B172F3C004BC883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E58C4D71B172F3C004BC883 /* Main.storyboard */; };
+		5EC8AC301B17EA5C00D0D26B /* RETabBarGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8AC2C1B17EA5C00D0D26B /* RETabBarGenerator.swift */; };
+		5EC8AC311B17EA5C00D0D26B /* REUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8AC2E1B17EA5C00D0D26B /* REUserInfoViewController.swift */; };
+		5EC8AC321B17EA5C00D0D26B /* RETabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8AC2F1B17EA5C00D0D26B /* RETabBarViewController.swift */; };
 		5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */; };
 		5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F71B156A2500A0B4E8 /* ViewController.swift */; };
 		5ECA62FB1B156A2500A0B4E8 /* RestaurantEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECA62F91B156A2500A0B4E8 /* RestaurantEvent.storyboard */; };
@@ -72,13 +72,13 @@
 		5E18FF4A1B170D590012FD2A /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		5E18FF4C1B170D590012FD2A /* UIViewExtentsions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtentsions.swift; sourceTree = "<group>"; };
 		5E475B701B15D8F40073EED4 /* UIViewControllerStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerStoryboardExtensions.swift; sourceTree = "<group>"; };
-		5E58C4CA1B1728B4004BC883 /* RETabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RETabBarViewController.swift; path = tabbar/RETabBarViewController.swift; sourceTree = "<group>"; };
-		5E58C4CD1B172937004BC883 /* REUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = REUserInfoViewController.swift; path = tabbar/Items/REUserInfoViewController.swift; sourceTree = "<group>"; };
-		5E58C4CF1B17296A004BC883 /* RETabBarGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RETabBarGenerator.swift; path = tabbar/RETabBarGenerator.swift; sourceTree = "<group>"; };
 		5E58C4D11B1729B4004BC883 /* Cent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cent.framework; path = Carthage/Cent.framework; sourceTree = "<group>"; };
 		5E58C4D21B1729B4004BC883 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = Carthage/Dollar.framework; sourceTree = "<group>"; };
 		5E58C4D51B172BF7004BC883 /* StoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardExtensions.swift; sourceTree = "<group>"; };
 		5E58C4D81B172F3C004BC883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EC8AC2C1B17EA5C00D0D26B /* RETabBarGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RETabBarGenerator.swift; sourceTree = "<group>"; };
+		5EC8AC2E1B17EA5C00D0D26B /* REUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REUserInfoViewController.swift; sourceTree = "<group>"; };
+		5EC8AC2F1B17EA5C00D0D26B /* RETabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RETabBarViewController.swift; sourceTree = "<group>"; };
 		5ECA62F01B156A2500A0B4E8 /* RestaurantEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECA62F41B156A2500A0B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,16 +185,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5E18FF401B170C6F0012FD2A /* tabbar */ = {
-			isa = PBXGroup;
-			children = (
-				5E58C4CC1B1728E1004BC883 /* Items */,
-				5E58C4CA1B1728B4004BC883 /* RETabBarViewController.swift */,
-				5E58C4CF1B17296A004BC883 /* RETabBarGenerator.swift */,
-			);
-			name = tabbar;
-			sourceTree = "<group>";
-		};
 		5E18FF411B170D540012FD2A /* third */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,12 +213,30 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		5E58C4CC1B1728E1004BC883 /* Items */ = {
+		5EC8AC2A1B17EA5C00D0D26B /* tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				5E58C4CD1B172937004BC883 /* REUserInfoViewController.swift */,
+				5EC8AC2B1B17EA5C00D0D26B /* generator */,
+				5EC8AC2D1B17EA5C00D0D26B /* Items */,
+				5EC8AC2F1B17EA5C00D0D26B /* RETabBarViewController.swift */,
 			);
-			name = Items;
+			path = tabbar;
+			sourceTree = "<group>";
+		};
+		5EC8AC2B1B17EA5C00D0D26B /* generator */ = {
+			isa = PBXGroup;
+			children = (
+				5EC8AC2C1B17EA5C00D0D26B /* RETabBarGenerator.swift */,
+			);
+			path = generator;
+			sourceTree = "<group>";
+		};
+		5EC8AC2D1B17EA5C00D0D26B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				5EC8AC2E1B17EA5C00D0D26B /* REUserInfoViewController.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		5ECA62E71B156A2500A0B4E8 = {
@@ -257,8 +265,8 @@
 				5EEBC2C91B1733D1005D85D9 /* Reveal */,
 				5E18FF451B170D590012FD2A /* UIKit */,
 				5E18FF411B170D540012FD2A /* third */,
-				5E18FF401B170C6F0012FD2A /* tabbar */,
 				5E170F801B15B63D007EDE70 /* business_layout */,
+				5EC8AC2A1B17EA5C00D0D26B /* tabbar */,
 				5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */,
 				5ECA62F71B156A2500A0B4E8 /* ViewController.swift */,
 				5ECA62F91B156A2500A0B4E8 /* RestaurantEvent.storyboard */,
@@ -482,16 +490,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC8AC311B17EA5C00D0D26B /* REUserInfoViewController.swift in Sources */,
+				5EC8AC301B17EA5C00D0D26B /* RETabBarGenerator.swift in Sources */,
 				5E18FF4D1B170D590012FD2A /* UIColorExtensions.swift in Sources */,
 				5E18FF441B170D540012FD2A /* SwiftyUserDefaults.swift in Sources */,
-				5E58C4D01B17296A004BC883 /* RETabBarGenerator.swift in Sources */,
 				5E18FF531B170D590012FD2A /* UIViewExtentsions.swift in Sources */,
 				5E170F981B15B63D007EDE70 /* PAWActivityView.m in Sources */,
 				5E58C4D61B172BF7004BC883 /* StoryboardExtensions.swift in Sources */,
 				5E18FF511B170D590012FD2A /* UITableViewExtensions.swift in Sources */,
-				5E58C4CB1B1728B4004BC883 /* RETabBarViewController.swift in Sources */,
 				5EEBC2CB1B1733F1005D85D9 /* RECenterViewController.swift in Sources */,
-				5E58C4CE1B172937004BC883 /* REUserInfoViewController.swift in Sources */,
+				5EC8AC321B17EA5C00D0D26B /* RETabBarViewController.swift in Sources */,
 				5E18FF4F1B170D590012FD2A /* UIControlExtensions.swift in Sources */,
 				5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */,
 				5E170F951B15B63D007EDE70 /* PAWNewUserViewController.m in Sources */,
