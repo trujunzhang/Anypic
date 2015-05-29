@@ -1,0 +1,35 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+#use_frameworks!
+
+inhibit_all_warnings!
+
+# link_with 'app', 'appTests'
+
+def import_pods
+
+  pod 'Parse'
+  pod 'ParseFacebookUtils'
+  pod 'ParseCrashReporting'
+  pod 'ParseUI'
+  pod 'Reachability'
+  pod 'FormatterKit'
+  pod 'UIImageEffects'
+
+end
+
+target 'RestaurantEventBDD', :exclusive => true do
+  # ________________common tools library___________________
+  import_pods
+
+end
+
+
+ target 'RestaurantEventBDDTests', :exclusive => true do
+      import_pods
+
+    #pod 'Expecta'
+    #pod 'OCMock'
+    #pod 'OCMockito'
+
+ end
