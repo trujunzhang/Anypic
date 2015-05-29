@@ -20,7 +20,13 @@ class ViewController: UIViewController {
     }
     
     func saveRestaurant(){
+        let image1 = UIImage(named: "recipe01.jpg")
+        let image2 = UIImage(named: "recipe02.jpg")
+        let image3 = UIImage(named: "recipe03.jpg")
+        let image4 = UIImage(named: "recipe04.jpg")
+        var images:[UIImage] = [image1!,image2!,image3!,image4!]
         
+        SaveRestaurantUtils.saveRestaurant(images)
     }
     
     func saveTemp(){

@@ -42,8 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
         
-        
-        
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
             self.presentWallViewControllerAnimated(false)
@@ -54,8 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
             self.window?.rootViewController = self.navigationController
             self.window?.makeKeyAndVisible()
         }
-        
-        
         
         return true
     }

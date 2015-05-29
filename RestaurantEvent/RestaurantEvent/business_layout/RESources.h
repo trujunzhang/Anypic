@@ -6,3 +6,5 @@
 #import "PAWNewUserViewController.h"
 
 #import "PAPConstants.h"
+
+#import "ImageUtils.h"
