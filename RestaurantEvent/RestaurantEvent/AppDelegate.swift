@@ -65,6 +65,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
 
     }
     
+
+    
     
     // MARK: WallViewController
     func presentWallViewControllerAnimated(animated: Bool){
