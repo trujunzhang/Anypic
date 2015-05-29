@@ -45,34 +45,7 @@ class RETabBarViewController: UIViewController{
         
         self.homeTabBarContainer.addSubview(button)
         button.LayoutCenter()
-        
-        
-        //        AZCenterLabelButton *btn = [[AZCenterLabelButton alloc] init];
-        //        [btn setImage:[UIImage imageNamed:@"btn"] forState:UIControlStateNormal];
-        //        [btn setTitle:@"Hello Meizai!" forState:UIControlStateNormal];
-        //        [btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-        //        [btn setTitleColor:[UIColor purpleColor] forState:UIControlStateHighlighted];
-        //        [btn sizeToFit];
-        
-        //        for (index, button) in enumerate(self.buttons) {
-        //            let normalImage = UIImage(named: buttonObjects[index*3+0])
-        //            let selectedImage = UIImage(named: buttonObjects[index*3+1])
-        //            let title = buttonObjects[index*3+2]
-        //
-        //            button.setImage(normalImage, forState: .Normal)
-        //            button.setImage(selectedImage, forState: .Selected)
-        //            button.titleLabel?.text = title
-        //            button.sizeToFit()
-        //            button.centerImageAndTitle()
-        //        }
-        
-        
-        //        button.tag  = tagCounter;
-        //        [button setImage:viewController.tabBarItem.image forState:UIControlStateNormal];
-        //        [button setImage:viewController.tabBarItem.selectedImage forState:UIControlStateSelected];
-        //        [button sizeToFit];
-        //        [button addTarget:self action:@selector(tabButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        
+
     }
     
     
