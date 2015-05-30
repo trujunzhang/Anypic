@@ -11,20 +11,21 @@ import Foundation
 
 class QueryRestaurantUtils {
     
-    class func query() {
+    class func query() -> PFQuery{
         
         var query = PFQuery(className: kPAPRestaurantClassKey)
         query.whereKey(kPAPRestaurantUserKey, equalTo: PFUser.currentUser()!)
         //        query.orderByAscending(PF_USER_FULLNAME)
         query.limit = 1000
-        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-            if error == nil {
-                let array:NSArray = objects!
-                self.printObject(array as! [PFObject])
-            } else {
-            }
-        }
+//        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+//            if error == nil {
+//                let array:NSArray = objects!
+//                self.printObject(array as! [PFObject])
+//            } else {
+//            }
+//        }
         
+        return query
     }
     
     class func printObject(objects:[PFObject]){

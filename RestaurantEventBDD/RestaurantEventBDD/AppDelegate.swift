@@ -53,12 +53,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
             self.window?.makeKeyAndVisible()
         }
         
+
+        
         return true
     }
     
     // MARK: WallViewController
     func presentWallViewControllerAnimated(animated: Bool){
-//        self.window?.backgroundColor = UIColor.redColor()
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let viewController: UIViewController = RestaurantListViewController.instance()
+        self.navigationController.setViewControllers([viewController], animated: false)
+        self.window?.rootViewController = self.navigationController
+        
+        self.window?.makeKeyAndVisible()
+
+        self.window?.backgroundColor = UIColor.redColor()
     }
     
     // MARK: LoginViewController

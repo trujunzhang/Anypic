@@ -41,11 +41,7 @@ class RETabBarViewController: UIViewController{
             containers[index].addSubview(button)
             button.LayoutCenter()
         }
-        
-        
-        
     }
-    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
