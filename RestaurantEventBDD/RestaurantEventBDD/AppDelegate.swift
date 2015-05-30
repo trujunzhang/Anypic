@@ -44,7 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
-            self.presentWallViewControllerAnimated(false)
+//            self.presentWallViewControllerAnimated(false)
+            self.presentiewController()
         } else {
             // Go to the welcome screen and have them log in or create an account.
             self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
@@ -56,6 +57,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
 
         
         return true
+    }
+    
+    func presentiewController(){
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let viewController: UIViewController = ViewController.instance()
+        self.navigationController.setViewControllers([viewController], animated: false)
+        self.window?.rootViewController = self.navigationController
+        
+        self.window?.makeKeyAndVisible()
+        
+        self.window?.backgroundColor = UIColor.blueColor()
     }
     
     // MARK: WallViewController

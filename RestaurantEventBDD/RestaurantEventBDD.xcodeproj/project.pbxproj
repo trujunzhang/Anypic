@@ -26,6 +26,17 @@
 		5E21B8AB1B18AAFF00BB6D68 /* recipe02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E21B8A71B18AAFF00BB6D68 /* recipe02.jpg */; };
 		5E21B8AC1B18AAFF00BB6D68 /* recipe03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E21B8A81B18AAFF00BB6D68 /* recipe03.jpg */; };
 		5E21B8AD1B18AAFF00BB6D68 /* recipe04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E21B8A91B18AAFF00BB6D68 /* recipe04.jpg */; };
+		5E3BA0CC1B19BF83003AE90F /* RETabBarGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0C61B19BF83003AE90F /* RETabBarGenerator.swift */; };
+		5E3BA0CD1B19BF83003AE90F /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0C81B19BF83003AE90F /* RestaurantListViewController.swift */; };
+		5E3BA0CE1B19BF83003AE90F /* REUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0C91B19BF83003AE90F /* REUserInfoViewController.swift */; };
+		5E3BA0CF1B19BF83003AE90F /* RETabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0CA1B19BF83003AE90F /* RETabBarViewController.swift */; };
+		5E3BA0D81B19C09B003AE90F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0D21B19C09B003AE90F /* UIColorExtensions.swift */; };
+		5E3BA0D91B19C09B003AE90F /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0D31B19C09B003AE90F /* UIConstants.swift */; };
+		5E3BA0DA1B19C09B003AE90F /* UIControlExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0D41B19C09B003AE90F /* UIControlExtensions.swift */; };
+		5E3BA0DC1B19C09B003AE90F /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0D61B19C09B003AE90F /* UITableViewExtensions.swift */; };
+		5E3BA0DD1B19C09B003AE90F /* UIViewExtentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0D71B19C09B003AE90F /* UIViewExtentsions.swift */; };
+		5E3BA0E01B19C0FB003AE90F /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */; };
+		5E3BA0E21B19C19C003AE90F /* Cartography.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E48750F1B19AEE600426ED0 /* RestaurantEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E48750D1B19AEE600426ED0 /* RestaurantEvent.storyboard */; };
 		5E52C7F91B18A79000A503AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E52C7F81B18A79000A503AB /* AppDelegate.swift */; };
 		5E52C7FB1B18A79000A503AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E52C7FA1B18A79000A503AB /* ViewController.swift */; };
@@ -46,6 +57,19 @@
 			remoteInfo = RestaurantEventBDD;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E3BA0E11B19C18C003AE90F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E3BA0E21B19C19C003AE90F /* Cartography.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F0055AB5C90B65E013A3837 /* libPods-RestaurantEventBDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RestaurantEventBDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +104,17 @@
 		5E21B8A71B18AAFF00BB6D68 /* recipe02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipe02.jpg; sourceTree = "<group>"; };
 		5E21B8A81B18AAFF00BB6D68 /* recipe03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipe03.jpg; sourceTree = "<group>"; };
 		5E21B8A91B18AAFF00BB6D68 /* recipe04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipe04.jpg; sourceTree = "<group>"; };
+		5E3BA0C61B19BF83003AE90F /* RETabBarGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RETabBarGenerator.swift; sourceTree = "<group>"; };
+		5E3BA0C81B19BF83003AE90F /* RestaurantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		5E3BA0C91B19BF83003AE90F /* REUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REUserInfoViewController.swift; sourceTree = "<group>"; };
+		5E3BA0CA1B19BF83003AE90F /* RETabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RETabBarViewController.swift; sourceTree = "<group>"; };
+		5E3BA0D01B19C034003AE90F /* RestaurantEventBDD-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RestaurantEventBDD-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E3BA0D21B19C09B003AE90F /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		5E3BA0D31B19C09B003AE90F /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		5E3BA0D41B19C09B003AE90F /* UIControlExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlExtensions.swift; sourceTree = "<group>"; };
+		5E3BA0D61B19C09B003AE90F /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		5E3BA0D71B19C09B003AE90F /* UIViewExtentsions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtentsions.swift; sourceTree = "<group>"; };
+		5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = ../RestaurantEvent/Carthage/Cartography.framework; sourceTree = "<group>"; };
 		5E48750E1B19AEE600426ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../RestaurantEvent/RestaurantEvent/Base.lproj/RestaurantEvent.storyboard; sourceTree = "<group>"; };
 		5E52C7F31B18A79000A503AB /* RestaurantEventBDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEventBDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E52C7F71B18A79000A503AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				912D3CE42BB1A70A14CEF8A5 /* libPods-RestaurantEventBDD.a in Frameworks */,
+				5E3BA0E01B19C0FB003AE90F /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +272,55 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		5E3BA0C41B19BF83003AE90F /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				5E3BA0C51B19BF83003AE90F /* generator */,
+				5E3BA0C71B19BF83003AE90F /* Items */,
+				5E3BA0CA1B19BF83003AE90F /* RETabBarViewController.swift */,
+				5E3BA0CB1B19BF83003AE90F /* Views */,
+			);
+			name = tabbar;
+			path = ../../RestaurantEvent/RestaurantEvent/tabbar;
+			sourceTree = "<group>";
+		};
+		5E3BA0C51B19BF83003AE90F /* generator */ = {
+			isa = PBXGroup;
+			children = (
+				5E3BA0C61B19BF83003AE90F /* RETabBarGenerator.swift */,
+			);
+			path = generator;
+			sourceTree = "<group>";
+		};
+		5E3BA0C71B19BF83003AE90F /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				5E3BA0C81B19BF83003AE90F /* RestaurantListViewController.swift */,
+				5E3BA0C91B19BF83003AE90F /* REUserInfoViewController.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		5E3BA0CB1B19BF83003AE90F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E3BA0D11B19C09B003AE90F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E3BA0D21B19C09B003AE90F /* UIColorExtensions.swift */,
+				5E3BA0D31B19C09B003AE90F /* UIConstants.swift */,
+				5E3BA0D41B19C09B003AE90F /* UIControlExtensions.swift */,
+				5E3BA0D61B19C09B003AE90F /* UITableViewExtensions.swift */,
+				5E3BA0D71B19C09B003AE90F /* UIViewExtentsions.swift */,
+			);
+			name = UIKit;
+			path = ../../RestaurantEvent/RestaurantEvent/UIKit;
+			sourceTree = "<group>";
+		};
 		5E52C7EA1B18A79000A503AB = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +344,8 @@
 		5E52C7F51B18A79000A503AB /* RestaurantEventBDD */ = {
 			isa = PBXGroup;
 			children = (
+				5E3BA0D11B19C09B003AE90F /* UIKit */,
+				5E3BA0C41B19BF83003AE90F /* tabbar */,
 				5E21B8A51B18AAFF00BB6D68 /* Resources */,
 				5E21B8731B18AAF500BB6D68 /* business_layout */,
 				5E52C7F81B18A79000A503AB /* AppDelegate.swift */,
@@ -275,6 +362,7 @@
 		5E52C7F61B18A79000A503AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5E3BA0D01B19C034003AE90F /* RestaurantEventBDD-Bridging-Header.h */,
 				5E52C7F71B18A79000A503AB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -300,6 +388,7 @@
 		A2FDF775D720B9B6AAC9F9E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */,
 				72475F811C7983D430D5AAF6 /* libPods-RestaurantEventBDD.a */,
 				0F0055AB5C90B65E013A3837 /* libPods-RestaurantEventBDDTests.a */,
 			);
@@ -329,6 +418,7 @@
 				5E52C7F01B18A79000A503AB /* Frameworks */,
 				5E52C7F11B18A79000A503AB /* Resources */,
 				24B24D8BD3A48792EBC13935 /* Copy Pods Resources */,
+				5E3BA0E11B19C18C003AE90F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -492,21 +582,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3BA0CE1B19BF83003AE90F /* REUserInfoViewController.swift in Sources */,
 				5E21B89A1B18AAF500BB6D68 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				5E21B8A01B18AAF500BB6D68 /* PAPConstants.m in Sources */,
+				5E3BA0DA1B19C09B003AE90F /* UIControlExtensions.swift in Sources */,
 				5E21B89F1B18AAF500BB6D68 /* PAWPost.m in Sources */,
 				5E21B8981B18AAF500BB6D68 /* UIImage+AlphaAdditions.m in Sources */,
 				5E21B8A41B18AAF500BB6D68 /* PAWActivityView.m in Sources */,
+				5E3BA0DD1B19C09B003AE90F /* UIViewExtentsions.swift in Sources */,
 				5E52C7FB1B18A79000A503AB /* ViewController.swift in Sources */,
 				5E52C7F91B18A79000A503AB /* AppDelegate.swift in Sources */,
 				5E21B89B1B18AAF500BB6D68 /* PAWLoginViewController.m in Sources */,
+				5E3BA0CF1B19BF83003AE90F /* RETabBarViewController.swift in Sources */,
 				5E21B89D1B18AAF500BB6D68 /* PAWNewUserViewController.m in Sources */,
 				5E21B8A11B18AAF500BB6D68 /* SaveRestaurantUtils.swift in Sources */,
 				5E21B8991B18AAF500BB6D68 /* UIImage+ResizeAdditions.m in Sources */,
+				5E3BA0CD1B19BF83003AE90F /* RestaurantListViewController.swift in Sources */,
+				5E3BA0DC1B19C09B003AE90F /* UITableViewExtensions.swift in Sources */,
 				5E21B8971B18AAF500BB6D68 /* UIImage+Alpha.m in Sources */,
+				5E3BA0CC1B19BF83003AE90F /* RETabBarGenerator.swift in Sources */,
 				5E21B8A21B18AAF500BB6D68 /* UIViewControllerStoryboardExtensions.swift in Sources */,
+				5E3BA0D91B19C09B003AE90F /* UIConstants.swift in Sources */,
 				5EE636A11B194D5F000BEA82 /* QueryRestaurantUtils.swift in Sources */,
 				5E21B8A31B18AAF500BB6D68 /* ImageUtils.m in Sources */,
+				5E3BA0D81B19C09B003AE90F /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +742,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/djzhang/Desktop/wanghaogithub720/parse-tutorials/Anypic/RestaurantEvent/Carthage",
+				);
 				INFOPLIST_FILE = RestaurantEventBDD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -656,6 +759,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/djzhang/Desktop/wanghaogithub720/parse-tutorials/Anypic/RestaurantEvent/Carthage",
+				);
 				INFOPLIST_FILE = RestaurantEventBDD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

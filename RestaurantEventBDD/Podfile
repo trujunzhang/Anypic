@@ -16,6 +16,7 @@ def import_pods
   pod 'FormatterKit'
   pod 'UIImageEffects'
 
+  pod "AZCenterLabelButton"
 end
 
 target 'RestaurantEventBDD', :exclusive => true do

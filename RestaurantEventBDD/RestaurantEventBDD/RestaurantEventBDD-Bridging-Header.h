@@ -5,6 +5,9 @@
 // Our project object-c headers
 #import "RESources.h"
 
+// Library: AZCenterLabelButton
+#import "AZCenterLabelButton.h"
+
 
 // Library : parse and facebook
 #import <Parse/Parse.h>
