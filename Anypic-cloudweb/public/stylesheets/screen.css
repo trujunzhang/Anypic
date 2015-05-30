@@ -128,7 +128,8 @@ p {
 
 /* line 131, ../sass/screen.scss */
 .leather {
-  background: #f1e1c6 url("../images/leather_bg.jpg");
+  /*background: #f1e1c6 url("../images/leather_bg.jpg");*/
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #d94338 0%, #a91f60 100%) repeat scroll 0 0;
   background-repeat: repeat-x;
   background-position: center top;
   -webkit-background-size: 1400px 626px;
