@@ -199,21 +199,32 @@ p {
   padding-top: 1em;
   padding-bottom: 0.5em;
   text-align: left;
-  color: silver;
-  font-family: "HelveticaNeueRegular", "HelveticaNeue-Regular", "Helvetica Neue Regular", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Arial", sans-serif;
-  font-weight: 300;
-  font-stretch: normal;
-  font-size: 20px;
+  /*color: silver;*/
+  font-family: Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*font-family: "HelveticaNeueRegular", "HelveticaNeue-Regular", "Helvetica Neue Regular", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Arial", sans-serif;*/
+  /*font-weight: 300;*/
+  /*font-stretch: normal;*/
+  /*font-size: 20px;*/
+  color: white;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 130%;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* line 196, ../sass/screen.scss */
 #right p {
   margin-top: 0;
-  color: #a7a7a7;
-  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Arial", sans-serif;
-  font-weight: 300;
-  font-stretch: normal;
-  font-size: 16px;
+  /*color: #a7a7a7;*/
+  color: white;
+  font-family: Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Arial", sans-serif;*/
+  /*font-weight: 300;*/
+  /*font-stretch: normal;*/
+  /*font-size: 16px;*/
   text-align: left;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 130%;
 }
 
 /* line 203, ../sass/screen.scss */
@@ -1092,4 +1103,18 @@ img.screenshot {
 /* line 89, ../sass/slides.scss */
 .pagination li.current a {
   background-position: 0 0;
+}
+
+
+.right h2 {
+  color: white;
+  font-family: Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 130%;
+  text-align: center;
+}
+
+.textshadow {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
