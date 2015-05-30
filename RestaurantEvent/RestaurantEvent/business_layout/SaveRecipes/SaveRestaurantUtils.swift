@@ -11,6 +11,26 @@ import Foundation
 
 class SaveRestaurantUtils {
     
+    class func savePhoto(image:UIImage){
+        let info: UploadImageInfo = ImageUtils.prepareImageToStandard(image)
+        
+        let photoFile: PFFile = PFFile(data:info.imageData)
+        let thumbnailFile: PFFile = PFFile(data:info.thumbnailImageData)
+        
+        let x = 0
+        
+        photoFile.saveInBackgroundWithBlock({ (success, error) -> Void in
+            if error == nil {
+                let url = photoFile.url
+                let x = 0
+            } else {
+                let y = 0
+            }
+        }, progressBlock: { (value) -> Void in
+            println("\(value)")
+        })
+    }
+    
     class func savePhotos(image:UIImage,point:PFObject){
         // create a photo object
         var photo = PFObject(className: kPAPPhotoClassKey)

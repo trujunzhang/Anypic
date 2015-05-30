@@ -32,6 +32,7 @@
 		5E52C8001B18A79000A503AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E52C7FF1B18A79000A503AB /* Images.xcassets */; };
 		5E52C8031B18A79000A503AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E52C8011B18A79000A503AB /* LaunchScreen.xib */; };
 		5E52C80F1B18A79000A503AB /* RestaurantEventBDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E52C80E1B18A79000A503AB /* RestaurantEventBDDTests.swift */; };
+		5EE636A11B194D5F000BEA82 /* QueryRestaurantUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE636A01B194D5F000BEA82 /* QueryRestaurantUtils.swift */; };
 		912D3CE42BB1A70A14CEF8A5 /* libPods-RestaurantEventBDD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72475F811C7983D430D5AAF6 /* libPods-RestaurantEventBDD.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		5E52C8081B18A79000A503AB /* RestaurantEventBDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantEventBDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E52C80D1B18A79000A503AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E52C80E1B18A79000A503AB /* RestaurantEventBDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEventBDDTests.swift; sourceTree = "<group>"; };
+		5EE636A01B194D5F000BEA82 /* QueryRestaurantUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryRestaurantUtils.swift; sourceTree = "<group>"; };
 		72475F811C7983D430D5AAF6 /* libPods-RestaurantEventBDD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RestaurantEventBDD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72905EFC89A08B3D6587E6D0 /* Pods-RestaurantEventBDDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantEventBDDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantEventBDDTests/Pods-RestaurantEventBDDTests.release.xcconfig"; sourceTree = "<group>"; };
 		C09593E0BE3AC9960F07736F /* Pods-RestaurantEventBDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantEventBDD.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantEventBDD/Pods-RestaurantEventBDD.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		5E21B88E1B18AAF500BB6D68 /* SaveRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				5EE636A01B194D5F000BEA82 /* QueryRestaurantUtils.swift */,
 				5E21B88F1B18AAF500BB6D68 /* SaveRestaurantUtils.swift */,
 			);
 			path = SaveRecipes;
@@ -498,6 +501,7 @@
 				5E21B8991B18AAF500BB6D68 /* UIImage+ResizeAdditions.m in Sources */,
 				5E21B8971B18AAF500BB6D68 /* UIImage+Alpha.m in Sources */,
 				5E21B8A21B18AAF500BB6D68 /* UIViewControllerStoryboardExtensions.swift in Sources */,
+				5EE636A11B194D5F000BEA82 /* QueryRestaurantUtils.swift in Sources */,
 				5E21B8A31B18AAF500BB6D68 /* ImageUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

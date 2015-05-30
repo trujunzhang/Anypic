@@ -16,7 +16,9 @@ class ViewController: UIViewController {
         
 //        saveTemp()
         
-        saveRestaurant()
+//        saveRestaurant()
+        
+        QueryRestaurantUtils.query()
     }
     
     func saveRestaurant(){
@@ -26,7 +28,9 @@ class ViewController: UIViewController {
         let image4 = UIImage(named: "recipe04.jpg")
         var images:[UIImage] = [image1!,image2!,image3!,image4!]
         
-        SaveRestaurantUtils.saveRestaurant(images)
+//        SaveRestaurantUtils.saveRestaurant(images)
+        
+        SaveRestaurantUtils.savePhoto(image1!)
     }
     
     func saveTemp(){
