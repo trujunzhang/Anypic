@@ -99,8 +99,22 @@ extern NSString *const kPAPPhotoClassKey;
 extern NSString *const kPAPPhotoPictureKey;
 extern NSString *const kPAPPhotoThumbnailKey;
 extern NSString *const kPAPPhotoUserKey;
+extern NSString *const kPAPPhotoRestaurantKey;
 extern NSString *const kPAPPhotoOpenGraphIDKey;
 
+
+#pragma mark - PFObject Restaurant Class
+// Class key
+extern NSString *const kPAPRestaurantClassKey;
+
+// Field keys
+extern NSString *const kPAPRestaurantUserKey;
+extern NSString *const kPAPRestaurantNameKey;
+extern NSString *const kPAPRestaurantWaiterKey;
+extern NSString *const kPAPRestaurantRecipeListKey;
+extern NSString *const kPAPRestaurantCostKey;
+extern NSString *const kPAPRestaurantRemarkKey;
+extern NSString *const kPAPRestaurantLocationKey;
 
 #pragma mark - Cached Photo Attributes
 // keys

@@ -76,7 +76,21 @@ NSString *const kPAPPhotoClassKey = @"Photo";
 NSString *const kPAPPhotoPictureKey         = @"image";
 NSString *const kPAPPhotoThumbnailKey       = @"thumbnail";
 NSString *const kPAPPhotoUserKey            = @"user";
-NSString *const kPAPPhotoOpenGraphIDKey    = @"fbOpenGraphID";
+NSString *const kPAPPhotoRestaurantKey      = @"restaurant";
+NSString *const kPAPPhotoOpenGraphIDKey     = @"fbOpenGraphID";
+
+#pragma mark - PFObject Restaurant Class
+// Class key
+NSString *const kPAPRestaurantClassKey          = @"restaurant";
+
+// Field keys
+NSString *const kPAPRestaurantUserKey           = @"user";
+NSString *const kPAPRestaurantNameKey           = @"restaurantName";
+NSString *const kPAPRestaurantWaiterKey         = @"waiter";
+NSString *const kPAPRestaurantRecipeListKey     = @"recipeList";
+NSString *const kPAPRestaurantCostKey           = @"cost";
+NSString *const kPAPRestaurantRemarkKey         = @"remark";
+NSString *const kPAPRestaurantLocationKey       = @"location";
 
 
 #pragma mark - Cached Photo Attributes

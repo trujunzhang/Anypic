@@ -11,7 +11,7 @@ import Foundation
 
 class SaveRestaurantUtils {
     
-    class func savePhotos(image:UIImage){
+    class func savePhotos(image:UIImage,point:PFObject){
         // create a photo object
         var photo = PFObject(className: kPAPPhotoClassKey)
         
@@ -22,6 +22,10 @@ class SaveRestaurantUtils {
         
         photo[kPAPPhotoPictureKey] = photoFile
         photo[kPAPPhotoThumbnailKey] = thumbnailFile
+        
+        photo[kPAPPhotoUserKey] = PFUser.currentUser()
+        
+        photo[kPAPPhotoRestaurantKey] = point
         
         // photos are public, but may only be modified by the user who uploaded them
         let photoACL:PFACL = PFACL(user:PFUser.currentUser()!)
@@ -38,32 +42,35 @@ class SaveRestaurantUtils {
         }
     }
     
-    class func savePhotos(images:[UIImage]){
+    class func savePhotos(images:[UIImage],point:PFObject){
         
         for image in images{
-            self.savePhotos(image)
+            self.savePhotos(image,point:point)
         }
         
     }
     
     class func saveRestaurant(images:[UIImage]){
         
-        var object = PFObject(className: "Restaurant")
+        var object = PFObject(className: kPAPRestaurantClassKey)
         
-        object["user"] = PFUser.currentUser()
-        object["restaurantName"] = "restaurant Name"
-        object["waiter"] = "some Waiter"
-        object["recipeList"] =
+        object[kPAPRestaurantUserKey] = PFUser.currentUser()
+        object[kPAPRestaurantNameKey] = "restaurant Name"
+        object[kPAPRestaurantWaiterKey] = "some Waiter"
+        object[kPAPRestaurantRecipeListKey] =
             ["2 fresh English muffins","4 eggs","4 rashers of back bacon","2 egg yolks","1 tbsp of lemon juice","g of butter","salt and pepper"]
-        object["eatTime"] = [NSDate (timeIntervalSinceNow: 0)]
-        object["costs"] = "12.00"
-        object["remark"] = "Under the “RecipeBook” targets, select “Build Phases” and expand the “Link Binary with Libraries”. Click the “+” button and add the above libraries one by one."
-        object["location"] = PFGeoPoint(latitude: 1.0, longitude: 2.0)
+        
+        // replaced with createdAt field
+        //        object["eatTime"] = [NSDate (timeIntervalSinceNow: 0)]
+        object[kPAPRestaurantCostKey] = "12.00"
+        object[kPAPRestaurantRemarkKey] = "Under the “RecipeBook” targets, select “Build Phases” and expand the “Link Binary with Libraries”. Click the “+” button and add the above libraries one by one."
+        object[kPAPRestaurantLocationKey] = PFGeoPoint(latitude: 1.0, longitude: 2.0)
+        
         
         object.saveInBackgroundWithBlock { (success, error) -> Void in
             if error == nil {
-                let x = 0
-                self.savePhotos(images)
+                //                let id = object.objectId
+                self.savePhotos(images,point:object)
             } else {
                 let y = 0
             }
