@@ -7,7 +7,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="dTC-Ih-wqN">
             <objects>
-                <viewController storyboardIdentifier="RETabBarViewController" id="p13-35-sNl" customClass="RETabBarViewController" customModule="RestaurantEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RETabBarViewController" id="p13-35-sNl" customClass="RETabBarViewController" customModule="RestaurantEventBDD" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xEs-c4-UIx"/>
                         <viewControllerLayoutGuide type="bottom" id="8pD-1z-e0l"/>
@@ -46,29 +46,75 @@
         <!--Restaurant List View Controller-->
         <scene sceneID="9TW-mW-4Ts">
             <objects>
-                <tableViewController storyboardIdentifier="RestaurantListViewController" id="HQX-HF-GuW" customClass="RestaurantListViewController" customModule="RestaurantEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RestaurantListViewController" id="HQX-HF-GuW" customClass="RestaurantListViewController" customModule="RestaurantEventBDD" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rze-wF-afm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PFf-ZI-d1q">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHeaderViewCell" textLabel="zzI-Y3-iOG" detailTextLabel="c1b-pB-a99" style="IBUITableViewCellStyleSubtitle" id="PFf-ZI-d1q" customClass="UserHeaderViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PFf-ZI-d1q" id="TnI-U7-t2f">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zzI-Y3-iOG">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c1b-pB-a99">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailLabel" destination="c1b-pB-a99" id="bUx-9z-3sF"/>
+                                    <outlet property="titleLabel" destination="zzI-Y3-iOG" id="D8L-6B-cMY"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xBv-gW-CdX">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeLocationViewCell" id="xBv-gW-CdX" customClass="RecipeLocationViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xBv-gW-CdX" id="1ea-E0-5LX">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fMw-Im-Ppn">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                        </mapView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="fMw-Im-Ppn" secondAttribute="bottom" id="LP1-GP-wY0"/>
+                                        <constraint firstItem="fMw-Im-Ppn" firstAttribute="leading" secondItem="1ea-E0-5LX" secondAttribute="leading" id="TfB-YP-htC"/>
+                                        <constraint firstItem="fMw-Im-Ppn" firstAttribute="top" secondItem="1ea-E0-5LX" secondAttribute="top" id="ZU4-1u-xrs"/>
+                                        <constraint firstAttribute="trailing" secondItem="fMw-Im-Ppn" secondAttribute="trailing" id="nTh-xp-zch"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mapView" destination="fMw-Im-Ppn" id="fPb-nr-AL4"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i5n-86-SEz">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipePhotoViewCell" id="i5n-86-SEz" customClass="RecipePhotoViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i5n-86-SEz" id="EFs-0p-nqa">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3LW-Fg-hIU">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3LW-Fg-hIU" firstAttribute="leading" secondItem="EFs-0p-nqa" secondAttribute="leading" id="4iE-lG-WcH"/>
+                                        <constraint firstAttribute="bottom" secondItem="3LW-Fg-hIU" secondAttribute="bottom" id="J6k-ei-uvH"/>
+                                        <constraint firstAttribute="trailing" secondItem="3LW-Fg-hIU" secondAttribute="trailing" id="ia4-Ac-mKG"/>
+                                        <constraint firstItem="3LW-Fg-hIU" firstAttribute="top" secondItem="EFs-0p-nqa" secondAttribute="top" id="uCM-CE-Elw"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="photoView" destination="3LW-Fg-hIU" id="fI4-my-6vx"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="khC-lN-wkQ">
                                 <autoresizingMask key="autoresizingMask"/>

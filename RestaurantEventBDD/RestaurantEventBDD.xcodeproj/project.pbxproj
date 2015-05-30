@@ -37,6 +37,9 @@
 		5E3BA0DD1B19C09B003AE90F /* UIViewExtentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0D71B19C09B003AE90F /* UIViewExtentsions.swift */; };
 		5E3BA0E01B19C0FB003AE90F /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */; };
 		5E3BA0E21B19C19C003AE90F /* Cartography.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E3BC8501B19C5880023AC64 /* UserHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BC84F1B19C5880023AC64 /* UserHeaderViewCell.swift */; };
+		5E3BC8521B19C5A00023AC64 /* RecipeLocationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BC8511B19C5A00023AC64 /* RecipeLocationViewCell.swift */; };
+		5E3BC8541B19C5BE0023AC64 /* RecipePhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BC8531B19C5BE0023AC64 /* RecipePhotoViewCell.swift */; };
 		5E48750F1B19AEE600426ED0 /* RestaurantEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E48750D1B19AEE600426ED0 /* RestaurantEvent.storyboard */; };
 		5E52C7F91B18A79000A503AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E52C7F81B18A79000A503AB /* AppDelegate.swift */; };
 		5E52C7FB1B18A79000A503AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E52C7FA1B18A79000A503AB /* ViewController.swift */; };
@@ -115,6 +118,9 @@
 		5E3BA0D61B19C09B003AE90F /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		5E3BA0D71B19C09B003AE90F /* UIViewExtentsions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtentsions.swift; sourceTree = "<group>"; };
 		5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = ../RestaurantEvent/Carthage/Cartography.framework; sourceTree = "<group>"; };
+		5E3BC84F1B19C5880023AC64 /* UserHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeaderViewCell.swift; sourceTree = "<group>"; };
+		5E3BC8511B19C5A00023AC64 /* RecipeLocationViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeLocationViewCell.swift; sourceTree = "<group>"; };
+		5E3BC8531B19C5BE0023AC64 /* RecipePhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipePhotoViewCell.swift; sourceTree = "<group>"; };
 		5E48750E1B19AEE600426ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../RestaurantEvent/RestaurantEvent/Base.lproj/RestaurantEvent.storyboard; sourceTree = "<group>"; };
 		5E52C7F31B18A79000A503AB /* RestaurantEventBDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEventBDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E52C7F71B18A79000A503AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -275,9 +281,9 @@
 		5E3BA0C41B19BF83003AE90F /* tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				5E3BA0CA1B19BF83003AE90F /* RETabBarViewController.swift */,
 				5E3BA0C51B19BF83003AE90F /* generator */,
 				5E3BA0C71B19BF83003AE90F /* Items */,
-				5E3BA0CA1B19BF83003AE90F /* RETabBarViewController.swift */,
 				5E3BA0CB1B19BF83003AE90F /* Views */,
 			);
 			name = tabbar;
@@ -304,6 +310,9 @@
 		5E3BA0CB1B19BF83003AE90F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5E3BC84F1B19C5880023AC64 /* UserHeaderViewCell.swift */,
+				5E3BC8511B19C5A00023AC64 /* RecipeLocationViewCell.swift */,
+				5E3BC8531B19C5BE0023AC64 /* RecipePhotoViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -589,8 +598,10 @@
 				5E21B89F1B18AAF500BB6D68 /* PAWPost.m in Sources */,
 				5E21B8981B18AAF500BB6D68 /* UIImage+AlphaAdditions.m in Sources */,
 				5E21B8A41B18AAF500BB6D68 /* PAWActivityView.m in Sources */,
+				5E3BC8521B19C5A00023AC64 /* RecipeLocationViewCell.swift in Sources */,
 				5E3BA0DD1B19C09B003AE90F /* UIViewExtentsions.swift in Sources */,
 				5E52C7FB1B18A79000A503AB /* ViewController.swift in Sources */,
+				5E3BC8501B19C5880023AC64 /* UserHeaderViewCell.swift in Sources */,
 				5E52C7F91B18A79000A503AB /* AppDelegate.swift in Sources */,
 				5E21B89B1B18AAF500BB6D68 /* PAWLoginViewController.m in Sources */,
 				5E3BA0CF1B19BF83003AE90F /* RETabBarViewController.swift in Sources */,
@@ -600,6 +611,7 @@
 				5E3BA0CD1B19BF83003AE90F /* RestaurantListViewController.swift in Sources */,
 				5E3BA0DC1B19C09B003AE90F /* UITableViewExtensions.swift in Sources */,
 				5E21B8971B18AAF500BB6D68 /* UIImage+Alpha.m in Sources */,
+				5E3BC8541B19C5BE0023AC64 /* RecipePhotoViewCell.swift in Sources */,
 				5E3BA0CC1B19BF83003AE90F /* RETabBarGenerator.swift in Sources */,
 				5E21B8A21B18AAF500BB6D68 /* UIViewControllerStoryboardExtensions.swift in Sources */,
 				5E3BA0D91B19C09B003AE90F /* UIConstants.swift in Sources */,
