@@ -24,10 +24,6 @@ class RETabBarViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.redColor()
-       
-
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -39,9 +35,12 @@ class RETabBarViewController: UIViewController{
     // MARK: layout 
     func layoutViewController(){
         
-//        UIView.LayoutDivideTheSameWidth(homeTabBarContainer, view2: cameraTabBarContainer, view3: activityFeedTabBarContainer)
-        
+        self.view.backgroundColor = UIColor.purpleColor()
         let containers:[UIView] = [homeTabBarContainer,cameraTabBarContainer,activityFeedTabBarContainer]
+        for container in containers{
+            container.backgroundColor = UIColor.clearColor()
+        }
+        
         let tabBarInfos:[TabBarInfo] =  RETabBarGenerator.generateTabBarInfos()
         for (index,tabBarInfo) in enumerate(tabBarInfos){
             let button:AZCenterLabelButton = AZCenterLabelButton()
