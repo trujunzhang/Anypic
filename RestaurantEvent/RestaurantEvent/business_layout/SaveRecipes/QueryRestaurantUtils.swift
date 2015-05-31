@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import Dollar
 
 class QueryRestaurantUtils {
     
@@ -21,7 +21,13 @@ class QueryRestaurantUtils {
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if error == nil {
                 let array:NSArray = objects!
-                self.printObject(array as! [PFObject])
+                if(array.count > 0 ){
+                    var object:PFObject = array[0] as! PFObject
+                    //                    self.update(object)
+//                    self.deletePhotos(object)
+                    self.addPhotos(object)
+                }
+                //                self.printObject(array as! [PFObject])
             } else {
             }
         }
@@ -29,16 +35,56 @@ class QueryRestaurantUtils {
         return query
     }
     
-    class func update(){
+    class func update(object:PFObject){
+        object[kPAPRestaurantCostKey] = "123.00"
         
+        object.saveInBackgroundWithBlock { (success, error) -> Void in
+            if error == nil {
+                let id = object.objectId
+            } else {
+                let y = 0
+            }
+        }
     }
     
-    class func deletePhoto(){
+    class func deletePhotos(object:PFObject){
+        var photos:[PFObject]  = object.valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
+        //        var newPhotos:[PFObject] = photos.removeAtIndex(0)
+        var deletedPhoto:PFObject = photos[0]
+        var newPhotos:[PFObject] =  $.remove(photos) {
+            $0 == deletedPhoto
+        }
         
+        self.deletePhotos(object, newPhotos: newPhotos,lastPhotos:photos)
     }
     
-    class func addPhoto(){
+    class func deletePhotos(object:PFObject,newPhotos:[PFObject],lastPhotos:[PFObject]){
         
+        object[kPAPRestaurantPhotosKey] = newPhotos
+        
+        object.saveInBackgroundWithBlock { (success, error) -> Void in
+            if error == nil {
+                let id = object.objectId
+            } else {
+                let y = 0
+            }
+        }
+    }
+    
+    class func addPhotos(object:PFObject){
+        let image4 = UIImage(named: "recipe04.jpg")
+        
+        self.addPhotos(object, images: [image4!])
+    }
+    
+    class func addPhotos(object:PFObject,images:[UIImage]){
+        for image in images{
+            let photo = SaveRestaurantUtils.getPhotoObject(image)
+//            photos.append(photo)
+        }
+
+//        let photo = getPhotoObject(image)
+//        photos.append(photo)
     }
     
     class func printObject(objects:[PFObject]){

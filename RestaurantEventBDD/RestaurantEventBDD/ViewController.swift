@@ -22,8 +22,8 @@ class ViewController: UIViewController {
         
 //        saveTemp()
         
-        saveRestaurant()
-//        QueryRestaurantUtils.query()
+//        saveRestaurant()
+        QueryRestaurantUtils.query()
         
 //        layoutViewContainer.LayoutMargining(UIEdgeInsetsMake(0,0,0,0))
     }
