@@ -41,7 +41,7 @@ NSString *const kPAPInstallationUserKey = @"user";
 
 #pragma mark - Activity Class
 // Class key
-NSString *const kPAPActivityClassKey = @"Activity";
+NSString *const kPAPActivityClassKey = @"ActivityPic";
 
 // Field keys
 NSString *const kPAPActivityTypeKey        = @"type";
@@ -70,7 +70,7 @@ NSString *const kPAPUserAutoFollowKey                           = @"autoFollow";
 
 #pragma mark - Photo Class
 // Class key
-NSString *const kPAPPhotoClassKey = @"Photo";
+NSString *const kPAPPhotoClassKey = @"PhotoPic";
 
 // Field keys
 NSString *const kPAPPhotoPictureKey         = @"image";
