@@ -11,6 +11,7 @@ import Foundation
 class RECenterViewController: UIViewController {
     
     let tabBarViewController: RETabBarViewController = RETabBarViewController.instance()
+    lazy var tabBarInfos:[TabBarInfo] =  { return RETabBarGenerator.generateTabBarInfos()}()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,15 @@ class RECenterViewController: UIViewController {
         //self.tabBarViewControlle
         self.addChildViewController(self.tabBarViewController)
         self.view.addSubview(self.tabBarViewController.view)
+        
         self.tabBarViewController.view.layoutPanelBottomMargin(50)
-        self.tabBarViewController.layoutViewController()
+        self.tabBarViewController.layoutViewController(tabBarInfos)
+        
+        // current presentationView
+        //        self.selectViewController(, button: <#UIButton#>)
+    }
+    
+    func selectViewController(viewController:ViewController,button:UIButton){
+        
     }
 }
