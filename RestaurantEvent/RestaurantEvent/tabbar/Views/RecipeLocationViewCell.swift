@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipeLocationViewCell: UITableViewCell {
+class RecipeLocationViewCell: PFTableViewCell {
 
     @IBOutlet weak var mapView: MKMapView!
     

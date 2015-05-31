@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipePhotoViewCell: UITableViewCell {
+class RecipePhotoViewCell: PFTableViewCell {
 
     @IBOutlet weak var photoView: UIImageView!
     

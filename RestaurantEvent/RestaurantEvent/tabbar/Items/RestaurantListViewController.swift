@@ -20,7 +20,6 @@ class RestaurantListViewController: PFQueryTableViewController {
         // Do any additional setup after loading the view.
         self.title = "Restaurant List"
         
-        
         // The className to query on
         self.parseClassName = kPAPPhotoClassKey
         
@@ -38,9 +37,6 @@ class RestaurantListViewController: PFQueryTableViewController {
         
         // The Loading text clashes with the dark Anypic design
         self.loadingViewEnabled = true
-        
-        tableView.registerClass(PFTableViewCell.self, forCellReuseIdentifier: "ParseCell")
-        //        tableView.registerNib(UINib(nibName: "CatsTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,17 +57,17 @@ class RestaurantListViewController: PFQueryTableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let pfObjects:[PFObject] = self.objects as! [PFObject]
-        let object:PFObject = pfObjects[section]
+
+        let photos:[PFObject] =   pfObjects[section].valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
         
-        let photos:[PFObject] =  object.valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
-        
-        // header + map + photos(array)
+        //Count is header + map + photos(array)
         return 1 + 1 + photos.count
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
-        var cell:PFTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("ParseCell", forIndexPath: indexPath) as! PFTableViewCell
+        let identify = RestaurantTableUtils.getTableIdentify(indexPath.row)
+        var cell:PFTableViewCell = self.tableView.dequeueReusableCellWithIdentifier(identify, forIndexPath: indexPath) as! PFTableViewCell
         
         configureCell(cell, forRowAtIndexPath: indexPath)
         

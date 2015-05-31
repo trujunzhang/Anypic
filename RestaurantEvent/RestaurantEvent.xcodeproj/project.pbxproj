@@ -48,6 +48,7 @@
 		5ECA630C1B156A2500A0B4E8 /* RestaurantEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA630B1B156A2500A0B4E8 /* RestaurantEventTests.swift */; };
 		5EEBC2CB1B1733F1005D85D9 /* RECenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEBC2CA1B1733F1005D85D9 /* RECenterViewController.swift */; };
 		5EEBC2CD1B173404005D85D9 /* RELeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEBC2CC1B173404005D85D9 /* RELeftViewController.swift */; };
+		5EF3C2B61B1B3C5B001C9091 /* RecipeViewCellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3C2B51B1B3C5B001C9091 /* RecipeViewCellConstants.swift */; };
 		E20891F980262F9B1EBDDD2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3DC49AAA39E561943DC899 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		5ECA630B1B156A2500A0B4E8 /* RestaurantEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEventTests.swift; sourceTree = "<group>"; };
 		5EEBC2CA1B1733F1005D85D9 /* RECenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RECenterViewController.swift; path = Reveal/RECenterViewController.swift; sourceTree = "<group>"; };
 		5EEBC2CC1B173404005D85D9 /* RELeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RELeftViewController.swift; path = Reveal/RELeftViewController.swift; sourceTree = "<group>"; };
+		5EF3C2B51B1B3C5B001C9091 /* RecipeViewCellConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewCellConstants.swift; sourceTree = "<group>"; };
 		C6CAE07539DD58B4FB1C7AD0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EB3DC49AAA39E561943DC899 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 		5E07810F1B1AE85A00E2014F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5EF3C2B51B1B3C5B001C9091 /* RecipeViewCellConstants.swift */,
 				5E0781101B1AE85A00E2014F /* RecipeLocationViewCell.swift */,
 				5E0781111B1AE85A00E2014F /* RecipePhotoViewCell.swift */,
 				5E0781121B1AE85A00E2014F /* UserHeaderViewCell.swift */,
@@ -578,6 +581,7 @@
 				5E852ED91B19B16E00FF24A4 /* PAWActivityView.m in Sources */,
 				5E18FF531B170D590012FD2A /* UIViewExtentsions.swift in Sources */,
 				5E58C4D61B172BF7004BC883 /* StoryboardExtensions.swift in Sources */,
+				5EF3C2B61B1B3C5B001C9091 /* RecipeViewCellConstants.swift in Sources */,
 				5E0781171B1AE85A00E2014F /* RecipeLocationViewCell.swift in Sources */,
 				5E852ED31B19B16E00FF24A4 /* PAWPost.m in Sources */,
 				5E0781161B1AE85A00E2014F /* RETabBarViewController.swift in Sources */,

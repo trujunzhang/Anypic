@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserHeaderViewCell: UITableViewCell {
+class UserHeaderViewCell: PFTableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     
