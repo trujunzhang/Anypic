@@ -66,12 +66,18 @@ class RestaurantListViewController: PFQueryTableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
-        let identify = RestaurantTableUtils.getTableIdentify(indexPath.row)
+        let identify = RestaurantTableUtils.getTableCellIdentify(indexPath.row)
         var cell:PFTableViewCell = self.tableView.dequeueReusableCellWithIdentifier(identify, forIndexPath: indexPath) as! PFTableViewCell
         
         configureCell(cell, forRowAtIndexPath: indexPath)
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let height = RestaurantTableUtils.getTableCellHeight(indexPath.row)
+        println("\(height)")
+        return height
     }
     
     override func objectAtIndexPath(indexPath: NSIndexPath?) -> PFObject? {

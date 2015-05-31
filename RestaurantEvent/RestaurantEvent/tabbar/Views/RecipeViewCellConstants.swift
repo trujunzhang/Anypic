@@ -17,7 +17,7 @@ enum RestaurantTableRowType:Int{
 
 class RestaurantTableUtils: NSObject{
     
-    class func getTableIdentify(type:Int) -> String{
+    class func getTableCellIdentify(type:Int) -> String{
         if(type == 0){
             return "UserHeaderViewCell"
         }else if (type == 1){
@@ -25,5 +25,15 @@ class RestaurantTableUtils: NSObject{
         }
         
         return "RecipePhotoViewCell"
+    }
+    
+    class func getTableCellHeight(type:Int) -> CGFloat{
+        if(type == 0){
+            return 44
+        }else if (type == 1){
+            return 120
+        }
+        
+        return 320
     }
 }
