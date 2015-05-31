@@ -91,7 +91,16 @@ NSString *const kPAPRestaurantRecipeListKey     = @"recipeList";
 NSString *const kPAPRestaurantCostKey           = @"cost";
 NSString *const kPAPRestaurantRemarkKey         = @"remark";
 NSString *const kPAPRestaurantLocationKey       = @"location";
+NSString *const kPAPRestaurantPhotosKey         = @"photos";
 
+
+#pragma mark - PFObject RestaurantPhoto Class
+// Class key
+NSString *const kPAPRestaurantPhotoClassKey       = @"RestaurantPhoto";
+
+// Field keys
+NSString *const kPAPRestaurantPhotoPhotoKey       = @"photo";
+NSString *const kPAPRestaurantPhotoRestaurantKey  = @"restaurant";
 
 #pragma mark - Cached Photo Attributes
 // keys

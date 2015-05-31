@@ -115,6 +115,15 @@ extern NSString *const kPAPRestaurantRecipeListKey;
 extern NSString *const kPAPRestaurantCostKey;
 extern NSString *const kPAPRestaurantRemarkKey;
 extern NSString *const kPAPRestaurantLocationKey;
+extern NSString *const kPAPRestaurantPhotosKey;
+
+#pragma mark - PFObject RestaurantPhoto Class
+// Class key
+extern NSString *const kPAPRestaurantPhotoClassKey;
+
+// Field keys
+extern NSString *const kPAPRestaurantPhotoPhotoKey;
+extern NSString *const kPAPRestaurantPhotoRestaurantKey;
 
 #pragma mark - Cached Photo Attributes
 // keys
