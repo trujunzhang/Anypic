@@ -56,13 +56,17 @@ class RestaurantListViewController: PFQueryTableViewController {
     //MARK: UITableViewDataSource
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return self.objects!.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = self.objects!.count
-        println("\(count)")
-        return self.objects!.count
+        let pfObjects:[PFObject] = self.objects as! [PFObject]
+        let object:PFObject = pfObjects[section]
+        
+        let photos:[PFObject] =  object.valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
+        
+        // header + map + photos(array)
+        return 1 + 1 + photos.count
     }
     
     

@@ -44,9 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
-//            self.presentRestaurantListViewController(false)
+            self.presentRestaurantListViewController(false)
 //            self.presentiewController()
-            QueryRestaurantUtils.query()
+//            QueryRestaurantUtils.query()
         } else {
             // Go to the welcome screen and have them log in or create an account.
             self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
