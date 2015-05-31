@@ -39,7 +39,8 @@ class RETabBarViewController: UIViewController{
     func layoutViewController(tabBarInfos:[TabBarInfo] ,delegate: TabBarItemDelegate){
         self.delegate = delegate
         
-        self.view.backgroundColor = UIColor.purpleColor()
+        self.view.backgroundColor = UIColor.blackColor()
+        
         let containers:[UIView] = [homeTabBarContainer,cameraTabBarContainer,activityFeedTabBarContainer]
         for container in containers{
             container.backgroundColor = UIColor.clearColor()

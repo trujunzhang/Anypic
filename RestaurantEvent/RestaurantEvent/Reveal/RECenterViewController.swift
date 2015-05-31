@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RECenterViewController: UIViewController ,TabBarItemDelegate{
+class RECenterViewController: UIViewController,TabBarItemDelegate{
     
     let tabBarViewController: RETabBarViewController = RETabBarViewController.instance()
     
@@ -22,10 +22,12 @@ class RECenterViewController: UIViewController ,TabBarItemDelegate{
         super.viewDidLoad()
         
         self.title = "Center Panel"
-        
+        self.edgesForExtendedLayout = .None
+
+        // add Presentation view
         self.view.addSubview(self.presentationView)
         
-        //self.tabBarViewControlle
+        // add tabbar view
         self.addChildViewController(self.tabBarViewController)
         self.view.addSubview(self.tabBarViewController.view)
         
