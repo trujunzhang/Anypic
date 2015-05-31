@@ -74,6 +74,13 @@ class RestaurantListViewController: PFQueryTableViewController {
         return cell
     }
     
+    override func objectAtIndexPath(indexPath: NSIndexPath?) -> PFObject? {
+        let section = indexPath?.section
+        let pfObject:[PFObject] = self.objects as! [PFObject]
+        
+        return pfObject[section!]
+    }
+    
     func configureCell(cell: PFTableViewCell, forRowAtIndexPath: NSIndexPath) {
         let object: PFObject = self.objectAtIndexPath(forRowAtIndexPath)!
         cell.textLabel?.text = object.objectForKey(kPAPRestaurantWaiterKey) as! String
