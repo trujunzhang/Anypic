@@ -27,7 +27,11 @@ class UserHeaderViewCell: ParseAbstractTableCell {
     
     // MARK: Setup table cell by object instanced PFObject
     override func setCell(object:PFObject){
-        let x = 0
+      let displayName =  "Trujun Zhang" //object.valueForKey(kPAPUserDisplayNameKey) as! String
+      let timeAgo =  "40 minutes ago"
+        
+        titleLabel.text = displayName
+        detailLabel.text = timeAgo
     }
 
 }

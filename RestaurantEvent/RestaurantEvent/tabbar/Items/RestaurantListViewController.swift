@@ -79,10 +79,25 @@ class RestaurantListViewController: PFQueryTableViewController {
     }
     
     override func objectAtIndexPath(indexPath: NSIndexPath?) -> PFObject? {
-        let section = indexPath?.section
+        var section:Int = indexPath!.section
+        var row:Int = indexPath!.row
         let pfObject:[PFObject] = self.objects as! [PFObject]
         
-        return pfObject[section!]
+        var object = pfObject[section]
+        
+        switch (row){
+        case RestaurantTableRowType.UserInfo.hashValue:
+            object = PFUser.currentUser()!
+            break;
+        case RestaurantTableRowType.RecipeLocation.hashValue:
+            break;
+        default:
+            var photos:[PFObject]  = object.valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
+            object = photos[row - 2]
+            break;
+        }
+        
+        return object
     }
     
     func configureCell(cell: ParseAbstractTableCell, forRowAtIndexPath: NSIndexPath) {
