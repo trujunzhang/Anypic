@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipePhotoViewCell: PFTableViewCell {
+class RecipePhotoViewCell: ParseAbstractTableCell {
 
     @IBOutlet weak var photoView: UIImageView!
     
@@ -23,4 +23,8 @@ class RecipePhotoViewCell: PFTableViewCell {
         // Configure the view for the selected state
     }
 
+    // MARK: Setup table cell by object instanced PFObject
+    override func setCell(object:PFObject){
+        let x = 0
+    }
 }

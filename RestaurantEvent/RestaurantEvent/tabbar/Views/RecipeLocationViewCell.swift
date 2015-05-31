@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipeLocationViewCell: PFTableViewCell {
+class RecipeLocationViewCell: ParseAbstractTableCell {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -21,6 +21,11 @@ class RecipeLocationViewCell: PFTableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    // MARK: Setup table cell by object instanced PFObject
+    override func setCell(object:PFObject){
+        let x = 0
     }
 
 }

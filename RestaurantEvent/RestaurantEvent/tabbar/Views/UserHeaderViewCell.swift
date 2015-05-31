@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserHeaderViewCell: PFTableViewCell {
+class UserHeaderViewCell: ParseAbstractTableCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -23,6 +23,11 @@ class UserHeaderViewCell: PFTableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    // MARK: Setup table cell by object instanced PFObject
+    override func setCell(object:PFObject){
+        let x = 0
     }
 
 }

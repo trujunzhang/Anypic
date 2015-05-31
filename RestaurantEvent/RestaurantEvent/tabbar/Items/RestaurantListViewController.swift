@@ -57,7 +57,7 @@ class RestaurantListViewController: PFQueryTableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let pfObjects:[PFObject] = self.objects as! [PFObject]
-
+        
         let photos:[PFObject] =   pfObjects[section].valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
         
         //Count is header + map + photos(array)
@@ -67,7 +67,7 @@ class RestaurantListViewController: PFQueryTableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         let identify = RestaurantTableUtils.getTableCellIdentify(indexPath.row)
-        var cell:PFTableViewCell = self.tableView.dequeueReusableCellWithIdentifier(identify, forIndexPath: indexPath) as! PFTableViewCell
+        var cell:ParseAbstractTableCell = self.tableView.dequeueReusableCellWithIdentifier(identify, forIndexPath: indexPath) as! ParseAbstractTableCell
         
         configureCell(cell, forRowAtIndexPath: indexPath)
         
@@ -75,9 +75,7 @@ class RestaurantListViewController: PFQueryTableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let height = RestaurantTableUtils.getTableCellHeight(indexPath.row)
-        println("\(height)")
-        return height
+        return RestaurantTableUtils.getTableCellHeight(indexPath.row)
     }
     
     override func objectAtIndexPath(indexPath: NSIndexPath?) -> PFObject? {
@@ -87,9 +85,9 @@ class RestaurantListViewController: PFQueryTableViewController {
         return pfObject[section!]
     }
     
-    func configureCell(cell: PFTableViewCell, forRowAtIndexPath: NSIndexPath) {
+    func configureCell(cell: ParseAbstractTableCell, forRowAtIndexPath: NSIndexPath) {
         let object: PFObject = self.objectAtIndexPath(forRowAtIndexPath)!
-        cell.textLabel?.text = object.objectForKey(kPAPRestaurantWaiterKey) as! String
+        cell.setCell(object)
     }
     
     

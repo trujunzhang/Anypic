@@ -40,6 +40,7 @@
 		5E852ED71B19B16E00FF24A4 /* UIViewControllerStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EC41B19B16E00FF24A4 /* UIViewControllerStoryboardExtensions.swift */; };
 		5E852ED81B19B16E00FF24A4 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EC71B19B16E00FF24A4 /* ImageUtils.m */; };
 		5E852ED91B19B16E00FF24A4 /* PAWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852ECA1B19B16E00FF24A4 /* PAWActivityView.m */; };
+		5EC9A3811B1B4980002E9929 /* ParseAbstractTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9A3801B1B4980002E9929 /* ParseAbstractTableCell.swift */; };
 		5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */; };
 		5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F71B156A2500A0B4E8 /* ViewController.swift */; };
 		5ECA62FB1B156A2500A0B4E8 /* RestaurantEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECA62F91B156A2500A0B4E8 /* RestaurantEvent.storyboard */; };
@@ -110,6 +111,7 @@
 		5E852EC71B19B16E00FF24A4 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
 		5E852EC91B19B16E00FF24A4 /* PAWActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWActivityView.h; sourceTree = "<group>"; };
 		5E852ECA1B19B16E00FF24A4 /* PAWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWActivityView.m; sourceTree = "<group>"; };
+		5EC9A3801B1B4980002E9929 /* ParseAbstractTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseAbstractTableCell.swift; sourceTree = "<group>"; };
 		5ECA62F01B156A2500A0B4E8 /* RestaurantEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECA62F41B156A2500A0B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		5E07810F1B1AE85A00E2014F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5EC9A3801B1B4980002E9929 /* ParseAbstractTableCell.swift */,
 				5EF3C2B51B1B3C5B001C9091 /* RecipeViewCellConstants.swift */,
 				5E0781101B1AE85A00E2014F /* RecipeLocationViewCell.swift */,
 				5E0781111B1AE85A00E2014F /* RecipePhotoViewCell.swift */,
@@ -602,6 +605,7 @@
 				5E852ECB1B19B16E00FF24A4 /* UIImage+Alpha.m in Sources */,
 				5E852ED71B19B16E00FF24A4 /* UIViewControllerStoryboardExtensions.swift in Sources */,
 				5E18FF4E1B170D590012FD2A /* UIConstants.swift in Sources */,
+				5EC9A3811B1B4980002E9929 /* ParseAbstractTableCell.swift in Sources */,
 				5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */,
 				5E852ECF1B19B16E00FF24A4 /* PAWLoginViewController.m in Sources */,
 				5E852ED11B19B16E00FF24A4 /* PAWNewUserViewController.m in Sources */,
