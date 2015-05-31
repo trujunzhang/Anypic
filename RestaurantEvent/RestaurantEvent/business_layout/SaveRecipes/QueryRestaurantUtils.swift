@@ -24,8 +24,8 @@ class QueryRestaurantUtils {
                 if(array.count > 0 ){
                     var object:PFObject = array[0] as! PFObject
                     //                    self.update(object)
-                    //                    self.deletePhotos(object)
-                    //                    self.addPhotos(object)
+//                                        self.deletePhotos(object)
+//                                        self.addPhotos(object)
                 }
                 //                self.printObject(array as! [PFObject])
             } else {
@@ -96,9 +96,6 @@ class QueryRestaurantUtils {
                 let y = 0
             }
         }
-        
-        //        let photo = getPhotoObject(image)
-        //        photos.append(photo)
     }
     
     class func printObject(objects:[PFObject]){
