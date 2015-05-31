@@ -116,19 +116,31 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i5n-86-SEz" id="EFs-0p-nqa">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3LW-Fg-hIU">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-BZ-eh6">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                        </imageView>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncp-iE-PVJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="3LW-Fg-hIU" firstAttribute="leading" secondItem="EFs-0p-nqa" secondAttribute="leading" id="4iE-lG-WcH"/>
-                                        <constraint firstAttribute="bottom" secondItem="3LW-Fg-hIU" secondAttribute="bottom" id="J6k-ei-uvH"/>
-                                        <constraint firstAttribute="trailing" secondItem="3LW-Fg-hIU" secondAttribute="trailing" id="ia4-Ac-mKG"/>
-                                        <constraint firstItem="3LW-Fg-hIU" firstAttribute="top" secondItem="EFs-0p-nqa" secondAttribute="top" id="uCM-CE-Elw"/>
+                                        <constraint firstItem="hOa-BZ-eh6" firstAttribute="top" secondItem="EFs-0p-nqa" secondAttribute="top" id="2O5-o4-exF"/>
+                                        <constraint firstItem="ncp-iE-PVJ" firstAttribute="leading" secondItem="EFs-0p-nqa" secondAttribute="leading" id="5bG-3t-r5L"/>
+                                        <constraint firstAttribute="bottom" secondItem="hOa-BZ-eh6" secondAttribute="bottom" id="70R-Mp-Zjk"/>
+                                        <constraint firstAttribute="bottom" secondItem="ncp-iE-PVJ" secondAttribute="bottom" id="8xb-05-HN5"/>
+                                        <constraint firstItem="hOa-BZ-eh6" firstAttribute="leading" secondItem="EFs-0p-nqa" secondAttribute="leading" id="K85-gV-qAn"/>
+                                        <constraint firstAttribute="trailing" secondItem="hOa-BZ-eh6" secondAttribute="trailing" id="Pff-rj-3fL"/>
+                                        <constraint firstItem="ncp-iE-PVJ" firstAttribute="top" secondItem="EFs-0p-nqa" secondAttribute="top" id="mmb-57-BWR"/>
+                                        <constraint firstAttribute="trailing" secondItem="ncp-iE-PVJ" secondAttribute="trailing" id="uuZ-gA-leE"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="photoView" destination="3LW-Fg-hIU" id="fI4-my-6vx"/>
+                                    <outlet property="photoButton" destination="ncp-iE-PVJ" id="f7F-u3-wdc"/>
+                                    <outlet property="photoContainer" destination="hOa-BZ-eh6" id="wrT-6r-5Nl"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="khC-lN-wkQ">
