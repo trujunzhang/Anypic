@@ -102,7 +102,7 @@ extension UIView {
     ||--------------------------------------||
     
     :param: relatedView relatedView instance
-    :param: height      relatedView's height
+    :param: height      self's height
     */
     func LayoutBottomRelatedView(relatedView:UIView,height: CGFloat) {
         layout(relatedView,self) {
@@ -110,12 +110,12 @@ extension UIView {
             
             view1.centerX == view1.superview!.centerX
             view1.width == view1.superview!.width
-            view1.height == height
             view1.top == view1.superview!.top
+            view1.bottom == view2.top
             
             view2.centerX == view1.centerX
             view2.width == view2.superview!.width
-            view2.top == view1.bottom
+            view2.height == height
             view2.bottom == view2.superview!.bottom
         }
     }
