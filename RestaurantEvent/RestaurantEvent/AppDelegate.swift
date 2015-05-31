@@ -48,6 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
             self.presentWallViewControllerAnimated(false)
+//             self.presentRestaurantListViewController(false)
+//            QueryRestaurantUtils.query()
         } else {
             // Go to the welcome screen and have them log in or create an account.
             self.presentLoginViewController()
@@ -64,7 +66,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
     func presentTabBarController(){
 
     }
-    
+    // MARK: RestaurantListViewController
+    func presentRestaurantListViewController(animated: Bool){
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let viewController: UIViewController = RestaurantListViewController.instance()
+        self.navigationController.setViewControllers([viewController], animated: false)
+        self.window?.rootViewController = self.navigationController
+        
+        self.window?.makeKeyAndVisible()
+        
+        self.window?.backgroundColor = UIColor.redColor()
+    }
 
     
     

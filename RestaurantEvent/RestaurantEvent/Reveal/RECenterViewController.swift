@@ -15,6 +15,7 @@ class RECenterViewController: UIViewController ,TabBarItemDelegate{
     lazy var presentationView:UIView = { return UIView() }()
     lazy var tabBarInfos:[TabBarInfo] =  { return RETabBarGenerator.generateTabBarInfos() }()
     
+    var lastViewController:UIViewController?
     
     //MARK: UIViewController lifecycle
     override func viewDidLoad() {
@@ -51,8 +52,7 @@ class RECenterViewController: UIViewController ,TabBarItemDelegate{
     
     // MARK: TabBarItemDelegate
     func didPressButton(sender:UIButton,atIndex:Int){
-        let tabInfo = tabBarInfos[atIndex]
-        let selectedViewController = tabInfo.contentController
+        let selectedViewController = tabBarInfos[atIndex].contentController
         
         self.replaceSelectViewController(selectedViewController, button: sender)
     }
@@ -66,9 +66,14 @@ class RECenterViewController: UIViewController ,TabBarItemDelegate{
     func selectViewController(viewController:UIViewController){
         // First,clean up last sub views
         self.presentationView.removeAllSubViews()
-        
+        if let theLastViewController = self.lastViewController{
+            theLastViewController.removeFromParentViewController()
+        }
+        self.lastViewController = viewController
+
         self.addChildViewController(viewController)
         self.presentationView.addSubview(viewController.view)
+        viewController.view.LayoutFullView()
     }
     
 }

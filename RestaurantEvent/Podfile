@@ -14,5 +14,7 @@ pod 'UIImageEffects'
 pod 'JASidePanels'
 
 pod "AZCenterLabelButton"
+pod "TPKeyboardAvoiding"
 
 pod 'Reveal-iOS-SDK'
+
