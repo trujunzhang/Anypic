@@ -18,19 +18,19 @@ class QueryRestaurantUtils {
         //        query.orderByAscending(PF_USER_FULLNAME)
         query.limit = 1000
         
-        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-            if error == nil {
-                let array:NSArray = objects!
-                if(array.count > 0 ){
-                    var object:PFObject = array[0] as! PFObject
-                    //                    self.update(object)
-//                                        self.deletePhotos(object)
-//                                        self.addPhotos(object)
-                }
-                //                self.printObject(array as! [PFObject])
-            } else {
-            }
-        }
+//        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+//            if error == nil {
+//                let array:NSArray = objects!
+//                if(array.count > 0 ){
+//                    var object:PFObject = array[0] as! PFObject
+//                    //                    self.update(object)
+////                                        self.deletePhotos(object)
+////                                        self.addPhotos(object)
+//                }
+//                //                self.printObject(array as! [PFObject])
+//            } else {
+//            }
+//        }
         
         return query
     }

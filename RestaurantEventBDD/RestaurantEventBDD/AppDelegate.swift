@@ -44,8 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
-//            self.presentWallViewControllerAnimated(false)
-            self.presentiewController()
+            self.presentRestaurantListViewController(false)
+//            self.presentiewController()
         } else {
             // Go to the welcome screen and have them log in or create an account.
             self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
@@ -53,9 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
             self.window?.rootViewController = self.navigationController
             self.window?.makeKeyAndVisible()
         }
-        
 
-        
         return true
     }
     
@@ -71,8 +69,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         self.window?.backgroundColor = UIColor.blueColor()
     }
     
-    // MARK: WallViewController
-    func presentWallViewControllerAnimated(animated: Bool){
+    // MARK: RestaurantListViewController
+    func presentRestaurantListViewController(animated: Bool){
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         let viewController: UIViewController = RestaurantListViewController.instance()

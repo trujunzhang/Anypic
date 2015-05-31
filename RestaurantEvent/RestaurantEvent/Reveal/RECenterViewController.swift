@@ -67,7 +67,7 @@ class RECenterViewController: UIViewController ,TabBarItemDelegate{
         // First,clean up last sub views
         self.presentationView.removeAllSubViews()
         
-        
+        self.addChildViewController(viewController)
         self.presentationView.addSubview(viewController.view)
     }
     

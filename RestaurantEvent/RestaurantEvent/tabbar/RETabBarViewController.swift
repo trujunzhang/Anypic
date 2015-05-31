@@ -53,7 +53,6 @@ class RETabBarViewController: UIViewController{
             let title = tabBarInfo.title
             
             button.setImage(normalImage, forState: .Normal)
-//            button.setImage(selectedImage, forState: .Selected)
             button.setTitle(title, forState: .Normal)
             
             button.titleLabel?.font = UIFont.systemFontOfSize(12)
