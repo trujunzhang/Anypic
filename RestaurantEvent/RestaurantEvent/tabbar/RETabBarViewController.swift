@@ -59,12 +59,16 @@ class RETabBarViewController: UIViewController{
             button.titleLabel?.font = UIFont.systemFontOfSize(12)
             button.sizeToFit()
             
-            buttons.append(button)
+            self.buttons.append(button)
             button.addTarget(self, action: "tabButtonPressed:", forControlEvents: .TouchUpInside)
             
             containers[index].addSubview(button)
             button.LayoutCenter()
         }
+    }
+    
+    func showTabBarButton(buttonIndex:Int){
+        tabButtonPressed(self.buttons[buttonIndex])
     }
     
     // MARK: Buttons event

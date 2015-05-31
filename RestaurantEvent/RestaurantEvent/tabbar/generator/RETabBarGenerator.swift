@@ -9,8 +9,9 @@
 import Foundation
 
 enum TabBarType: Int{
-    case Normal
+    case Home
     case Camera
+    case Activity
 }
 
 struct TabBarInfo {
@@ -25,11 +26,11 @@ struct TabBarInfo {
 class RETabBarGenerator{
     class func generateTabBarInfos() -> [TabBarInfo]{
 
-        let homeTabBarInfo = TabBarInfo(type: .Normal,  title: "Home" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"), contentController: UIViewController())
+        let homeTabBarInfo = TabBarInfo(type: .Home,  title: "Home" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"), contentController: UIViewController())
         
-        let cameraTabBarInfo = TabBarInfo(type: .Normal,  title: "" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"), contentController: UIViewController())
+        let cameraTabBarInfo = TabBarInfo(type: .Camera,  title: "" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"), contentController: UIViewController())
 
-        let activityTabBarInfo = TabBarInfo(type: .Normal,  title: "Activity" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconTimeline"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconTimelineSelected"), contentController: UIViewController())
+        let activityTabBarInfo = TabBarInfo(type: .Activity,  title: "Activity" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconTimeline"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconTimelineSelected"), contentController: UIViewController())
 
         return [homeTabBarInfo,cameraTabBarInfo,activityTabBarInfo]
     }

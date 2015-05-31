@@ -11,12 +11,12 @@ import Foundation
 class RECenterViewController: UIViewController ,TabBarItemDelegate{
     
     let tabBarViewController: RETabBarViewController = RETabBarViewController.instance()
+    
+    lazy var presentationView:UIView = { return UIView() }()
     lazy var tabBarInfos:[TabBarInfo] =  { return RETabBarGenerator.generateTabBarInfos() }()
     
-    lazy var presentationView:UIView = {
-        return UIView()
-        }()
     
+    //MARK: UIViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,14 +28,26 @@ class RECenterViewController: UIViewController ,TabBarItemDelegate{
         
         self.tabBarViewController.view.layoutPanelBottomMargin(50)
         self.tabBarViewController.layoutViewController(tabBarInfos,delegate:self)
-        
-        // current presentationView
-        //        self.selectViewController(, button: <#UIButton#>)
     }
     
-    func selectViewController(viewController:ViewController,button:UIButton){
-        
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.tabBarViewController.showTabBarButton(TabBarType.Home.hashValue)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+    
     
     // MARK: TabBarItemDelegate
     func didPressButton(sender:UIButton,atIndex:Int){
@@ -52,7 +64,10 @@ class RECenterViewController: UIViewController ,TabBarItemDelegate{
     }
     
     func selectViewController(viewController:UIViewController){
+        // First,clean up last sub views
         self.presentationView.removeAllSubViews()
+        
+        
         self.presentationView.addSubview(viewController.view)
     }
     
