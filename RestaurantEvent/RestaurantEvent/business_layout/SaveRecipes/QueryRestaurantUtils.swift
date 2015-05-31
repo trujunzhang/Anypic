@@ -24,8 +24,8 @@ class QueryRestaurantUtils {
                 if(array.count > 0 ){
                     var object:PFObject = array[0] as! PFObject
                     //                    self.update(object)
-//                    self.deletePhotos(object)
-                    self.addPhotos(object)
+                    //                    self.deletePhotos(object)
+                    //                    self.addPhotos(object)
                 }
                 //                self.printObject(array as! [PFObject])
             } else {
@@ -49,7 +49,6 @@ class QueryRestaurantUtils {
     
     class func deletePhotos(object:PFObject){
         var photos:[PFObject]  = object.valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
-        //        var newPhotos:[PFObject] = photos.removeAtIndex(0)
         var deletedPhoto:PFObject = photos[0]
         var newPhotos:[PFObject] =  $.remove(photos) {
             $0 == deletedPhoto
@@ -60,6 +59,7 @@ class QueryRestaurantUtils {
     
     class func deletePhotos(object:PFObject,newPhotos:[PFObject],lastPhotos:[PFObject]){
         
+        // Save last photos that not contains deleted photos
         object[kPAPRestaurantPhotosKey] = newPhotos
         
         object.saveInBackgroundWithBlock { (success, error) -> Void in
@@ -78,13 +78,27 @@ class QueryRestaurantUtils {
     }
     
     class func addPhotos(object:PFObject,images:[UIImage]){
+        var lastPhotos:[PFObject]  = object.valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
+        var newPhotos:[PFObject] = [PFObject]()
         for image in images{
             let photo = SaveRestaurantUtils.getPhotoObject(image)
-//            photos.append(photo)
+            newPhotos.append(photo)
+            lastPhotos.append(photo)
         }
-
-//        let photo = getPhotoObject(image)
-//        photos.append(photo)
+        
+        // Save last photos that contains some new photos
+        object[kPAPRestaurantPhotosKey] = lastPhotos
+        object.saveInBackgroundWithBlock { (success, error) -> Void in
+            if error == nil {
+                let id = object.objectId
+                SaveRestaurantUtils.saveRestautantRelatedPhotos(object,photos: newPhotos)
+            } else {
+                let y = 0
+            }
+        }
+        
+        //        let photo = getPhotoObject(image)
+        //        photos.append(photo)
     }
     
     class func printObject(objects:[PFObject]){
