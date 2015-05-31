@@ -21,5 +21,6 @@ class RECenterViewController: UIViewController {
         self.addChildViewController(self.tabBarViewController)
         self.view.addSubview(self.tabBarViewController.view)
         self.tabBarViewController.view.layoutPanelBottomMargin(50)
+        self.tabBarViewController.layoutViewController()
     }
 }

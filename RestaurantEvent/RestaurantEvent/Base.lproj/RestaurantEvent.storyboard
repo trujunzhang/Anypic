@@ -7,7 +7,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="dTC-Ih-wqN">
             <objects>
-                <viewController storyboardIdentifier="RETabBarViewController" id="p13-35-sNl" customClass="RETabBarViewController" customModule="RestaurantEventBDD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RETabBarViewController" id="p13-35-sNl" customClass="RETabBarViewController" customModule="RestaurantEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xEs-c4-UIx"/>
                         <viewControllerLayoutGuide type="bottom" id="8pD-1z-e0l"/>
@@ -21,11 +21,11 @@
                                 <color key="backgroundColor" red="1" green="0.28528585950000002" blue="0.05965722281" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N6s-FD-wh7">
-                                <rect key="frame" x="75" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="400" y="0.0" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaW-Pr-g5E">
-                                <rect key="frame" x="148" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="480" y="0.0" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -46,13 +46,13 @@
         <!--Restaurant List View Controller-->
         <scene sceneID="9TW-mW-4Ts">
             <objects>
-                <tableViewController storyboardIdentifier="RestaurantListViewController" id="HQX-HF-GuW" customClass="RestaurantListViewController" customModule="RestaurantEventBDD" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RestaurantListViewController" id="HQX-HF-GuW" customClass="RestaurantListViewController" customModule="RestaurantEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rze-wF-afm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHeaderViewCell" textLabel="zzI-Y3-iOG" detailTextLabel="c1b-pB-a99" style="IBUITableViewCellStyleSubtitle" id="PFf-ZI-d1q" customClass="UserHeaderViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHeaderViewCell" textLabel="zzI-Y3-iOG" detailTextLabel="c1b-pB-a99" style="IBUITableViewCellStyleSubtitle" id="PFf-ZI-d1q" customClass="UserHeaderViewCell" customModule="RestaurantEvent" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PFf-ZI-d1q" id="TnI-U7-t2f">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -76,7 +76,7 @@
                                     <outlet property="titleLabel" destination="zzI-Y3-iOG" id="D8L-6B-cMY"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeLocationViewCell" id="xBv-gW-CdX" customClass="RecipeLocationViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeLocationViewCell" id="xBv-gW-CdX" customClass="RecipeLocationViewCell" customModule="RestaurantEvent" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xBv-gW-CdX" id="1ea-E0-5LX">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -96,7 +96,7 @@
                                     <outlet property="mapView" destination="fMw-Im-Ppn" id="fPb-nr-AL4"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipePhotoViewCell" id="i5n-86-SEz" customClass="RecipePhotoViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipePhotoViewCell" id="i5n-86-SEz" customClass="RecipePhotoViewCell" customModule="RestaurantEvent" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i5n-86-SEz" id="EFs-0p-nqa">
                                     <autoresizingMask key="autoresizingMask"/>

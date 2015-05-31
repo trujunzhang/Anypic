@@ -9,8 +9,3 @@
 import Foundation
 
 
-extension RETabBarViewController{
-   class func instance() -> RETabBarViewController{
-        return UIStoryboard(name: "RestaurantEvent", bundle: nil).instantiateViewControllerWithIdentifier("RETabBarViewController") as! RETabBarViewController
-    }
-}

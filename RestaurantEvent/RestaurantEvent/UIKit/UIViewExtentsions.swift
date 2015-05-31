@@ -46,6 +46,29 @@ extension UIView {
         }
     }
     
+    class func LayoutDivideTheSameWidth(view1:UIView,view2:UIView,view3:UIView){
+        layout(view1,view2,view3) {
+            view1,view2,view3 in
+            
+            view1.leading == view1.superview!.leading
+            view1.centerY == view1.superview!.centerY
+            view1.width   == view1.superview!.width/3
+            view1.height  == view1.superview!.height
+            
+            view2.leading == view1.superview!.trailing
+            view2.centerY == view2.superview!.centerY
+            view2.width   == view2.superview!.width/3
+            view2.height  == view2.superview!.height
+            
+//            view3.leading == view2.superview!.trailing
+//            view3.centerY == view3.superview!.centerY
+//            view3.width   == view3.superview!.width/3
+//            view3.height  == view3.superview!.height
+            
+        }
+    }
+
+    
     func LayoutRelatedView(relatedView:UIView,height: CGFloat) {
         layout(self,relatedView) {
             view1,view2 in

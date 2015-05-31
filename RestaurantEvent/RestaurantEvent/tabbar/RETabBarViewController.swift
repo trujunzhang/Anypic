@@ -10,6 +10,9 @@ import Foundation
 
 
 class RETabBarViewController: UIViewController{
+    class func instance() -> RETabBarViewController{
+        return UIStoryboard(name: "RestaurantEvent", bundle: nil).instantiateViewControllerWithIdentifier("RETabBarViewController") as! RETabBarViewController
+    }
     
     @IBOutlet weak var homeTabBarContainer: UIView!
     
@@ -21,6 +24,22 @@ class RETabBarViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.redColor()
+       
+
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+    }
+    
+    // MARK: layout 
+    func layoutViewController(){
+        
+//        UIView.LayoutDivideTheSameWidth(homeTabBarContainer, view2: cameraTabBarContainer, view3: activityFeedTabBarContainer)
         
         let containers:[UIView] = [homeTabBarContainer,cameraTabBarContainer,activityFeedTabBarContainer]
         let tabBarInfos:[TabBarInfo] =  RETabBarGenerator.generateTabBarInfos()
@@ -41,12 +60,6 @@ class RETabBarViewController: UIViewController{
             containers[index].addSubview(button)
             button.LayoutCenter()
         }
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        
     }
     
     
