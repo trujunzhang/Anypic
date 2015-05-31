@@ -21,13 +21,11 @@ class RETabBarViewController: UIViewController{
     var delegate: TabBarItemDelegate?
     
     @IBOutlet weak var homeTabBarContainer: UIView!
-    
     @IBOutlet weak var cameraTabBarContainer: UIView!
-    
     @IBOutlet weak var activityFeedTabBarContainer: UIView!
     
     var buttons:[UIButton] = [UIButton]()
-    var selectedButton:Int = 0
+    var lastSelectedButton:UIButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +53,7 @@ class RETabBarViewController: UIViewController{
             let title = tabBarInfo.title
             
             button.setImage(normalImage, forState: .Normal)
-            button.setImage(selectedImage, forState: .Selected)
+//            button.setImage(selectedImage, forState: .Selected)
             button.setTitle(title, forState: .Normal)
             
             button.titleLabel?.font = UIFont.systemFontOfSize(12)
@@ -73,6 +71,19 @@ class RETabBarViewController: UIViewController{
     func tabButtonPressed(sender:UIButton){
         let buttonIndex = $.indexOf(self.buttons, value: sender)
         self.delegate?.didPressButton(sender,atIndex:buttonIndex!)
+    }
+    
+    // MARK: 
+    func replaceSelectedButton(selectedButton:UIButton,tabBarInfos:[TabBarInfo]){
+        if let theLastSelectedButton = self.lastSelectedButton{
+            let oldButtonIndex = $.indexOf(self.buttons, value: theLastSelectedButton)
+            theLastSelectedButton.setImage(tabBarInfos[oldButtonIndex!].normalImage, forState: .Normal)
+        }
+
+        let newButtonIndex = $.indexOf(self.buttons, value: selectedButton)
+        selectedButton.setImage(tabBarInfos[newButtonIndex!].selectedImage, forState: .Normal)
+        
+        self.lastSelectedButton = selectedButton
     }
     
     

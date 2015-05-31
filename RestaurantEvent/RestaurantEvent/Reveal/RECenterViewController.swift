@@ -11,7 +11,11 @@ import Foundation
 class RECenterViewController: UIViewController ,TabBarItemDelegate{
     
     let tabBarViewController: RETabBarViewController = RETabBarViewController.instance()
-    lazy var tabBarInfos:[TabBarInfo] =  { return RETabBarGenerator.generateTabBarInfos()}()
+    lazy var tabBarInfos:[TabBarInfo] =  { return RETabBarGenerator.generateTabBarInfos() }()
+    
+    lazy var presentationView:UIView = {
+        return UIView()
+        }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,21 @@ class RECenterViewController: UIViewController ,TabBarItemDelegate{
     
     // MARK: TabBarItemDelegate
     func didPressButton(sender:UIButton,atIndex:Int){
+        let tabInfo = tabBarInfos[atIndex]
+        let selectedViewController = tabInfo.contentController
         
+        self.replaceSelectViewController(selectedViewController, button: sender)
     }
+    
+    // MARK: View Controller Selection
+    func replaceSelectViewController(viewController:UIViewController,button:UIButton){
+        self.tabBarViewController.replaceSelectedButton(button,tabBarInfos:tabBarInfos)
+        self.selectViewController(viewController)
+    }
+    
+    func selectViewController(viewController:UIViewController){
+        self.presentationView.removeAllSubViews()
+        self.presentationView.addSubview(viewController.view)
+    }
+    
 }
