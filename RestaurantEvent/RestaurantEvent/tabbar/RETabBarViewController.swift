@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import Dollar
 
+protocol TabBarItemDelegate{
+    func didPressButton(sender:UIButton,atIndex:Int)
+}
 
 class RETabBarViewController: UIViewController{
     class func instance() -> RETabBarViewController{
         return UIStoryboard(name: "RestaurantEvent", bundle: nil).instantiateViewControllerWithIdentifier("RETabBarViewController") as! RETabBarViewController
     }
+    
+    var delegate: TabBarItemDelegate?
     
     @IBOutlet weak var homeTabBarContainer: UIView!
     
@@ -21,6 +27,7 @@ class RETabBarViewController: UIViewController{
     @IBOutlet weak var activityFeedTabBarContainer: UIView!
     
     var buttons:[UIButton] = [UIButton]()
+    var selectedButton:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +35,11 @@ class RETabBarViewController: UIViewController{
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        
     }
     
-    // MARK: layout 
-    func layoutViewController(tabBarInfos:[TabBarInfo] ){
+    // MARK: layout
+    func layoutViewController(tabBarInfos:[TabBarInfo] ,delegate: TabBarItemDelegate){
+        self.delegate = delegate
         
         self.view.backgroundColor = UIColor.purpleColor()
         let containers:[UIView] = [homeTabBarContainer,cameraTabBarContainer,activityFeedTabBarContainer]
@@ -55,10 +61,20 @@ class RETabBarViewController: UIViewController{
             button.titleLabel?.font = UIFont.systemFontOfSize(12)
             button.sizeToFit()
             
+            buttons.append(button)
+            button.addTarget(self, action: "tabButtonPressed:", forControlEvents: .TouchUpInside)
+            
             containers[index].addSubview(button)
             button.LayoutCenter()
         }
     }
+    
+    // MARK: Buttons event
+    func tabButtonPressed(sender:UIButton){
+        let buttonIndex = $.indexOf(self.buttons, value: sender)
+        self.delegate?.didPressButton(sender,atIndex:buttonIndex!)
+    }
+    
     
     
 }

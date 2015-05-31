@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RECenterViewController: UIViewController {
+class RECenterViewController: UIViewController ,TabBarItemDelegate{
     
     let tabBarViewController: RETabBarViewController = RETabBarViewController.instance()
     lazy var tabBarInfos:[TabBarInfo] =  { return RETabBarGenerator.generateTabBarInfos()}()
@@ -23,13 +23,18 @@ class RECenterViewController: UIViewController {
         self.view.addSubview(self.tabBarViewController.view)
         
         self.tabBarViewController.view.layoutPanelBottomMargin(50)
-        self.tabBarViewController.layoutViewController(tabBarInfos)
+        self.tabBarViewController.layoutViewController(tabBarInfos,delegate:self)
         
         // current presentationView
         //        self.selectViewController(, button: <#UIButton#>)
     }
     
     func selectViewController(viewController:ViewController,button:UIButton){
+        
+    }
+    
+    // MARK: TabBarItemDelegate
+    func didPressButton(sender:UIButton,atIndex:Int){
         
     }
 }
