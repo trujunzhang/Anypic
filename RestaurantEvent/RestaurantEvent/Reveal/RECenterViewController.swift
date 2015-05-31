@@ -23,14 +23,14 @@ class RECenterViewController: UIViewController ,TabBarItemDelegate{
         
         self.title = "Center Panel"
         
+        self.view.addSubview(self.presentationView)
+        
         //self.tabBarViewControlle
         self.addChildViewController(self.tabBarViewController)
         self.view.addSubview(self.tabBarViewController.view)
         
-        self.tabBarViewController.view.layoutPanelBottomMargin(50)
-        
+        self.tabBarViewController.view.LayoutBottomRelatedView(self.presentationView,height:50)
         self.tabBarViewController.layoutViewController(tabBarInfos,delegate:self)
-        
     }
     
     override func viewWillAppear(animated: Bool) {
