@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ViewController") as! ViewController
     }
 
-    @IBOutlet weak var layoutViewContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +22,9 @@ class ViewController: UIViewController {
 //        saveTemp()
         
 //        saveRestaurant()
-        QueryRestaurantUtils.query()
+//        QueryRestaurantUtils.query()
         
-//        layoutViewContainer.LayoutMargining(UIEdgeInsetsMake(0,0,0,0))
+//
     }
     
     override func viewDidAppear(animated: Bool) {

@@ -16,16 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EI3-2J-1W7">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaH-tG-7N4">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.28528585950000002" blue="0.05965722281" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wt0-D8-bXN"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GaH-tG-7N4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9Jo-0Y-Ij6"/>
+                            <constraint firstAttribute="bottom" secondItem="GaH-tG-7N4" secondAttribute="bottom" id="K0A-Et-BWA"/>
+                            <constraint firstAttribute="trailing" secondItem="GaH-tG-7N4" secondAttribute="trailing" id="L12-EP-dH2"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="layoutViewContainer" destination="EI3-2J-1W7" id="QUr-4C-mLM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
