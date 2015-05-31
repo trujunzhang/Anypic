@@ -40,7 +40,7 @@ extension UIView {
     func LayoutCenter() {
         layout(self) {
             view in
-
+            
             view.size   == view.size
             view.center == view.superview!.center
         }
@@ -60,35 +60,68 @@ extension UIView {
             view2.width   == view2.superview!.width/3
             view2.height  == view2.superview!.height
             
-//            view3.leading == view2.superview!.trailing
-//            view3.centerY == view3.superview!.centerY
-//            view3.width   == view3.superview!.width/3
-//            view3.height  == view3.superview!.height
+            //            view3.leading == view2.superview!.trailing
+            //            view3.centerY == view3.superview!.centerY
+            //            view3.width   == view3.superview!.width/3
+            //            view3.height  == view3.superview!.height
             
         }
     }
-
     
-    func LayoutRelatedView(relatedView:UIView,height: CGFloat) {
+    /**
+    ||--------------------------------------||
+    ||-------------- * self * --------------||
+    ||--------------------------------------||
+    ||---------- * relatedView * -----------||
+    ||--------------------------------------||
+    
+    :param: relatedView relatedView instance
+    :param: height      self's height
+    */
+    func LayoutTopRelatedView(relatedView:UIView,height: CGFloat) {
         layout(self,relatedView) {
             view1,view2 in
             
             view1.centerX == view1.superview!.centerX
-            view2.centerX == view1.centerX
-            
             view1.width == view1.superview!.width
-            view2.width == view1.width
-            
             view1.height == height
-            
             view1.top == view1.superview!.top
-            view2.top == view1.bottom
             
+            view2.centerX == view1.centerX
+            view2.width == view2.superview!.width
+            view2.top == view1.bottom
             view2.bottom == view2.superview!.bottom
         }
     }
-
-
+    
+    /**
+    ||--------------------------------------||
+    ||---------- * relatedView * -----------||
+    ||--------------------------------------||
+    ||-------------- * self * --------------||
+    ||--------------------------------------||
+    
+    :param: relatedView relatedView instance
+    :param: height      relatedView's height
+    */
+    func LayoutBottomRelatedView(relatedView:UIView,height: CGFloat) {
+        layout(relatedView,self) {
+            view1,view2 in
+            
+            view1.centerX == view1.superview!.centerX
+            view1.width == view1.superview!.width
+            view1.height == height
+            view1.top == view1.superview!.top
+            
+            view2.centerX == view1.centerX
+            view2.width == view2.superview!.width
+            view2.top == view1.bottom
+            view2.bottom == view2.superview!.bottom
+        }
+    }
+    
+    
+    
     /**
     AutoLayout for margining self
     
@@ -112,7 +145,7 @@ extension UIView {
             
             view1.centerX == view1.superview!.centerX
             view1.width == view1.superview!.width
-
+            
             view1.top == view1.superview!.top + topMargin
             view1.height == height
         }
