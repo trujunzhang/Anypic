@@ -8,31 +8,38 @@
 
 import Foundation
 import Dollar
+import Result
+import Box
+
+typealias QueryHandler = (Result<PFObject, NSError>) -> Void
 
 class ParseQueryUtils {
     
     // MARK : Query Photo
+    class func queryPhoto(photo:PFObject,completionBlock:QueryHandler){
+        self.startQueryTaskForPhotoInfo(queryPhoto(photo), completionBlock: completionBlock)
+    }
+    
     class func queryPhoto(photo:PFObject) -> PFQuery{
-        
         var query = PFQuery(className: kPAPPhotoClassKey)
         query.whereKey("objectId", equalTo: photo.objectId!)
         query.limit = 1000
         
-        self.showPhotoInfo(query)
-        
         return query
     }
     
-    class func showPhotoInfo(query:PFQuery){
+    class func startQueryTaskForPhotoInfo(query:PFQuery,completionBlock:QueryHandler){
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-            if error == nil {
+            
+            if let theError = error{
+                completionBlock(.failure(theError))
+            }else{
                 let array:NSArray = objects!
                 if(array.count > 0 ){
-                    var photo:PFObject = array[0] as! PFObject
-                    let photoFile: PFFile = photo.valueForKey(kPAPPhotoPictureKey) as! PFFile
-                    let x = 0
+                    let photo:PFObject = array[0] as! PFObject
+                    // let photoFile: PFFile = photo.valueForKey(kPAPPhotoPictureKey) as! PFFile
+                    completionBlock(.success(photo))
                 }
-            } else {
             }
         }
     }
@@ -46,7 +53,7 @@ class ParseQueryUtils {
         query.limit = 1000
         
         //        self.showRestaurantInfo(query)
-//        self.showPhotoInfoFromRestaurant(query)
+        //        self.showPhotoInfoFromRestaurant(query)
         
         return query
     }

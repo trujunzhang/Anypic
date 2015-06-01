@@ -248,7 +248,8 @@
         cell.imageView.image = [UIImage imageNamed:@"PlaceholderPhoto.png"];
         
         if (object) {
-            cell.imageView.file = [object objectForKey:kPAPPhotoPictureKey];
+            id file = [object objectForKey:kPAPPhotoPictureKey];
+            cell.imageView.file = file;
             
             // PFQTVC will take care of asynchronously downloading files, but will only load them when the tableview is not moving. If the data is there, let's load it right away.
             if ([cell.imageView.file isDataAvailable]) {
