@@ -48,6 +48,7 @@
 		5EB99E801B1BE9DC0009EB43 /* PAWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E711B1BE9DC0009EB43 /* PAWActivityView.m */; };
 		5EB99E821B1BEA000009EB43 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB99E811B1BEA000009EB43 /* Box.framework */; };
 		5EB99E841B1BEA060009EB43 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB99E831B1BEA060009EB43 /* Result.framework */; };
+		5EC3A7BD1B1C1096003DA4AA /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3A7BC1B1C1096003DA4AA /* AppColorScheme.swift */; };
 		5EC9A3811B1B4980002E9929 /* ParseAbstractTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9A3801B1B4980002E9929 /* ParseAbstractTableCell.swift */; };
 		5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */; };
 		5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F71B156A2500A0B4E8 /* ViewController.swift */; };
@@ -134,6 +135,7 @@
 		5EB99E711B1BE9DC0009EB43 /* PAWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWActivityView.m; sourceTree = "<group>"; };
 		5EB99E811B1BEA000009EB43 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Box.framework; sourceTree = "<group>"; };
 		5EB99E831B1BEA060009EB43 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Result.framework; sourceTree = "<group>"; };
+		5EC3A7BC1B1C1096003DA4AA /* AppColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColorScheme.swift; sourceTree = "<group>"; };
 		5EC9A3801B1B4980002E9929 /* ParseAbstractTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseAbstractTableCell.swift; sourceTree = "<group>"; };
 		5ECA62F01B156A2500A0B4E8 /* RestaurantEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECA62F41B156A2500A0B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -387,6 +389,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		5EC3A7BB1B1C104C003DA4AA /* App Scheme */ = {
+			isa = PBXGroup;
+			children = (
+				5EC3A7BC1B1C1096003DA4AA /* AppColorScheme.swift */,
+			);
+			path = "App Scheme";
+			sourceTree = "<group>";
+		};
 		5ECA62E71B156A2500A0B4E8 = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +420,7 @@
 		5ECA62F21B156A2500A0B4E8 /* RestaurantEvent */ = {
 			isa = PBXGroup;
 			children = (
+				5EC3A7BB1B1C104C003DA4AA /* App Scheme */,
 				5E830CF51B1C02210050E04B /* Vendor */,
 				5EB99E4D1B1BE9DC0009EB43 /* business_layout */,
 				5E0781081B1AE85A00E2014F /* tabbar */,
@@ -670,6 +681,7 @@
 				5E18FF511B170D590012FD2A /* UITableViewExtensions.swift in Sources */,
 				5EEBC2CB1B1733F1005D85D9 /* RECenterViewController.swift in Sources */,
 				5E18FF4F1B170D590012FD2A /* UIControlExtensions.swift in Sources */,
+				5EC3A7BD1B1C1096003DA4AA /* AppColorScheme.swift in Sources */,
 				5EB99E7D1B1BE9DC0009EB43 /* SaveRestaurantUtils.swift in Sources */,
 				5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */,
 				5EB99E7E1B1BE9DC0009EB43 /* UIViewControllerStoryboardExtensions.swift in Sources */,
