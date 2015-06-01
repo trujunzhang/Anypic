@@ -46,7 +46,7 @@ class ParseQueryUtils {
         query.limit = 1000
         
         //        self.showRestaurantInfo(query)
-        self.showPhotoInfoFromRestaurant(query)
+//        self.showPhotoInfoFromRestaurant(query)
         
         return query
     }

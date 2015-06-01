@@ -25,21 +25,23 @@
 		5E58C4D41B1729B4004BC883 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E58C4D21B1729B4004BC883 /* Dollar.framework */; };
 		5E58C4D61B172BF7004BC883 /* StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58C4D51B172BF7004BC883 /* StoryboardExtensions.swift */; };
 		5E58C4D91B172F3C004BC883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E58C4D71B172F3C004BC883 /* Main.storyboard */; };
-		5E852ECB1B19B16E00FF24A4 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EA91B19B16E00FF24A4 /* UIImage+Alpha.m */; };
-		5E852ECC1B19B16E00FF24A4 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EAB1B19B16E00FF24A4 /* UIImage+AlphaAdditions.m */; };
-		5E852ECD1B19B16E00FF24A4 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EAD1B19B16E00FF24A4 /* UIImage+ResizeAdditions.m */; };
-		5E852ECE1B19B16E00FF24A4 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EAF1B19B16E00FF24A4 /* UIImage+RoundedCornerAdditions.m */; };
-		5E852ECF1B19B16E00FF24A4 /* PAWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EB51B19B16E00FF24A4 /* PAWLoginViewController.m */; };
-		5E852ED01B19B16E00FF24A4 /* PAWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E852EB61B19B16E00FF24A4 /* PAWLoginViewController.xib */; };
-		5E852ED11B19B16E00FF24A4 /* PAWNewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EB91B19B16E00FF24A4 /* PAWNewUserViewController.m */; };
-		5E852ED21B19B16E00FF24A4 /* PAWNewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E852EBA1B19B16E00FF24A4 /* PAWNewUserViewController.xib */; };
-		5E852ED31B19B16E00FF24A4 /* PAWPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EBD1B19B16E00FF24A4 /* PAWPost.m */; };
-		5E852ED41B19B16E00FF24A4 /* PAPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EBF1B19B16E00FF24A4 /* PAPConstants.m */; };
-		5E852ED51B19B16E00FF24A4 /* QueryRestaurantUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EC21B19B16E00FF24A4 /* QueryRestaurantUtils.swift */; };
-		5E852ED61B19B16E00FF24A4 /* SaveRestaurantUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EC31B19B16E00FF24A4 /* SaveRestaurantUtils.swift */; };
-		5E852ED71B19B16E00FF24A4 /* UIViewControllerStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EC41B19B16E00FF24A4 /* UIViewControllerStoryboardExtensions.swift */; };
-		5E852ED81B19B16E00FF24A4 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852EC71B19B16E00FF24A4 /* ImageUtils.m */; };
-		5E852ED91B19B16E00FF24A4 /* PAWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E852ECA1B19B16E00FF24A4 /* PAWActivityView.m */; };
+		5EB99E721B1BE9DC0009EB43 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E501B1BE9DC0009EB43 /* UIImage+Alpha.m */; };
+		5EB99E731B1BE9DC0009EB43 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E521B1BE9DC0009EB43 /* UIImage+AlphaAdditions.m */; };
+		5EB99E741B1BE9DC0009EB43 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E541B1BE9DC0009EB43 /* UIImage+ResizeAdditions.m */; };
+		5EB99E751B1BE9DC0009EB43 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E561B1BE9DC0009EB43 /* UIImage+RoundedCornerAdditions.m */; };
+		5EB99E761B1BE9DC0009EB43 /* PAWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E5C1B1BE9DC0009EB43 /* PAWLoginViewController.m */; };
+		5EB99E771B1BE9DC0009EB43 /* PAWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB99E5D1B1BE9DC0009EB43 /* PAWLoginViewController.xib */; };
+		5EB99E781B1BE9DC0009EB43 /* PAWNewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E601B1BE9DC0009EB43 /* PAWNewUserViewController.m */; };
+		5EB99E791B1BE9DC0009EB43 /* PAWNewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB99E611B1BE9DC0009EB43 /* PAWNewUserViewController.xib */; };
+		5EB99E7A1B1BE9DC0009EB43 /* PAWPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E641B1BE9DC0009EB43 /* PAWPost.m */; };
+		5EB99E7B1B1BE9DC0009EB43 /* PAPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E661B1BE9DC0009EB43 /* PAPConstants.m */; };
+		5EB99E7C1B1BE9DC0009EB43 /* ParseQueryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E691B1BE9DC0009EB43 /* ParseQueryUtils.swift */; };
+		5EB99E7D1B1BE9DC0009EB43 /* SaveRestaurantUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E6A1B1BE9DC0009EB43 /* SaveRestaurantUtils.swift */; };
+		5EB99E7E1B1BE9DC0009EB43 /* UIViewControllerStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E6B1B1BE9DC0009EB43 /* UIViewControllerStoryboardExtensions.swift */; };
+		5EB99E7F1B1BE9DC0009EB43 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E6E1B1BE9DC0009EB43 /* ImageUtils.m */; };
+		5EB99E801B1BE9DC0009EB43 /* PAWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB99E711B1BE9DC0009EB43 /* PAWActivityView.m */; };
+		5EB99E821B1BEA000009EB43 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB99E811B1BEA000009EB43 /* Box.framework */; };
+		5EB99E841B1BEA060009EB43 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB99E831B1BEA060009EB43 /* Result.framework */; };
 		5EC9A3811B1B4980002E9929 /* ParseAbstractTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9A3801B1B4980002E9929 /* ParseAbstractTableCell.swift */; };
 		5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */; };
 		5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F71B156A2500A0B4E8 /* ViewController.swift */; };
@@ -84,33 +86,35 @@
 		5E58C4D21B1729B4004BC883 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = Carthage/Dollar.framework; sourceTree = "<group>"; };
 		5E58C4D51B172BF7004BC883 /* StoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardExtensions.swift; sourceTree = "<group>"; };
 		5E58C4D81B172F3C004BC883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5E852EA81B19B16E00FF24A4 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
-		5E852EA91B19B16E00FF24A4 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
-		5E852EAA1B19B16E00FF24A4 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
-		5E852EAB1B19B16E00FF24A4 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
-		5E852EAC1B19B16E00FF24A4 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
-		5E852EAD1B19B16E00FF24A4 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
-		5E852EAE1B19B16E00FF24A4 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
-		5E852EAF1B19B16E00FF24A4 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
-		5E852EB11B19B16E00FF24A4 /* PAWConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWConstants.h; sourceTree = "<group>"; };
-		5E852EB41B19B16E00FF24A4 /* PAWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWLoginViewController.h; sourceTree = "<group>"; };
-		5E852EB51B19B16E00FF24A4 /* PAWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWLoginViewController.m; sourceTree = "<group>"; };
-		5E852EB61B19B16E00FF24A4 /* PAWLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAWLoginViewController.xib; sourceTree = "<group>"; };
-		5E852EB81B19B16E00FF24A4 /* PAWNewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWNewUserViewController.h; sourceTree = "<group>"; };
-		5E852EB91B19B16E00FF24A4 /* PAWNewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWNewUserViewController.m; sourceTree = "<group>"; };
-		5E852EBA1B19B16E00FF24A4 /* PAWNewUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAWNewUserViewController.xib; sourceTree = "<group>"; };
-		5E852EBC1B19B16E00FF24A4 /* PAWPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWPost.h; sourceTree = "<group>"; };
-		5E852EBD1B19B16E00FF24A4 /* PAWPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWPost.m; sourceTree = "<group>"; };
-		5E852EBE1B19B16E00FF24A4 /* PAPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPConstants.h; sourceTree = "<group>"; };
-		5E852EBF1B19B16E00FF24A4 /* PAPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPConstants.m; sourceTree = "<group>"; };
-		5E852EC01B19B16E00FF24A4 /* RESources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESources.h; sourceTree = "<group>"; };
-		5E852EC21B19B16E00FF24A4 /* QueryRestaurantUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryRestaurantUtils.swift; sourceTree = "<group>"; };
-		5E852EC31B19B16E00FF24A4 /* SaveRestaurantUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveRestaurantUtils.swift; sourceTree = "<group>"; };
-		5E852EC41B19B16E00FF24A4 /* UIViewControllerStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerStoryboardExtensions.swift; sourceTree = "<group>"; };
-		5E852EC61B19B16E00FF24A4 /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
-		5E852EC71B19B16E00FF24A4 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
-		5E852EC91B19B16E00FF24A4 /* PAWActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWActivityView.h; sourceTree = "<group>"; };
-		5E852ECA1B19B16E00FF24A4 /* PAWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWActivityView.m; sourceTree = "<group>"; };
+		5EB99E4F1B1BE9DC0009EB43 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		5EB99E501B1BE9DC0009EB43 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		5EB99E511B1BE9DC0009EB43 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
+		5EB99E521B1BE9DC0009EB43 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
+		5EB99E531B1BE9DC0009EB43 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		5EB99E541B1BE9DC0009EB43 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		5EB99E551B1BE9DC0009EB43 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
+		5EB99E561B1BE9DC0009EB43 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
+		5EB99E581B1BE9DC0009EB43 /* PAWConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWConstants.h; sourceTree = "<group>"; };
+		5EB99E5B1B1BE9DC0009EB43 /* PAWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWLoginViewController.h; sourceTree = "<group>"; };
+		5EB99E5C1B1BE9DC0009EB43 /* PAWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWLoginViewController.m; sourceTree = "<group>"; };
+		5EB99E5D1B1BE9DC0009EB43 /* PAWLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAWLoginViewController.xib; sourceTree = "<group>"; };
+		5EB99E5F1B1BE9DC0009EB43 /* PAWNewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWNewUserViewController.h; sourceTree = "<group>"; };
+		5EB99E601B1BE9DC0009EB43 /* PAWNewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWNewUserViewController.m; sourceTree = "<group>"; };
+		5EB99E611B1BE9DC0009EB43 /* PAWNewUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAWNewUserViewController.xib; sourceTree = "<group>"; };
+		5EB99E631B1BE9DC0009EB43 /* PAWPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWPost.h; sourceTree = "<group>"; };
+		5EB99E641B1BE9DC0009EB43 /* PAWPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWPost.m; sourceTree = "<group>"; };
+		5EB99E651B1BE9DC0009EB43 /* PAPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPConstants.h; sourceTree = "<group>"; };
+		5EB99E661B1BE9DC0009EB43 /* PAPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPConstants.m; sourceTree = "<group>"; };
+		5EB99E671B1BE9DC0009EB43 /* RESources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESources.h; sourceTree = "<group>"; };
+		5EB99E691B1BE9DC0009EB43 /* ParseQueryUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseQueryUtils.swift; sourceTree = "<group>"; };
+		5EB99E6A1B1BE9DC0009EB43 /* SaveRestaurantUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveRestaurantUtils.swift; sourceTree = "<group>"; };
+		5EB99E6B1B1BE9DC0009EB43 /* UIViewControllerStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerStoryboardExtensions.swift; sourceTree = "<group>"; };
+		5EB99E6D1B1BE9DC0009EB43 /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		5EB99E6E1B1BE9DC0009EB43 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		5EB99E701B1BE9DC0009EB43 /* PAWActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAWActivityView.h; sourceTree = "<group>"; };
+		5EB99E711B1BE9DC0009EB43 /* PAWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAWActivityView.m; sourceTree = "<group>"; };
+		5EB99E811B1BEA000009EB43 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Box.framework; sourceTree = "<group>"; };
+		5EB99E831B1BEA060009EB43 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Result.framework; sourceTree = "<group>"; };
 		5EC9A3801B1B4980002E9929 /* ParseAbstractTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseAbstractTableCell.swift; sourceTree = "<group>"; };
 		5ECA62F01B156A2500A0B4E8 /* RestaurantEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECA62F41B156A2500A0B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				5E0D48851B156F11005ECFB2 /* Cartography.framework in Frameworks */,
 				5E58C4D31B1729B4004BC883 /* Cent.framework in Frameworks */,
 				5E58C4D41B1729B4004BC883 /* Dollar.framework in Frameworks */,
+				5EB99E841B1BEA060009EB43 /* Result.framework in Frameworks */,
+				5EB99E821B1BEA000009EB43 /* Box.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,108 +225,108 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		5E852EA61B19B16E00FF24A4 /* business_layout */ = {
+		5EB99E4D1B1BE9DC0009EB43 /* business_layout */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EA71B19B16E00FF24A4 /* Categories */,
-				5E852EB01B19B16E00FF24A4 /* Constants */,
-				5E852EB21B19B16E00FF24A4 /* Controllers */,
-				5E852EBB1B19B16E00FF24A4 /* Models */,
-				5E852EBE1B19B16E00FF24A4 /* PAPConstants.h */,
-				5E852EBF1B19B16E00FF24A4 /* PAPConstants.m */,
-				5E852EC01B19B16E00FF24A4 /* RESources.h */,
-				5E852EC11B19B16E00FF24A4 /* SaveRecipes */,
-				5E852EC41B19B16E00FF24A4 /* UIViewControllerStoryboardExtensions.swift */,
-				5E852EC51B19B16E00FF24A4 /* Utils */,
-				5E852EC81B19B16E00FF24A4 /* Views */,
+				5EB99E4E1B1BE9DC0009EB43 /* Categories */,
+				5EB99E571B1BE9DC0009EB43 /* Constants */,
+				5EB99E591B1BE9DC0009EB43 /* Controllers */,
+				5EB99E621B1BE9DC0009EB43 /* Models */,
+				5EB99E651B1BE9DC0009EB43 /* PAPConstants.h */,
+				5EB99E661B1BE9DC0009EB43 /* PAPConstants.m */,
+				5EB99E671B1BE9DC0009EB43 /* RESources.h */,
+				5EB99E681B1BE9DC0009EB43 /* SaveRecipes */,
+				5EB99E6B1B1BE9DC0009EB43 /* UIViewControllerStoryboardExtensions.swift */,
+				5EB99E6C1B1BE9DC0009EB43 /* Utils */,
+				5EB99E6F1B1BE9DC0009EB43 /* Views */,
 			);
 			path = business_layout;
 			sourceTree = "<group>";
 		};
-		5E852EA71B19B16E00FF24A4 /* Categories */ = {
+		5EB99E4E1B1BE9DC0009EB43 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EA81B19B16E00FF24A4 /* UIImage+Alpha.h */,
-				5E852EA91B19B16E00FF24A4 /* UIImage+Alpha.m */,
-				5E852EAA1B19B16E00FF24A4 /* UIImage+AlphaAdditions.h */,
-				5E852EAB1B19B16E00FF24A4 /* UIImage+AlphaAdditions.m */,
-				5E852EAC1B19B16E00FF24A4 /* UIImage+ResizeAdditions.h */,
-				5E852EAD1B19B16E00FF24A4 /* UIImage+ResizeAdditions.m */,
-				5E852EAE1B19B16E00FF24A4 /* UIImage+RoundedCornerAdditions.h */,
-				5E852EAF1B19B16E00FF24A4 /* UIImage+RoundedCornerAdditions.m */,
+				5EB99E4F1B1BE9DC0009EB43 /* UIImage+Alpha.h */,
+				5EB99E501B1BE9DC0009EB43 /* UIImage+Alpha.m */,
+				5EB99E511B1BE9DC0009EB43 /* UIImage+AlphaAdditions.h */,
+				5EB99E521B1BE9DC0009EB43 /* UIImage+AlphaAdditions.m */,
+				5EB99E531B1BE9DC0009EB43 /* UIImage+ResizeAdditions.h */,
+				5EB99E541B1BE9DC0009EB43 /* UIImage+ResizeAdditions.m */,
+				5EB99E551B1BE9DC0009EB43 /* UIImage+RoundedCornerAdditions.h */,
+				5EB99E561B1BE9DC0009EB43 /* UIImage+RoundedCornerAdditions.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		5E852EB01B19B16E00FF24A4 /* Constants */ = {
+		5EB99E571B1BE9DC0009EB43 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EB11B19B16E00FF24A4 /* PAWConstants.h */,
+				5EB99E581B1BE9DC0009EB43 /* PAWConstants.h */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		5E852EB21B19B16E00FF24A4 /* Controllers */ = {
+		5EB99E591B1BE9DC0009EB43 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EB31B19B16E00FF24A4 /* Login */,
-				5E852EB71B19B16E00FF24A4 /* NewUser */,
+				5EB99E5A1B1BE9DC0009EB43 /* Login */,
+				5EB99E5E1B1BE9DC0009EB43 /* NewUser */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		5E852EB31B19B16E00FF24A4 /* Login */ = {
+		5EB99E5A1B1BE9DC0009EB43 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EB41B19B16E00FF24A4 /* PAWLoginViewController.h */,
-				5E852EB51B19B16E00FF24A4 /* PAWLoginViewController.m */,
-				5E852EB61B19B16E00FF24A4 /* PAWLoginViewController.xib */,
+				5EB99E5B1B1BE9DC0009EB43 /* PAWLoginViewController.h */,
+				5EB99E5C1B1BE9DC0009EB43 /* PAWLoginViewController.m */,
+				5EB99E5D1B1BE9DC0009EB43 /* PAWLoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		5E852EB71B19B16E00FF24A4 /* NewUser */ = {
+		5EB99E5E1B1BE9DC0009EB43 /* NewUser */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EB81B19B16E00FF24A4 /* PAWNewUserViewController.h */,
-				5E852EB91B19B16E00FF24A4 /* PAWNewUserViewController.m */,
-				5E852EBA1B19B16E00FF24A4 /* PAWNewUserViewController.xib */,
+				5EB99E5F1B1BE9DC0009EB43 /* PAWNewUserViewController.h */,
+				5EB99E601B1BE9DC0009EB43 /* PAWNewUserViewController.m */,
+				5EB99E611B1BE9DC0009EB43 /* PAWNewUserViewController.xib */,
 			);
 			path = NewUser;
 			sourceTree = "<group>";
 		};
-		5E852EBB1B19B16E00FF24A4 /* Models */ = {
+		5EB99E621B1BE9DC0009EB43 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EBC1B19B16E00FF24A4 /* PAWPost.h */,
-				5E852EBD1B19B16E00FF24A4 /* PAWPost.m */,
+				5EB99E631B1BE9DC0009EB43 /* PAWPost.h */,
+				5EB99E641B1BE9DC0009EB43 /* PAWPost.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5E852EC11B19B16E00FF24A4 /* SaveRecipes */ = {
+		5EB99E681B1BE9DC0009EB43 /* SaveRecipes */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EC21B19B16E00FF24A4 /* QueryRestaurantUtils.swift */,
-				5E852EC31B19B16E00FF24A4 /* SaveRestaurantUtils.swift */,
+				5EB99E691B1BE9DC0009EB43 /* ParseQueryUtils.swift */,
+				5EB99E6A1B1BE9DC0009EB43 /* SaveRestaurantUtils.swift */,
 			);
 			path = SaveRecipes;
 			sourceTree = "<group>";
 		};
-		5E852EC51B19B16E00FF24A4 /* Utils */ = {
+		5EB99E6C1B1BE9DC0009EB43 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EC61B19B16E00FF24A4 /* ImageUtils.h */,
-				5E852EC71B19B16E00FF24A4 /* ImageUtils.m */,
+				5EB99E6D1B1BE9DC0009EB43 /* ImageUtils.h */,
+				5EB99E6E1B1BE9DC0009EB43 /* ImageUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		5E852EC81B19B16E00FF24A4 /* Views */ = {
+		5EB99E6F1B1BE9DC0009EB43 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5E852EC91B19B16E00FF24A4 /* PAWActivityView.h */,
-				5E852ECA1B19B16E00FF24A4 /* PAWActivityView.m */,
+				5EB99E701B1BE9DC0009EB43 /* PAWActivityView.h */,
+				5EB99E711B1BE9DC0009EB43 /* PAWActivityView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -348,8 +354,8 @@
 		5ECA62F21B156A2500A0B4E8 /* RestaurantEvent */ = {
 			isa = PBXGroup;
 			children = (
+				5EB99E4D1B1BE9DC0009EB43 /* business_layout */,
 				5E0781081B1AE85A00E2014F /* tabbar */,
-				5E852EA61B19B16E00FF24A4 /* business_layout */,
 				5EEBC2C91B1733D1005D85D9 /* Reveal */,
 				5E18FF451B170D590012FD2A /* UIKit */,
 				5E18FF411B170D540012FD2A /* third */,
@@ -412,6 +418,8 @@
 		FA2AA4C54BAAB0D2D18A5170 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EB99E831B1BEA060009EB43 /* Result.framework */,
+				5EB99E811B1BEA000009EB43 /* Box.framework */,
 				5E58C4D11B1729B4004BC883 /* Cent.framework */,
 				5E58C4D21B1729B4004BC883 /* Dollar.framework */,
 				5E0D48841B156F11005ECFB2 /* Cartography.framework */,
@@ -507,9 +515,9 @@
 				5E58C4D91B172F3C004BC883 /* Main.storyboard in Resources */,
 				5ECA62FB1B156A2500A0B4E8 /* RestaurantEvent.storyboard in Resources */,
 				5ECA63001B156A2500A0B4E8 /* LaunchScreen.xib in Resources */,
-				5E852ED01B19B16E00FF24A4 /* PAWLoginViewController.xib in Resources */,
+				5EB99E771B1BE9DC0009EB43 /* PAWLoginViewController.xib in Resources */,
 				5ECA62FD1B156A2500A0B4E8 /* Images.xcassets in Resources */,
-				5E852ED21B19B16E00FF24A4 /* PAWNewUserViewController.xib in Resources */,
+				5EB99E791B1BE9DC0009EB43 /* PAWNewUserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +540,8 @@
 				"$(SRCROOT)/Carthage/Cartography.framework",
 				"$(SRCROOT)/Carthage/Cent.framework",
 				"$(SRCROOT)/Carthage/Dollar.framework",
+				"$(SRCROOT)/Carthage/Box.framework",
+				"$(SRCROOT)/Carthage/Result.framework",
 			);
 			outputPaths = (
 			);
@@ -576,39 +586,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB99E751B1BE9DC0009EB43 /* UIImage+RoundedCornerAdditions.m in Sources */,
+				5EB99E7C1B1BE9DC0009EB43 /* ParseQueryUtils.swift in Sources */,
 				5E0781151B1AE85A00E2014F /* REUserInfoViewController.swift in Sources */,
 				5E18FF4D1B170D590012FD2A /* UIColorExtensions.swift in Sources */,
+				5EB99E7B1B1BE9DC0009EB43 /* PAPConstants.m in Sources */,
+				5EB99E731B1BE9DC0009EB43 /* UIImage+AlphaAdditions.m in Sources */,
 				5E0781141B1AE85A00E2014F /* RestaurantListViewController.swift in Sources */,
 				5E18FF441B170D540012FD2A /* SwiftyUserDefaults.swift in Sources */,
-				5E852ECD1B19B16E00FF24A4 /* UIImage+ResizeAdditions.m in Sources */,
-				5E852ED91B19B16E00FF24A4 /* PAWActivityView.m in Sources */,
 				5E18FF531B170D590012FD2A /* UIViewExtentsions.swift in Sources */,
 				5E58C4D61B172BF7004BC883 /* StoryboardExtensions.swift in Sources */,
 				5EF3C2B61B1B3C5B001C9091 /* RecipeViewCellConstants.swift in Sources */,
+				5EB99E761B1BE9DC0009EB43 /* PAWLoginViewController.m in Sources */,
+				5EB99E7A1B1BE9DC0009EB43 /* PAWPost.m in Sources */,
+				5EB99E741B1BE9DC0009EB43 /* UIImage+ResizeAdditions.m in Sources */,
 				5E0781171B1AE85A00E2014F /* RecipeLocationViewCell.swift in Sources */,
-				5E852ED31B19B16E00FF24A4 /* PAWPost.m in Sources */,
 				5E0781161B1AE85A00E2014F /* RETabBarViewController.swift in Sources */,
 				5E0781191B1AE85A00E2014F /* UserHeaderViewCell.swift in Sources */,
 				5E0781181B1AE85A00E2014F /* RecipePhotoViewCell.swift in Sources */,
-				5E852ECC1B19B16E00FF24A4 /* UIImage+AlphaAdditions.m in Sources */,
+				5EB99E801B1BE9DC0009EB43 /* PAWActivityView.m in Sources */,
+				5EB99E781B1BE9DC0009EB43 /* PAWNewUserViewController.m in Sources */,
+				5EB99E721B1BE9DC0009EB43 /* UIImage+Alpha.m in Sources */,
 				5E18FF511B170D590012FD2A /* UITableViewExtensions.swift in Sources */,
 				5EEBC2CB1B1733F1005D85D9 /* RECenterViewController.swift in Sources */,
 				5E18FF4F1B170D590012FD2A /* UIControlExtensions.swift in Sources */,
-				5E852ED61B19B16E00FF24A4 /* SaveRestaurantUtils.swift in Sources */,
-				5E852ED51B19B16E00FF24A4 /* QueryRestaurantUtils.swift in Sources */,
-				5E852ED81B19B16E00FF24A4 /* ImageUtils.m in Sources */,
-				5E852ED41B19B16E00FF24A4 /* PAPConstants.m in Sources */,
+				5EB99E7D1B1BE9DC0009EB43 /* SaveRestaurantUtils.swift in Sources */,
 				5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */,
+				5EB99E7E1B1BE9DC0009EB43 /* UIViewControllerStoryboardExtensions.swift in Sources */,
 				5EEBC2CD1B173404005D85D9 /* RELeftViewController.swift in Sources */,
+				5EB99E7F1B1BE9DC0009EB43 /* ImageUtils.m in Sources */,
 				5E0781131B1AE85A00E2014F /* RETabBarGenerator.swift in Sources */,
-				5E852ECE1B19B16E00FF24A4 /* UIImage+RoundedCornerAdditions.m in Sources */,
-				5E852ECB1B19B16E00FF24A4 /* UIImage+Alpha.m in Sources */,
-				5E852ED71B19B16E00FF24A4 /* UIViewControllerStoryboardExtensions.swift in Sources */,
 				5E18FF4E1B170D590012FD2A /* UIConstants.swift in Sources */,
 				5EC9A3811B1B4980002E9929 /* ParseAbstractTableCell.swift in Sources */,
 				5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */,
-				5E852ECF1B19B16E00FF24A4 /* PAWLoginViewController.m in Sources */,
-				5E852ED11B19B16E00FF24A4 /* PAWNewUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
