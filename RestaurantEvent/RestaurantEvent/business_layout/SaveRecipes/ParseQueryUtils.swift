@@ -11,6 +11,33 @@ import Dollar
 
 class ParseQueryUtils {
     
+    // MARK : Query Photo
+    class func queryPhoto(photo:PFObject) -> PFQuery{
+        
+        var query = PFQuery(className: kPAPPhotoClassKey)
+        query.whereKey("objectId", equalTo: photo.objectId!)
+        query.limit = 1000
+        
+        self.showPhotoInfo(query)
+        
+        return query
+    }
+    
+    class func showPhotoInfo(query:PFQuery){
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if error == nil {
+                let array:NSArray = objects!
+                if(array.count > 0 ){
+                    var photo:PFObject = array[0] as! PFObject
+                    let photoFile: PFFile = photo.valueForKey(kPAPPhotoPictureKey) as! PFFile
+                    let x = 0
+                }
+            } else {
+            }
+        }
+    }
+    
+    // MARK : Query restaurant
     class func queryRestaurant() -> PFQuery{
         
         var query = PFQuery(className: kPAPRestaurantClassKey)
@@ -18,12 +45,32 @@ class ParseQueryUtils {
         //        query.orderByAscending(PF_USER_FULLNAME)
         query.limit = 1000
         
-//        self.loadQuery(query)
+        //        self.showRestaurantInfo(query)
+        self.showPhotoInfoFromRestaurant(query)
         
         return query
     }
     
-    class func loadQuery(query:PFQuery){
+    class func showPhotoInfoFromRestaurant(query:PFQuery){
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if error == nil {
+                let array:NSArray = objects!
+                if(array.count > 0 ){
+                    var object:PFObject = array[0] as! PFObject
+                    let photos:[PFObject] = object.valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
+                    let photo:PFObject = photos[0]
+                    
+                    self.queryPhoto(photo) // Query photo
+                    //                    let photoId = photo.valueForKey("objectId") as! String
+                    //                    let photoFile: PFFile = photo.valueForKey(kPAPPhotoPictureKey) as! PFFile
+                    //                    let x = 0
+                }
+            } else {
+            }
+        }
+    }
+    
+    class func showRestaurantInfo(query:PFQuery){
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if error == nil {
                 let array:NSArray = objects!
@@ -38,6 +85,8 @@ class ParseQueryUtils {
             }
         }
     }
+    
+    
     
     class func update(object:PFObject){
         object[kPAPRestaurantCostKey] = "123.00"
