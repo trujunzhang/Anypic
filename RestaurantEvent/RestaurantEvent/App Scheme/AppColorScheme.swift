@@ -29,6 +29,24 @@ extension UIColor {
     class func applicationLinkColor() -> UIColor {
         return UIColor(red: 59/255, green: 89/255, blue: 152/255, alpha:1)
     }
+    
+    //TabBar item hint Color
+    class func applicationTabBarHintColor() -> UIColor {
+        return UIColor(red: 252/255, green: 67/255, blue: 8/255, alpha:1)
+    }
+    
+    class func applicationTabBarColor() -> UIColor {
+        return UIColor(red: 240/255, green: 239/255, blue: 238/255, alpha:1)
+    }
+    
+    //NavBar background Color
+    class func applicationNavBarColor() -> UIColor {
+        return UIColor(red: 255/255, green: 71/255, blue: 23/255, alpha:1)
+    }
+    
+    class func applicationViewControllerColor() -> UIColor {
+        return UIColor(red: 235/255, green: 239/255, blue: 240/255, alpha:1)
+    }
 }
 
 extension UILabel {

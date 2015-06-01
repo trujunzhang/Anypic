@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         return  UINavigationController(rootViewController:  UIViewController())
         }()
     
-    let viewController:JASidePanelController = JASidePanelController()
+    //    let viewController:JASidePanelController = JASidePanelController()
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -43,28 +43,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
         
-         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        // Set Navigation bar appearance
+        UINavigationBar.appearance().barTintColor = UIColor.applicationNavBarColor()
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
             self.presentWallViewControllerAnimated(false)
-//             self.presentRestaurantListViewController(false)
-//            QueryRestaurantUtils.query()
+            //             self.presentRestaurantListViewController(false)
+            //            QueryRestaurantUtils.query()
         } else {
             // Go to the welcome screen and have them log in or create an account.
             self.presentLoginViewController()
-            self.window?.rootViewController = self.navigationController
         }
+        
+        self.window?.rootViewController = self.navigationController
         self.window?.makeKeyAndVisible()
         
         // test
-//        let xxx:RETabBarViewController = RETabBarViewController.instance()
+        //        let xxx:RETabBarViewController = RETabBarViewController.instance()
         
         return true
     }
     
     func presentTabBarController(){
-
+        
     }
     // MARK: RestaurantListViewController
     func presentRestaurantListViewController(animated: Bool){
@@ -78,18 +82,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         self.window?.backgroundColor = UIColor.redColor()
     }
-
+    
     
     
     // MARK: WallViewController
     func presentWallViewControllerAnimated(animated: Bool){
-        self.viewController.shouldDelegateAutorotateToVisiblePanel = false
-        
-        self.viewController.leftPanel = RELeftViewController()
-        self.viewController.centerPanel = UINavigationController(rootViewController: RECenterViewController())
-        
-        self.window?.rootViewController = self.viewController
+        self.navigationController.setViewControllers([RECenterViewController()], animated: false)
     }
+    //    func presentWallViewControllerAnimated(animated: Bool){
+    //        self.viewController.shouldDelegateAutorotateToVisiblePanel = false
+    //
+    //        self.viewController.leftPanel = RELeftViewController()
+    //        self.viewController.centerPanel = UINavigationController(rootViewController: RECenterViewController())
+    //
+    //        self.window?.rootViewController = self.viewController
+    //    }
     
     // MARK: PAWLoginViewControllerDelegate
     func loginViewControllerDidLogin(controller: PAWLoginViewController!) {

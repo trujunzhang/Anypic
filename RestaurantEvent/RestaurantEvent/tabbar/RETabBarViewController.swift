@@ -59,6 +59,8 @@ class RETabBarViewController: UIViewController{
             button.titleLabel?.font = UIFont.systemFontOfSize(12)
             button.sizeToFit()
             
+            button.tintColor = UIColor.applicationTabBarHintColor()
+            
             self.buttons.append(button)
             button.addTarget(self, action: "tabButtonPressed:", forControlEvents: .TouchUpInside)
             
