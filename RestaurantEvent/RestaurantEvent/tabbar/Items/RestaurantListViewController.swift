@@ -46,7 +46,7 @@ class RestaurantListViewController: PFQueryTableViewController {
     
     // MARK: PFQueryTableViewController
     override func queryForTable() -> PFQuery{
-        return QueryRestaurantUtils.query()
+        return ParseQueryUtils.queryRestaurant()
     }
     
     //MARK: UITableViewDataSource

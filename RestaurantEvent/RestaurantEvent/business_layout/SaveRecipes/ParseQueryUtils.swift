@@ -9,9 +9,9 @@
 import Foundation
 import Dollar
 
-class QueryRestaurantUtils {
+class ParseQueryUtils {
     
-    class func query() -> PFQuery{
+    class func queryRestaurant() -> PFQuery{
         
         var query = PFQuery(className: kPAPRestaurantClassKey)
         query.whereKey(kPAPRestaurantUserKey, equalTo: PFUser.currentUser()!)
