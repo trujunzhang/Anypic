@@ -39,7 +39,7 @@ class RETabBarViewController: UIViewController{
     func layoutViewController(tabBarInfos:[TabBarInfo] ,delegate: TabBarItemDelegate){
         self.delegate = delegate
         
-        self.view.backgroundColor = UIColor.blackColor()
+        self.view.backgroundColor = UIColor.applicationTabBarColor()
         
         let containers:[UIView] = [homeTabBarContainer,cameraTabBarContainer,activityFeedTabBarContainer]
         for container in containers{
@@ -58,8 +58,6 @@ class RETabBarViewController: UIViewController{
             
             button.titleLabel?.font = UIFont.systemFontOfSize(12)
             button.sizeToFit()
-            
-            button.tintColor = UIColor.applicationTabBarHintColor()
             
             self.buttons.append(button)
             button.addTarget(self, action: "tabButtonPressed:", forControlEvents: .TouchUpInside)
