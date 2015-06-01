@@ -1,5 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
+#use_frameworks!
+
 workspace 'RestaurantEvent'
 
 pod 'Parse'
@@ -16,5 +18,10 @@ pod 'JASidePanels'
 pod "AZCenterLabelButton"
 pod "TPKeyboardAvoiding"
 
-pod 'Reveal-iOS-SDK'
+# A collection of categories and class methods to make your iOS life easier.
+# pod 'BGUtilities'
 
+# A beautiful set of predefined colors and a set of color methods to make your iOS/OSX development life easier.
+# pod 'Colours/Swift'
+
+pod 'Reveal-iOS-SDK'
