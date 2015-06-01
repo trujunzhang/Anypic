@@ -49,6 +49,7 @@
 		5EB99E821B1BEA000009EB43 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB99E811B1BEA000009EB43 /* Box.framework */; };
 		5EB99E841B1BEA060009EB43 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB99E831B1BEA060009EB43 /* Result.framework */; };
 		5EC3A7BD1B1C1096003DA4AA /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3A7BC1B1C1096003DA4AA /* AppColorScheme.swift */; };
+		5EC3A7BF1B1C1347003DA4AA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC3A7BE1B1C1347003DA4AA /* ReactiveCocoa.framework */; };
 		5EC9A3811B1B4980002E9929 /* ParseAbstractTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9A3801B1B4980002E9929 /* ParseAbstractTableCell.swift */; };
 		5ECA62F61B156A2500A0B4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F51B156A2500A0B4E8 /* AppDelegate.swift */; };
 		5ECA62F81B156A2500A0B4E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA62F71B156A2500A0B4E8 /* ViewController.swift */; };
@@ -136,6 +137,7 @@
 		5EB99E811B1BEA000009EB43 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Box.framework; sourceTree = "<group>"; };
 		5EB99E831B1BEA060009EB43 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Result.framework; sourceTree = "<group>"; };
 		5EC3A7BC1B1C1096003DA4AA /* AppColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColorScheme.swift; sourceTree = "<group>"; };
+		5EC3A7BE1B1C1347003DA4AA /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		5EC9A3801B1B4980002E9929 /* ParseAbstractTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseAbstractTableCell.swift; sourceTree = "<group>"; };
 		5ECA62F01B156A2500A0B4E8 /* RestaurantEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECA62F41B156A2500A0B4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				5E58C4D41B1729B4004BC883 /* Dollar.framework in Frameworks */,
 				5EB99E841B1BEA060009EB43 /* Result.framework in Frameworks */,
 				5EB99E821B1BEA000009EB43 /* Box.framework in Frameworks */,
+				5EC3A7BF1B1C1347003DA4AA /* ReactiveCocoa.framework in Frameworks */,
 				AA0A33C1D61E0C4ED7B31999 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +488,7 @@
 		FA2AA4C54BAAB0D2D18A5170 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EC3A7BE1B1C1347003DA4AA /* ReactiveCocoa.framework */,
 				5EB99E831B1BEA060009EB43 /* Result.framework */,
 				5EB99E811B1BEA000009EB43 /* Box.framework */,
 				5E58C4D11B1729B4004BC883 /* Cent.framework */,
@@ -609,6 +613,7 @@
 				"$(SRCROOT)/Carthage/Dollar.framework",
 				"$(SRCROOT)/Carthage/Box.framework",
 				"$(SRCROOT)/Carthage/Result.framework",
+				"$(SRCROOT)/Carthage/ReactiveCocoa.framework",
 			);
 			outputPaths = (
 			);
