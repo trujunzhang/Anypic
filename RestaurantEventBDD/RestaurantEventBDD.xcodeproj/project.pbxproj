@@ -42,9 +42,12 @@
 		5E3BA0DA1B19C09B003AE90F /* UIControlExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0D41B19C09B003AE90F /* UIControlExtensions.swift */; };
 		5E3BA0DC1B19C09B003AE90F /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0D61B19C09B003AE90F /* UITableViewExtensions.swift */; };
 		5E3BA0DD1B19C09B003AE90F /* UIViewExtentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3BA0D71B19C09B003AE90F /* UIViewExtentsions.swift */; };
-		5E3BA0E01B19C0FB003AE90F /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */; };
 		5E3BA0E21B19C19C003AE90F /* Cartography.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E48750F1B19AEE600426ED0 /* RestaurantEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E48750D1B19AEE600426ED0 /* RestaurantEvent.storyboard */; };
+		5E5107F81B1BE956009236B2 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5107F71B1BE956009236B2 /* Box.framework */; };
+		5E5107F91B1BE956009236B2 /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5107F71B1BE956009236B2 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E5107FB1B1BE965009236B2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5107FA1B1BE965009236B2 /* Result.framework */; };
+		5E5107FC1B1BE965009236B2 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5107FA1B1BE965009236B2 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E52C7F91B18A79000A503AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E52C7F81B18A79000A503AB /* AppDelegate.swift */; };
 		5E52C7FB1B18A79000A503AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E52C7FA1B18A79000A503AB /* ViewController.swift */; };
 		5E52C7FE1B18A79000A503AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E52C7FC1B18A79000A503AB /* Main.storyboard */; };
@@ -74,6 +77,8 @@
 			files = (
 				5E3BA0E21B19C19C003AE90F /* Cartography.framework in CopyFiles */,
 				5E3B83A21B1AABFF00C0D78C /* Cent.framework in CopyFiles */,
+				5E5107FC1B1BE965009236B2 /* Result.framework in CopyFiles */,
+				5E5107F91B1BE956009236B2 /* Box.framework in CopyFiles */,
 				5E3B83A31B1AABFF00C0D78C /* Dollar.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +137,9 @@
 		5E3BA0D71B19C09B003AE90F /* UIViewExtentsions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtentsions.swift; sourceTree = "<group>"; };
 		5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = ../RestaurantEvent/Carthage/Cartography.framework; sourceTree = "<group>"; };
 		5E48750E1B19AEE600426ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../RestaurantEvent/RestaurantEvent/Base.lproj/RestaurantEvent.storyboard; sourceTree = "<group>"; };
+		5E5107F51B1BE93D009236B2 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = ../RestaurantEvent/Carthage/Box.framework; sourceTree = "<group>"; };
+		5E5107F71B1BE956009236B2 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = ../RestaurantEvent/Carthage/Box.framework; sourceTree = "<group>"; };
+		5E5107FA1B1BE965009236B2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../RestaurantEvent/Carthage/Result.framework; sourceTree = "<group>"; };
 		5E52C7F31B18A79000A503AB /* RestaurantEventBDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantEventBDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E52C7F71B18A79000A503AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E52C7F81B18A79000A503AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,8 +162,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5107FB1B1BE965009236B2 /* Result.framework in Frameworks */,
+				5E5107F81B1BE956009236B2 /* Box.framework in Frameworks */,
 				912D3CE42BB1A70A14CEF8A5 /* libPods-RestaurantEventBDD.a in Frameworks */,
-				5E3BA0E01B19C0FB003AE90F /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +418,9 @@
 		A2FDF775D720B9B6AAC9F9E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E5107FA1B1BE965009236B2 /* Result.framework */,
+				5E5107F71B1BE956009236B2 /* Box.framework */,
+				5E5107F51B1BE93D009236B2 /* Box.framework */,
 				5E3B83A01B1AABFF00C0D78C /* Cent.framework */,
 				5E3B83A11B1AABFF00C0D78C /* Dollar.framework */,
 				5E3BA0DF1B19C0FB003AE90F /* Cartography.framework */,
