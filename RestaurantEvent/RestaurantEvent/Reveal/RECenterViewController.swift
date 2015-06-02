@@ -21,7 +21,7 @@ class RECenterViewController: UIViewController,TabBarItemDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Center Panel"
+        self.title = "Restaurant"
         self.edgesForExtendedLayout = .None
 
         // Add Presentation view.

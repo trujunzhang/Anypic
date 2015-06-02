@@ -75,7 +75,8 @@ class RestaurantListViewController: PFQueryTableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return RestaurantTableUtils.getTableCellHeight(indexPath.row)
+        let width = self.view.bounds.size.width
+        return RestaurantTableUtils.getTableCellHeight(indexPath.row, width:width)
     }
     
     override func objectAtIndexPath(indexPath: NSIndexPath?) -> PFObject? {

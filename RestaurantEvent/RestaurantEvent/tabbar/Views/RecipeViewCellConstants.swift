@@ -27,13 +27,14 @@ class RestaurantTableUtils: NSObject{
         return "RecipePhotoViewCell"
     }
     
-    class func getTableCellHeight(type:Int) -> CGFloat{
+    class func getTableCellHeight(type:Int,width:CGFloat) -> CGFloat{
         if(type == 0){
             return 44
         }else if (type == 1){
             return 120
         }
         
-        return 320
+        // 560 × 350
+        return (width/560)*350
     }
 }
