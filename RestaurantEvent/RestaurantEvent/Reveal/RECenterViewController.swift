@@ -9,6 +9,10 @@
 import Foundation
 
 class RECenterViewController: UIViewController,TabBarItemDelegate{
+    
+    @IBOutlet weak var addEventButton: MKButton!
+    
+    
     class func instance() -> RECenterViewController{
         return UIStoryboard(name: "RestaurantEvent", bundle: nil).instantiateViewControllerWithIdentifier("RECenterViewController") as! RECenterViewController
     }
@@ -24,33 +28,41 @@ class RECenterViewController: UIViewController,TabBarItemDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Configure NavigationBar title
         self.title = "Restaurant"
+        
         self.edgesForExtendedLayout = .None
-
+        
         // Add Presentation view.
         self.view.addSubview(self.presentationView)
         self.presentationView.LayoutFullView()
         
+        self.setupMaterialButton()
+        
         // Add tabbar view.
-//        self.addChildViewController(self.tabBarViewController)
-//        self.view.addSubview(self.tabBarViewController.view)
+        //        self.addChildViewController(self.tabBarViewController)
+        //        self.view.addSubview(self.tabBarViewController.view)
         
         // Layout all views here.
-//        self.tabBarViewController.view.LayoutBottomRelatedView(self.presentationView,height:50)
-//        self.tabBarViewController.layoutViewController(tabBarInfos,delegate:self)
+        //        self.tabBarViewController.view.LayoutBottomRelatedView(self.presentationView,height:50)
+        //        self.tabBarViewController.layoutViewController(tabBarInfos,delegate:self)
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         self.view.backgroundColor = UIColor.applicationCenterViewControllerColor()
+        
+        
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         // Show first tabBar item and it's presentation.
-//        self.tabBarViewController.showTabBarButton(TabBarType.Home.hashValue)
+        //        self.tabBarViewController.showTabBarButton(TabBarType.Home.hashValue)
         
         self.selectPresentationViewController(tabBarInfos[TabBarType.Home.hashValue])
     }
@@ -61,6 +73,22 @@ class RECenterViewController: UIViewController,TabBarItemDelegate{
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
+    }
+    
+    // MARK: Setup Material button appearance.
+    func setupMaterialButton(){
+        addEventButton.cornerRadius = 40.0
+        addEventButton.backgroundLayerCornerRadius = 40.0
+        addEventButton.maskEnabled = false
+        addEventButton.ripplePercent = 1.75
+        addEventButton.rippleLocation = .Center
+        
+        addEventButton.layer.shadowOpacity = 0.75
+        addEventButton.layer.shadowRadius = 3.5
+        addEventButton.layer.shadowColor = UIColor.blackColor().CGColor
+        addEventButton.layer.shadowOffset = CGSize(width: 1.0, height: 5.5)
+        
+        self.view.bringSubviewToFront(addEventButton)
     }
     
     
@@ -80,7 +108,7 @@ class RECenterViewController: UIViewController,TabBarItemDelegate{
             theLastViewController.removeFromParentViewController()
         }
         self.lastViewController = viewController
-
+        
         // Setup new viewController
         self.addChildViewController(viewController)
         self.presentationView.addSubview(viewController.view)
