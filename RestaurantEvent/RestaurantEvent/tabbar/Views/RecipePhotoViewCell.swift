@@ -41,7 +41,7 @@ class RecipePhotoViewCell: ParseAbstractTableCell {
         
         // Initialization for PhotoView.
         self.photoView.backgroundColor = UIColor.clearColor()
-        self.photoView.contentMode = .ScaleAspectFit
+        self.photoView.contentMode = .ScaleToFill
         
         self.photoContainer.addSubview(self.photoView)
         self.photoView.LayoutFullView()
@@ -82,7 +82,7 @@ class RecipePhotoViewCell: ParseAbstractTableCell {
         if let thePhoto = self.photo{
             let photoFile: PFFile = thePhoto.valueForKey(kPAPPhotoPictureKey) as! PFFile
             photoView.file = photoFile
-//            photoView.loadInBackground()
+            photoView.loadInBackground()
             
 //            if let theFile = photoView.file{
 //                if(theFile.isDataAvailable == true){

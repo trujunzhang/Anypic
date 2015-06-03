@@ -5,45 +5,66 @@
 #import "UITableViewCell+CellShadows.h"
 #import <QuartzCore/QuartzCore.h>
 
+#import "UIView+Roundify.h"
+#import "UIView+DropShadow.h"
 
 @implementation UITableViewCell (CellShadows)
 
-/** adds a drop shadow to the background view of the (grouped) cell */
 - (void)addShadowToCellInTableView:(UITableView *)tableView
                        atIndexPath:(NSIndexPath *)indexPath
 {
-  BOOL isFirstRow = !indexPath.row;
-  BOOL isLastRow = (indexPath.row == [tableView numberOfRowsInSection:indexPath.section] - 1);
-  
-  // the shadow rect determines the area in which the shadow gets drawn
-  CGRect shadowRect = CGRectInset(self.contentView.bounds, 0, -10);
-  if(isFirstRow)
-    shadowRect.origin.y += 10;
-  else if(isLastRow)
-    shadowRect.size.height -= 10;
-  
-  // the mask rect ensures that the shadow doesn't bleed into other table cells
-  CGRect maskRect = CGRectInset(self.contentView.bounds, -20, 0);
-  if(isFirstRow) {
-    maskRect.origin.y -= 10;
-    maskRect.size.height += 10;
-  }
-  else if(isLastRow)
-    maskRect.size.height += 10;
-  
-  // now configure the background view layer with the shadow
-  CALayer *layer = self.contentView.layer;
-  layer.shadowColor = [UIColor redColor].CGColor;
-  layer.shadowOffset = CGSizeMake(0, 0);
-  layer.shadowRadius = 3;
-  layer.shadowOpacity = 0.75;
-  layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:shadowRect cornerRadius:5].CGPath;
-  layer.masksToBounds = NO;
-  
-  // and finally add the shadow mask
-  CAShapeLayer *maskLayer = [CAShapeLayer layer];
-  maskLayer.path = [UIBezierPath bezierPathWithRect:maskRect].CGPath;
-  layer.mask = maskLayer;
+    BOOL isFirstRow = !indexPath.row;
+    BOOL isLastRow = (indexPath.row == [tableView numberOfRowsInSection:indexPath.section] - 1);
+    
+    UIView* shadowView = self.contentView;
+    
+    if(isFirstRow){
+        [shadowView addRoundedCorners:(UIRectCornerTopLeft | UIRectCornerTopRight)
+                               withRadii:(CGSize){16.f, 16.f}];
+    }
+    
+    [shadowView addDropShadow:UIColor.blackColor
+                        withOffset:CGSizeMake(0, 2)
+                            radius:2.0f
+                           opacity:0.2];
+}
+
+/** adds a drop shadow to the background view of the (grouped) cell */
+- (void)addShadowToCellInTableView_last:(UITableView *)tableView
+                            atIndexPath:(NSIndexPath *)indexPath
+{
+    BOOL isFirstRow = !indexPath.row;
+    BOOL isLastRow = (indexPath.row == [tableView numberOfRowsInSection:indexPath.section] - 1);
+    
+    // the shadow rect determines the area in which the shadow gets drawn
+    CGRect shadowRect = CGRectInset(self.contentView.bounds, 0, -10);
+    if(isFirstRow)
+        shadowRect.origin.y += 10;
+    else if(isLastRow)
+        shadowRect.size.height -= 10;
+    
+    // the mask rect ensures that the shadow doesn't bleed into other table cells
+    CGRect maskRect = CGRectInset(self.contentView.bounds, -20, 0);
+    if(isFirstRow) {
+        maskRect.origin.y -= 10;
+        maskRect.size.height += 10;
+    }
+    else if(isLastRow)
+        maskRect.size.height += 10;
+    
+    // now configure the background view layer with the shadow
+    CALayer *layer = self.contentView.layer;
+    layer.shadowColor = [UIColor redColor].CGColor;
+    layer.shadowOffset = CGSizeMake(0, 0);
+    layer.shadowRadius = 3;
+    layer.shadowOpacity = 0.75;
+    layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:shadowRect cornerRadius:5].CGPath;
+    layer.masksToBounds = NO;
+    
+    // and finally add the shadow mask
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.path = [UIBezierPath bezierPathWithRect:maskRect].CGPath;
+    layer.mask = maskLayer;
 }
 
 
