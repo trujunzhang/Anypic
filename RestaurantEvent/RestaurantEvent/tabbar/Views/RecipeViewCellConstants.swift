@@ -29,7 +29,7 @@ class RestaurantTableUtils: NSObject{
     
     class func getTableCellHeight(type:Int,width:CGFloat) -> CGFloat{
         if(type == 0){
-            return 44
+            return 144
         }else if (type == 1){
             return 120
         }

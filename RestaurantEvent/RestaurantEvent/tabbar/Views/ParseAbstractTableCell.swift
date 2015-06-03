@@ -9,8 +9,8 @@
 import Foundation
 
 
-//class ParseAbstractTableCell: PFTableViewCell {
-class ParseAbstractTableCell: PFCollectionViewCell {
+class ParseAbstractTableCell: PFTableViewCell {
+//class ParseAbstractTableCell: PFCollectionViewCell {
     
 //    override func setSelected(selected: Bool, animated: Bool) {
 //        super.setSelected(selected, animated: animated)

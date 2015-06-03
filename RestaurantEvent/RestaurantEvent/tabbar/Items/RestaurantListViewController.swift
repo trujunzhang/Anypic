@@ -8,11 +8,13 @@
 
 import UIKit
 
-class RestaurantListViewController: PFQueryTableViewController {
+class RestaurantListViewController: PFQueryTableViewController,UIScrollViewDelegate {
     
     class func instance() -> RestaurantListViewController {
         return UIStoryboard(name: "RestaurantEvent", bundle: nil).instantiateViewControllerWithIdentifier("RestaurantListViewController") as! RestaurantListViewController
     }
+    var topIndexPath:NSIndexPath?
+    var topHeight: CGFloat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,8 +60,12 @@ class RestaurantListViewController: PFQueryTableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let width = self.view.bounds.size.width
-        return RestaurantTableUtils.getTableCellHeight(indexPath.row, width:width)
+        if let theIndexPath = self.topIndexPath{
+            if(indexPath.section == theIndexPath.section && indexPath.row == theIndexPath.row){
+                return self.topHeight!
+            }
+        }
+        return RestaurantTableUtils.getTableCellHeight(indexPath.row, width:self.view.bounds.size.width)
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -86,22 +92,22 @@ class RestaurantListViewController: PFQueryTableViewController {
     }
     
     
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
-//        let identify = RestaurantTableUtils.getTableCellIdentify(indexPath.row)
-//        var cell:ParseAbstractTableCell = self.tableView.dequeueReusableCellWithIdentifier(identify, forIndexPath: indexPath) as! ParseAbstractTableCell
-//        
-//        configureCell(cell, forRowAtIndexPath: indexPath)
-//        
-////        cell.addShadowToCellInTableView(tableView,atIndexPath:indexPath)
-//        
-//        return cell
-//    }
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+        let identify = RestaurantTableUtils.getTableCellIdentify(indexPath.row)
+        var cell:ParseAbstractTableCell = self.tableView.dequeueReusableCellWithIdentifier(identify, forIndexPath: indexPath) as! ParseAbstractTableCell
+        
+        configureCell(cell, forRowAtIndexPath: indexPath)
+        
+        //        cell.addShadowToCellInTableView(tableView,atIndexPath:indexPath)
+        
+        return cell
+    }
     
     
     func getObjects(section:Int) -> PFObject{
         let pfObject:[PFObject] = self.objects as! [PFObject]
         
-//        return pfObject[section]
+        //        return pfObject[section]
         return pfObject[0]
     }
     
@@ -128,6 +134,46 @@ class RestaurantListViewController: PFQueryTableViewController {
         let object: PFObject = self.objectAtIndexPath(forRowAtIndexPath)!
         cell.setCell(object)
     }
+    
+    // MARK: Sticky User Header view on the top of the screen
+    
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        positionCells(scrollView)
+    }
+    
+    override func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        positionCells(scrollView)
+    }
+    
+    func positionCells(scrollView: UIScrollView) {
+        let cells = self.tableView.visibleCells()
+        let scrollOffset = scrollView.contentOffset.y
+        //        println("\(scrollOffset)")
+        
+        for cell in cells as! [ParseAbstractTableCell] {
+            let indexPath = self.tableView.indexPathForCell(cell)
+            let row = indexPath?.row
+            
+            if(row != 0){
+                continue
+            }
+            self.topIndexPath = indexPath
+            
+            let cellOffset = cell.frame.origin.y
+            let headerOffset = scrollOffset - cellOffset
+            if headerOffset >= 0 {
+                self.topHeight = headerOffset
+                self.tableView.reloadRowsAtIndexPaths([indexPath!], withRowAnimation: UITableViewRowAnimation.None)
+                
+//                self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
+                //                            println("\(indexPath?.row)")
+                //                cell.headerTop?.constant = headerOffset
+            } else {
+                //                cell.headerTop?.constant = 0
+            }
+        }
+    }
+    
     
     
 }
