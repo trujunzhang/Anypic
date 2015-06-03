@@ -70,6 +70,7 @@
 		5EED7B091B1EEE77002A93FE /* UIView+DropShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED7AF61B1EEE77002A93FE /* UIView+DropShadow.m */; };
 		5EED7B0A1B1EEE77002A93FE /* UIView+Roundify.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EED7AF91B1EEE77002A93FE /* UIView+Roundify.m */; };
 		5EF3C2B61B1B3C5B001C9091 /* RecipeViewCellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3C2B51B1B3C5B001C9091 /* RecipeViewCellConstants.swift */; };
+		5EF79E211B1F03F9009DD3CA /* RestaurantCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF79E201B1F03F9009DD3CA /* RestaurantCollectionViewController.swift */; };
 		AA0A33C1D61E0C4ED7B31999 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68351CF1A3A0E65ED010C8EE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -175,6 +176,7 @@
 		5EED7AF81B1EEE77002A93FE /* UIView+Roundify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Roundify.h"; sourceTree = "<group>"; };
 		5EED7AF91B1EEE77002A93FE /* UIView+Roundify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Roundify.m"; sourceTree = "<group>"; };
 		5EF3C2B51B1B3C5B001C9091 /* RecipeViewCellConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewCellConstants.swift; sourceTree = "<group>"; };
+		5EF79E201B1F03F9009DD3CA /* RestaurantCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewController.swift; sourceTree = "<group>"; };
 		68351CF1A3A0E65ED010C8EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CAE07539DD58B4FB1C7AD0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +228,7 @@
 		5E07810B1B1AE85A00E2014F /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				5EF79E201B1F03F9009DD3CA /* RestaurantCollectionViewController.swift */,
 				5E07810C1B1AE85A00E2014F /* RestaurantListViewController.swift */,
 				5E07810D1B1AE85A00E2014F /* REUserInfoViewController.swift */,
 			);
@@ -758,6 +761,7 @@
 				5EB99E781B1BE9DC0009EB43 /* PAWNewUserViewController.m in Sources */,
 				5EED7B061B1EEE77002A93FE /* MKTableViewCell.swift in Sources */,
 				5EB99E721B1BE9DC0009EB43 /* UIImage+Alpha.m in Sources */,
+				5EF79E211B1F03F9009DD3CA /* RestaurantCollectionViewController.swift in Sources */,
 				5EED7AFC1B1EEE77002A93FE /* NSString+BGStringUtilities.m in Sources */,
 				5E18FF511B170D590012FD2A /* UITableViewExtensions.swift in Sources */,
 				5EED7B081B1EEE77002A93FE /* SwiftyUserDefaults.swift in Sources */,

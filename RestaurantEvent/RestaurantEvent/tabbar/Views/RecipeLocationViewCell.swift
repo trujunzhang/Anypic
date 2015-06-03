@@ -17,11 +17,6 @@ class RecipeLocationViewCell: ParseAbstractTableCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     // MARK: Setup table cell by object instanced PFObject
     override func setCell(object:PFObject){

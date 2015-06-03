@@ -27,7 +27,10 @@ struct TabBarInfo {
 class RETabBarGenerator{
     class func generateTabBarInfos() -> [TabBarInfo]{
 
-        let homeTabBarInfo = TabBarInfo(type: .Home,  title: "Home" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"),edge:UIEdgeInsetsMake(0,20,0,20), contentController: RestaurantListViewController.instance())
+//        let homeTabBarInfo = TabBarInfo(type: .Home,  title: "Home" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"),edge:UIEdgeInsetsMake(0,20,0,20), contentController: RestaurantListViewController.instance())
+        
+        let homeTabBarInfo = TabBarInfo(type: .Home,  title: "Home" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"),edge:UIEdgeInsetsMake(0,20,0,20), contentController: RestaurantCollectionViewController.instance())
+        
         
         let cameraTabBarInfo = TabBarInfo(type: .Camera,  title: "" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"),edge:UIEdgeInsetsZero,  contentController: UIViewController())
 

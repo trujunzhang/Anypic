@@ -1,17 +1,18 @@
 //
-//  RestaurantListViewController.swift
-//  RestaurantEventBDD
+//  RestaurantCollectionViewController.swift
+//  RestaurantEvent
 //
-//  Created by djzhang on 5/30/15.
+//  Created by djzhang on 6/3/15.
 //  Copyright (c) 2015 djzhang. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class RestaurantListViewController: PFQueryTableViewController {
+class RestaurantCollectionViewController : PFQueryCollectionViewController{
     
-    class func instance() -> RestaurantListViewController {
-        return UIStoryboard(name: "RestaurantEvent", bundle: nil).instantiateViewControllerWithIdentifier("RestaurantListViewController") as! RestaurantListViewController
+    class func instance() -> RestaurantCollectionViewController {
+        return UIStoryboard(name: "RestaurantEvent", bundle: nil).instantiateViewControllerWithIdentifier("RestaurantCollectionViewController") as! RestaurantCollectionViewController
     }
     
     override func viewDidLoad() {
@@ -39,7 +40,7 @@ class RestaurantListViewController: PFQueryTableViewController {
         self.loadingViewEnabled = true
         
         self.view.backgroundColor = UIColor.clearColor()
-        self.tableView.backgroundColor = UIColor.clearColor()
+        self.collectionView!.backgroundColor = UIColor.clearColor()
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,37 +49,19 @@ class RestaurantListViewController: PFQueryTableViewController {
     }
     
     // MARK: PFQueryTableViewController
-    override func queryForTable() -> PFQuery{
+    override func queryForCollection() -> PFQuery{
         return ParseQueryUtils.queryRestaurant()
     }
-    //MARK: UITableViewDelegate
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+    
+    
+    //MARK: UICollectionViewDataSource
+    
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return self.objects.count*3
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let width = self.view.bounds.size.width
-        return RestaurantTableUtils.getTableCellHeight(indexPath.row, width:width)
-    }
-    
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10.0
-    }
-    
-    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 10.0
-    }
-    
-    
-    
-    //MARK: UITableViewDataSource
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return self.objects!.count*3
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let photos:[PFObject] =  getObjects(section).valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
         
         //Count is header + map + photos(array)
@@ -86,22 +69,30 @@ class RestaurantListViewController: PFQueryTableViewController {
     }
     
     
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
-//        let identify = RestaurantTableUtils.getTableCellIdentify(indexPath.row)
-//        var cell:ParseAbstractTableCell = self.tableView.dequeueReusableCellWithIdentifier(identify, forIndexPath: indexPath) as! ParseAbstractTableCell
-//        
-//        configureCell(cell, forRowAtIndexPath: indexPath)
-//        
-////        cell.addShadowToCellInTableView(tableView,atIndexPath:indexPath)
-//        
-//        return cell
-//    }
+
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFCollectionViewCell? {
+        
+        let identify = RestaurantTableUtils.getTableCellIdentify(indexPath.row)
+        
+        var cell:ParseAbstractTableCell = self.collectionView?.dequeueReusableCellWithReuseIdentifier(identify, forIndexPath: indexPath) as! ParseAbstractTableCell
+        
+        configureCell(cell, forRowAtIndexPath: indexPath)
+        
+        return cell
+    }
+
+    
+    //MARK: UICollectionViewDelegate
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+    }
     
     
     func getObjects(section:Int) -> PFObject{
         let pfObject:[PFObject] = self.objects as! [PFObject]
         
-//        return pfObject[section]
+        //        return pfObject[section]
         return pfObject[0]
     }
     
@@ -128,6 +119,7 @@ class RestaurantListViewController: PFQueryTableViewController {
         let object: PFObject = self.objectAtIndexPath(forRowAtIndexPath)!
         cell.setCell(object)
     }
+    
     
     
 }

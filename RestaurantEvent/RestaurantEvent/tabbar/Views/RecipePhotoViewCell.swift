@@ -22,18 +22,19 @@ class RecipePhotoViewCell: ParseAbstractTableCell {
         self.setupTableCell()
     }
     
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
+//    
+//    override func setSelected(selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//        
+//        // Configure the view for the selected state
+//    }
     
     // MARK: Setup table cell
     func setupTableCell(){
         // Initialization code
         self.opaque = false
-        self.selectionStyle = .None
-        self.accessoryType = .None
+//        self.selectionStyle = .None
+//        self.accessoryType = .None
         
         self.clipsToBounds = false
         

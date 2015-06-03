@@ -24,4 +24,6 @@ pod "TPKeyboardAvoiding"
 # A beautiful set of predefined colors and a set of color methods to make your iOS/OSX development life easier.
 # pod 'Colours/Swift'
 
+pod 'CSStickyHeaderFlowLayout'
+
 pod 'Reveal-iOS-SDK'

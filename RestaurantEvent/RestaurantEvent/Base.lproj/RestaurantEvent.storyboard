@@ -58,6 +58,150 @@
             </objects>
             <point key="canvasLocation" x="521" y="222"/>
         </scene>
+        <!--Restaurant Collection View Controller-->
+        <scene sceneID="smq-bt-sh2">
+            <objects>
+                <collectionViewController storyboardIdentifier="RestaurantCollectionViewController" id="TTX-mV-WLa" customClass="RestaurantCollectionViewController" customModule="RestaurantEvent" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="a7W-gZ-udk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="b2O-it-4c4">
+                            <size key="itemSize" width="350" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserHeaderViewCell" id="RTo-rM-TOJ" customClass="UserHeaderViewCell" customModule="RestaurantEvent" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2H-lJ-7dm">
+                                            <rect key="frame" x="12" y="26" width="326" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="bLZ-5D-Lgt"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dy-0x-GXN">
+                                            <rect key="frame" x="12" y="55" width="326" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="RZo-Cq-nT9"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="z2H-lJ-7dm" secondAttribute="trailing" constant="12" id="Jpd-RT-nF1"/>
+                                    <constraint firstItem="z2H-lJ-7dm" firstAttribute="leading" secondItem="RTo-rM-TOJ" secondAttribute="leading" constant="12" id="OtG-7P-MPY"/>
+                                    <constraint firstItem="z2H-lJ-7dm" firstAttribute="top" secondItem="RTo-rM-TOJ" secondAttribute="top" constant="26" id="b3O-kr-EuP"/>
+                                    <constraint firstItem="6dy-0x-GXN" firstAttribute="top" secondItem="z2H-lJ-7dm" secondAttribute="bottom" constant="8" id="iKo-z1-M1H"/>
+                                    <constraint firstAttribute="trailing" secondItem="6dy-0x-GXN" secondAttribute="trailing" constant="12" id="pZR-e8-lym"/>
+                                    <constraint firstItem="6dy-0x-GXN" firstAttribute="leading" secondItem="RTo-rM-TOJ" secondAttribute="leading" constant="12" id="tKV-7Z-Wq1"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="detailLabel" destination="6dy-0x-GXN" id="gxY-Bh-jNs"/>
+                                    <outlet property="titleLabel" destination="z2H-lJ-7dm" id="rDz-PJ-C5a"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeLocationViewCell" id="oQp-LG-JZN" customClass="RecipeLocationViewCell" customModule="RestaurantEvent" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8F5-el-SSS">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                                        </mapView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="8F5-el-SSS" firstAttribute="leading" secondItem="oQp-LG-JZN" secondAttribute="leading" id="Etd-tc-aSk"/>
+                                    <constraint firstAttribute="trailing" secondItem="8F5-el-SSS" secondAttribute="trailing" id="aBd-4a-EMK"/>
+                                    <constraint firstAttribute="bottom" secondItem="8F5-el-SSS" secondAttribute="bottom" id="eB8-ba-GYl"/>
+                                    <constraint firstItem="8F5-el-SSS" firstAttribute="top" secondItem="oQp-LG-JZN" secondAttribute="top" id="quO-9t-WxX"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="mapView" destination="8F5-el-SSS" id="P4N-4l-X90"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipePhotoViewCell" id="P1V-eZ-VyS" customClass="RecipePhotoViewCell" customModule="RestaurantEvent" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4B6-ql-r4t">
+                                            <rect key="frame" x="-8" y="0.0" width="350" height="150"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAM-KO-Rcr">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="4B6-ql-r4t" firstAttribute="top" secondItem="P1V-eZ-VyS" secondAttribute="top" id="1eQ-NN-IBr"/>
+                                    <constraint firstAttribute="trailing" secondItem="4B6-ql-r4t" secondAttribute="trailing" id="5F9-Ic-uBN"/>
+                                    <constraint firstItem="KAM-KO-Rcr" firstAttribute="top" secondItem="P1V-eZ-VyS" secondAttribute="top" id="64F-zM-4pp"/>
+                                    <constraint firstItem="4B6-ql-r4t" firstAttribute="leading" secondItem="P1V-eZ-VyS" secondAttribute="leading" id="Aw8-gN-WKK"/>
+                                    <constraint firstAttribute="trailing" secondItem="KAM-KO-Rcr" secondAttribute="trailing" id="Dxu-yS-OK9"/>
+                                    <constraint firstAttribute="bottom" secondItem="KAM-KO-Rcr" secondAttribute="bottom" id="E81-cK-5fx"/>
+                                    <constraint firstAttribute="bottom" secondItem="4B6-ql-r4t" secondAttribute="bottom" id="YoM-bv-PZb"/>
+                                    <constraint firstItem="KAM-KO-Rcr" firstAttribute="leading" secondItem="P1V-eZ-VyS" secondAttribute="leading" id="tkf-Qu-oVV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="photoButton" destination="KAM-KO-Rcr" id="ai9-5l-2Hb"/>
+                                    <outlet property="photoContainer" destination="4B6-ql-r4t" id="jDW-LL-8AY"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cy2-IO-7Jk">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MYX-r1-UJT">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="TTX-mV-WLa" id="t9u-04-15u"/>
+                            <outlet property="delegate" destination="TTX-mV-WLa" id="4pw-NZ-JJ4"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZ9-aj-ZpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-483" y="1060"/>
+        </scene>
         <!--Restaurant List View Controller-->
         <scene sceneID="9TW-mW-4Ts">
             <objects>
