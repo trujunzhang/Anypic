@@ -51,17 +51,35 @@ class RestaurantListViewController: PFQueryTableViewController {
     override func queryForTable() -> PFQuery{
         return ParseQueryUtils.queryRestaurant()
     }
+    //MARK: UITableViewDelegate
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let width = self.view.bounds.size.width
+        return RestaurantTableUtils.getTableCellHeight(indexPath.row, width:width)
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10.0
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 10.0
+    }
+    
+    
     
     //MARK: UITableViewDataSource
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return self.objects!.count
+        return self.objects!.count*3
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let pfObjects:[PFObject] = self.objects as! [PFObject]
-        
-        let photos:[PFObject] =   pfObjects[section].valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
+        let photos:[PFObject] =  getObjects(section).valueForKey(kPAPRestaurantPhotosKey) as! [PFObject]
         
         //Count is header + map + photos(array)
         return 1 + 1 + photos.count
@@ -77,18 +95,18 @@ class RestaurantListViewController: PFQueryTableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let width = self.view.bounds.size.width
-        return RestaurantTableUtils.getTableCellHeight(indexPath.row, width:width)
+    
+    func getObjects(section:Int) -> PFObject{
+        let pfObject:[PFObject] = self.objects as! [PFObject]
+        
+//        return pfObject[section]
+        return pfObject[0]
     }
     
     override func objectAtIndexPath(indexPath: NSIndexPath?) -> PFObject? {
-        var section:Int = indexPath!.section
+        var object = getObjects(indexPath!.section)
+        
         var row:Int = indexPath!.row
-        let pfObject:[PFObject] = self.objects as! [PFObject]
-        
-        var object = pfObject[section]
-        
         switch (row){
         case RestaurantTableRowType.UserInfo.hashValue:
             object = PFUser.currentUser()!
