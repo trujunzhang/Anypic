@@ -46,6 +46,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         // Set Navigation bar appearance
         UINavigationBar.appearance().barTintColor = UIColor.applicationNavBarColor()
         
+        let navbarFont = UIFont(name: "Ubuntu", size: 17) ?? UIFont.systemFontOfSize(17)
+        let barbuttonFont = UIFont(name: "Ubuntu-Light", size: 15) ?? UIFont.systemFontOfSize(15)
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.whiteColor()]
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: barbuttonFont, NSForegroundColorAttributeName:UIColor.whiteColor()], forState: UIControlState.Normal)
+        
+        
+//        UINavigationBar.appearance().titleTextAttributes = []
+//        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont(name: "Avenir Next", size: 20)!, NSForegroundColorAttributeName: UIColor(red: 93/255, green: 173/255, blue: 173/255, alpha: 1)]
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         if ((PFUser.currentUser()) != nil) {
@@ -89,6 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
     func presentWallViewControllerAnimated(animated: Bool){
         self.navigationController.setViewControllers([RECenterViewController.instance()], animated: false)
     }
+    
     //    func presentWallViewControllerAnimated(animated: Bool){
     //        self.viewController.shouldDelegateAutorotateToVisiblePanel = false
     //

@@ -88,6 +88,8 @@ class RECenterViewController: UIViewController,TabBarItemDelegate{
         addEventButton.layer.shadowColor = UIColor.blackColor().CGColor
         addEventButton.layer.shadowOffset = CGSize(width: 1.0, height: 5.5)
         
+        addEventButton.backgroundColor = UIColor.applicationAddEventButtonColor()
+        
         self.view.bringSubviewToFront(addEventButton)
     }
     
