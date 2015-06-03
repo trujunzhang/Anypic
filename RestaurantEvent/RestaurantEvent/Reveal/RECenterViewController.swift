@@ -60,26 +60,25 @@ class RECenterViewController: UIViewController,TabBarItemDelegate{
     func didPressButton(sender:UIButton,atIndex:Int){
         let selectedViewController = tabBarInfos[atIndex].contentController
         
-        self.replaceSelectViewController(selectedViewController, button: sender)
+        self.tabBarViewController.replaceSelectedButton(sender,tabBarInfos:tabBarInfos)
+        self.selectViewController(selectedViewController,tabBarInfo:tabBarInfos[atIndex])
     }
     
     // MARK: View Controller Selection
-    func replaceSelectViewController(viewController:UIViewController,button:UIButton){
-        self.tabBarViewController.replaceSelectedButton(button,tabBarInfos:tabBarInfos)
-        self.selectViewController(viewController)
-    }
-    
-    func selectViewController(viewController:UIViewController){
-        // First,clean up last sub views
+    func selectViewController(viewController:UIViewController,tabBarInfo:TabBarInfo){
+        
+        // First,clean up the last subviews
         self.presentationView.removeAllSubViews()
         if let theLastViewController = self.lastViewController{
             theLastViewController.removeFromParentViewController()
         }
         self.lastViewController = viewController
 
+        // Setup new viewController
         self.addChildViewController(viewController)
         self.presentationView.addSubview(viewController.view)
-        viewController.view.LayoutFullView()
+        
+        viewController.view.LayoutMargining(tabBarInfo.edge!)
     }
     
 }
