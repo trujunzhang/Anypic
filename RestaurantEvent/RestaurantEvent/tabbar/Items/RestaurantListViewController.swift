@@ -92,6 +92,8 @@ class RestaurantListViewController: PFQueryTableViewController {
         
         configureCell(cell, forRowAtIndexPath: indexPath)
         
+        cell.addShadowToCellInTableView(tableView,atIndexPath:indexPath)
+        
         return cell
     }
     
