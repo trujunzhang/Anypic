@@ -87,7 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
     
     // MARK: WallViewController
     func presentWallViewControllerAnimated(animated: Bool){
-        self.navigationController.setViewControllers([RECenterViewController()], animated: false)
+        self.navigationController.setViewControllers([RECenterViewController.instance()], animated: false)
     }
     //    func presentWallViewControllerAnimated(animated: Bool){
     //        self.viewController.shouldDelegateAutorotateToVisiblePanel = false

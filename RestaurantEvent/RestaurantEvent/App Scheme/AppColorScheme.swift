@@ -44,7 +44,8 @@ extension UIColor {
         return UIColor(red: 255/255, green: 71/255, blue: 23/255, alpha:1)
     }
     
-    class func applicationViewControllerColor() -> UIColor {
+    // Center ViewController Color
+    class func applicationCenterViewControllerColor() -> UIColor {
         return UIColor(red: 235/255, green: 239/255, blue: 240/255, alpha:1)
     }
 }
