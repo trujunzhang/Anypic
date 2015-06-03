@@ -185,11 +185,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hq-vt-9pc" customClass="MKButton" customModule="RestaurantEvent" customModuleProvider="target">
-                                <rect key="frame" x="440" y="440" width="80" height="80"/>
+                                <rect key="frame" x="272" y="530" width="56" height="56"/>
                                 <color key="backgroundColor" red="1" green="0.28528585950000002" blue="0.05965722281" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="6vR-Yk-PRA"/>
-                                    <constraint firstAttribute="width" constant="80" id="ldN-Gs-aZf"/>
+                                    <constraint firstAttribute="height" constant="56" id="HwS-UB-2gV"/>
+                                    <constraint firstAttribute="width" constant="56" id="MBu-O7-ZzL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
                                 <state key="normal" title="+">
@@ -199,8 +199,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ERW-XF-7qP" firstAttribute="top" secondItem="8hq-vt-9pc" secondAttribute="bottom" constant="80" id="Fr8-FI-LIc"/>
-                            <constraint firstAttribute="trailing" secondItem="8hq-vt-9pc" secondAttribute="trailing" constant="80" id="Y4b-IV-X1z"/>
+                            <constraint firstItem="ERW-XF-7qP" firstAttribute="top" secondItem="8hq-vt-9pc" secondAttribute="bottom" constant="14" id="VXY-hE-z9p"/>
+                            <constraint firstAttribute="centerX" secondItem="8hq-vt-9pc" secondAttribute="centerX" id="j3T-7h-HDE"/>
                         </constraints>
                     </view>
                     <connections>

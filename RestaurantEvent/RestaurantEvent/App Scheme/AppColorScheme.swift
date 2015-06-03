@@ -51,7 +51,7 @@ extension UIColor {
     
     // Material button background Color
     class func applicationAddEventButtonColor() -> UIColor {
-        return UIColor(red: 55/255, green: 54/255, blue: 233/255, alpha:1)
+        return UIColor(red: 232/255, green: 64/255, blue: 121/255, alpha:1)
     }
 }
 

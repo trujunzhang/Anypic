@@ -77,8 +77,8 @@ class RECenterViewController: UIViewController,TabBarItemDelegate{
     
     // MARK: Setup Material button appearance.
     func setupMaterialButton(){
-        addEventButton.cornerRadius = 40.0
-        addEventButton.backgroundLayerCornerRadius = 40.0
+        addEventButton.cornerRadius = 28.0
+        addEventButton.backgroundLayerCornerRadius = 28.0
         addEventButton.maskEnabled = false
         addEventButton.ripplePercent = 1.75
         addEventButton.rippleLocation = .Center
