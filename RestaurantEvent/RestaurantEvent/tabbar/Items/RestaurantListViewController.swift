@@ -37,6 +37,9 @@ class RestaurantListViewController: PFQueryTableViewController {
         
         // The Loading text clashes with the dark Anypic design
         self.loadingViewEnabled = true
+        
+        self.view.backgroundColor = UIColor.clearColor()
+        self.tableView.backgroundColor = UIColor.clearColor()
     }
     
     override func didReceiveMemoryWarning() {

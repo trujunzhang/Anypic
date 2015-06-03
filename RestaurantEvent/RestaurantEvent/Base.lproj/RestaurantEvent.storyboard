@@ -65,7 +65,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rze-wF-afm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHeaderViewCell" textLabel="zzI-Y3-iOG" detailTextLabel="c1b-pB-a99" style="IBUITableViewCellStyleSubtitle" id="PFf-ZI-d1q" customClass="UserHeaderViewCell" customModule="RestaurantEvent" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -118,7 +118,7 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOa-BZ-eh6">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncp-iE-PVJ">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -127,6 +127,7 @@
                                             </state>
                                         </button>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="hOa-BZ-eh6" firstAttribute="top" secondItem="EFs-0p-nqa" secondAttribute="top" id="2O5-o4-exF"/>
                                         <constraint firstItem="ncp-iE-PVJ" firstAttribute="leading" secondItem="EFs-0p-nqa" secondAttribute="leading" id="5bG-3t-r5L"/>
@@ -138,6 +139,7 @@
                                         <constraint firstAttribute="trailing" secondItem="ncp-iE-PVJ" secondAttribute="trailing" id="uuZ-gA-leE"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="photoButton" destination="ncp-iE-PVJ" id="f7F-u3-wdc"/>
                                     <outlet property="photoContainer" destination="hOa-BZ-eh6" id="wrT-6r-5Nl"/>
