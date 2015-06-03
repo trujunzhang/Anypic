@@ -40,6 +40,8 @@ class RETabBarGenerator{
     }
     
     class func makeImageRenderingModeAlwaysOriginal(named:String) ->UIImage{
-        return UIImage(named:named)!.imageWithRenderingMode(.AlwaysOriginal)
+//        return UIImage(named:named)!.imageWithRenderingMode(.AlwaysOriginal)
+//        return UIImage(named:"AppIcon")!.imageWithRenderingMode(.AlwaysOriginal)
+        return UIImage()
     }
 }

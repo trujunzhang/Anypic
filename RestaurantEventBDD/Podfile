@@ -17,6 +17,9 @@ def import_pods
   pod 'UIImageEffects'
 
   pod "AZCenterLabelButton"
+
+  pod 'CSStickyHeaderFlowLayout'
+
 end
 
 target 'RestaurantEventBDD', :exclusive => true do

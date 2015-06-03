@@ -42,20 +42,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
         
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
         
+        // Set Navigation bar appearance
+        UINavigationBar.appearance().barTintColor = UIColor.applicationNavBarColor()
+        
+        let navbarFont = UIFont(name: "Ubuntu", size: 17) ?? UIFont.systemFontOfSize(17)
+        let barbuttonFont = UIFont(name: "Ubuntu-Light", size: 15) ?? UIFont.systemFontOfSize(15)
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.whiteColor()]
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: barbuttonFont, NSForegroundColorAttributeName:UIColor.whiteColor()], forState: UIControlState.Normal)
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         if ((PFUser.currentUser()) != nil) {
             // Present wall straight-away
-//            self.presentRestaurantListViewController(false)
-//            self.presentiewController()
-            ParseQueryUtils.queryRestaurant()
-
+            //            self.presentRestaurantListViewController(false)
+            //            self.presentiewController()
+            //            ParseQueryUtils.queryRestaurant()
+            self.navigationController.setViewControllers([RECenterViewController.instance()], animated: false)
         } else {
             // Go to the welcome screen and have them log in or create an account.
-            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-            self.presentLoginViewController()
-            self.window?.rootViewController = self.navigationController
-            self.window?.makeKeyAndVisible()
-        }
 
+            self.presentLoginViewController()
+            
+        }
+        self.window?.rootViewController = self.navigationController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
     
@@ -75,12 +86,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,PAWLoginViewControllerDele
     func presentRestaurantListViewController(animated: Bool){
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let viewController: UIViewController = RestaurantListViewController.instance()
+        //        let viewController: UIViewController = RestaurantListViewController.instance()
+        let viewController: UIViewController = RestaurantCollectionViewController.instance()
         self.navigationController.setViewControllers([viewController], animated: false)
         self.window?.rootViewController = self.navigationController
         
         self.window?.makeKeyAndVisible()
-
+        
         self.window?.backgroundColor = UIColor.redColor()
     }
     
