@@ -19,6 +19,7 @@ struct TabBarInfo {
     var title = ""
     var normalImage: UIImage?
     var selectedImage: UIImage?
+    var edge: UIEdgeInsets?
     var contentController : UIViewController
 }
 
@@ -26,11 +27,11 @@ struct TabBarInfo {
 class RETabBarGenerator{
     class func generateTabBarInfos() -> [TabBarInfo]{
 
-        let homeTabBarInfo = TabBarInfo(type: .Home,  title: "Home" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"), contentController: RestaurantListViewController.instance())
+        let homeTabBarInfo = TabBarInfo(type: .Home,  title: "Home" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"),edge:UIEdgeInsetsMake(0,0,0,0), contentController: RestaurantListViewController.instance())
         
-        let cameraTabBarInfo = TabBarInfo(type: .Camera,  title: "" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"), contentController: UIViewController())
+        let cameraTabBarInfo = TabBarInfo(type: .Camera,  title: "" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconHome"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconHomeSelected"),edge:UIEdgeInsetsZero,  contentController: UIViewController())
 
-        let activityTabBarInfo = TabBarInfo(type: .Activity,  title: "Activity" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconTimeline"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconTimelineSelected"), contentController: UIViewController())
+        let activityTabBarInfo = TabBarInfo(type: .Activity,  title: "Activity" ,normalImage: makeImageRenderingModeAlwaysOriginal("IconTimeline"), selectedImage: makeImageRenderingModeAlwaysOriginal( "IconTimelineSelected"), edge:UIEdgeInsetsZero, contentController: UIViewController())
 
         return [homeTabBarInfo,cameraTabBarInfo,activityTabBarInfo]
     }
