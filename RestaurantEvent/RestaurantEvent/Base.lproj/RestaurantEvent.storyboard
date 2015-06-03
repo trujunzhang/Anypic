@@ -8,7 +8,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="dTC-Ih-wqN">
             <objects>
-                <viewController storyboardIdentifier="RETabBarViewController" id="p13-35-sNl" customClass="RETabBarViewController" customModule="RestaurantEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RETabBarViewController" id="p13-35-sNl" customClass="RETabBarViewController" customModule="RestaurantEventBDD" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xEs-c4-UIx"/>
                         <viewControllerLayoutGuide type="bottom" id="8pD-1z-e0l"/>
@@ -61,19 +61,19 @@
         <!--Restaurant Collection View Controller-->
         <scene sceneID="smq-bt-sh2">
             <objects>
-                <collectionViewController storyboardIdentifier="RestaurantCollectionViewController" id="TTX-mV-WLa" customClass="RestaurantCollectionViewController" customModule="RestaurantEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="RestaurantCollectionViewController" id="TTX-mV-WLa" customClass="RestaurantCollectionViewController" customModule="RestaurantEventBDD" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="a7W-gZ-udk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="b2O-it-4c4">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5TQ-2Y-D47" customClass="CSStickyHeaderFlowLayout">
                             <size key="itemSize" width="350" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserHeaderViewCell" id="RTo-rM-TOJ" customClass="UserHeaderViewCell" customModule="RestaurantEvent" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserHeaderViewCell" id="RTo-rM-TOJ" customClass="UserHeaderViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -114,7 +114,7 @@
                                     <outlet property="titleLabel" destination="z2H-lJ-7dm" id="rDz-PJ-C5a"/>
                                 </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeLocationViewCell" id="oQp-LG-JZN" customClass="RecipeLocationViewCell" customModule="RestaurantEvent" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeLocationViewCell" id="oQp-LG-JZN" customClass="RecipeLocationViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -137,15 +137,15 @@
                                     <outlet property="mapView" destination="8F5-el-SSS" id="P4N-4l-X90"/>
                                 </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipePhotoViewCell" id="P1V-eZ-VyS" customClass="RecipePhotoViewCell" customModule="RestaurantEvent" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipePhotoViewCell" id="P1V-eZ-VyS" customClass="RecipePhotoViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4B6-ql-r4t">
-                                            <rect key="frame" x="-8" y="0.0" width="350" height="150"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4B6-ql-r4t">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAM-KO-Rcr">
@@ -205,13 +205,13 @@
         <!--Restaurant List View Controller-->
         <scene sceneID="9TW-mW-4Ts">
             <objects>
-                <tableViewController storyboardIdentifier="RestaurantListViewController" id="HQX-HF-GuW" customClass="RestaurantListViewController" customModule="RestaurantEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RestaurantListViewController" id="HQX-HF-GuW" customClass="RestaurantListViewController" customModule="RestaurantEventBDD" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rze-wF-afm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHeaderViewCell" textLabel="zzI-Y3-iOG" detailTextLabel="c1b-pB-a99" style="IBUITableViewCellStyleSubtitle" id="PFf-ZI-d1q" customClass="UserHeaderViewCell" customModule="RestaurantEvent" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHeaderViewCell" textLabel="zzI-Y3-iOG" detailTextLabel="c1b-pB-a99" style="IBUITableViewCellStyleSubtitle" id="PFf-ZI-d1q" customClass="UserHeaderViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PFf-ZI-d1q" id="TnI-U7-t2f">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -235,7 +235,7 @@
                                     <outlet property="titleLabel" destination="zzI-Y3-iOG" id="D8L-6B-cMY"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeLocationViewCell" id="xBv-gW-CdX" customClass="RecipeLocationViewCell" customModule="RestaurantEvent" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeLocationViewCell" id="xBv-gW-CdX" customClass="RecipeLocationViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xBv-gW-CdX" id="1ea-E0-5LX">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -255,7 +255,7 @@
                                     <outlet property="mapView" destination="fMw-Im-Ppn" id="fPb-nr-AL4"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipePhotoViewCell" id="i5n-86-SEz" customClass="RecipePhotoViewCell" customModule="RestaurantEvent" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipePhotoViewCell" id="i5n-86-SEz" customClass="RecipePhotoViewCell" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i5n-86-SEz" id="EFs-0p-nqa">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -321,7 +321,7 @@
         <!--Center View Controller-->
         <scene sceneID="fDX-It-hph">
             <objects>
-                <viewController storyboardIdentifier="RECenterViewController" id="Dxs-tw-U7V" customClass="RECenterViewController" customModule="RestaurantEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RECenterViewController" id="Dxs-tw-U7V" customClass="RECenterViewController" customModule="RestaurantEventBDD" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yu2-1j-rsr"/>
                         <viewControllerLayoutGuide type="bottom" id="ERW-XF-7qP"/>
@@ -330,7 +330,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hq-vt-9pc" customClass="MKButton" customModule="RestaurantEvent" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hq-vt-9pc" customClass="MKButton" customModule="RestaurantEventBDD" customModuleProvider="target">
                                 <rect key="frame" x="272" y="530" width="56" height="56"/>
                                 <color key="backgroundColor" red="1" green="0.28528585950000002" blue="0.05965722281" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
