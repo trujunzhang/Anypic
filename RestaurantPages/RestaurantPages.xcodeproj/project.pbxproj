@@ -10,6 +10,7 @@
 		5E223E5B1B2084610044F57C /* PanGestureScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E223E5A1B2084610044F57C /* PanGestureScrollView.swift */; };
 		5E223E5D1B20849A0044F57C /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E223E5C1B20849A0044F57C /* pop.framework */; };
 		5E223E5E1B2084A60044F57C /* pop.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E223E5C1B20849A0044F57C /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E223E651B2086340044F57C /* UIView+PopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E223E641B2086340044F57C /* UIView+PopScrollView.m */; };
 		5EBB8F511B201EFA009710F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB8F501B201EFA009710F3 /* AppDelegate.swift */; };
 		5EBB8F531B201EFA009710F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB8F521B201EFA009710F3 /* ViewController.swift */; };
 		5EBB8F561B201EFA009710F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBB8F541B201EFA009710F3 /* Main.storyboard */; };
@@ -60,6 +61,9 @@
 		24735E03E7A83FE88481B432 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5E223E5A1B2084610044F57C /* PanGestureScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGestureScrollView.swift; sourceTree = "<group>"; };
 		5E223E5C1B20849A0044F57C /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = ../RestaurantEvent/Carthage/pop.framework; sourceTree = "<group>"; };
+		5E223E5F1B2085B30044F57C /* RestaurantPages-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestaurantPages-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E223E631B2086340044F57C /* UIView+PopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopScrollView.h"; sourceTree = "<group>"; };
+		5E223E641B2086340044F57C /* UIView+PopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopScrollView.m"; sourceTree = "<group>"; };
 		5EBB8F4B1B201EFA009710F3 /* RestaurantPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBB8F4F1B201EFA009710F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EBB8F501B201EFA009710F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +145,9 @@
 				5EBB8F4E1B201EFA009710F3 /* Supporting Files */,
 				5EBB8F791B201FA2009710F3 /* PagesCollectionViewController.swift */,
 				5EBB8F7B1B202010009710F3 /* PageCollectionViewCell.swift */,
+				5E223E5F1B2085B30044F57C /* RestaurantPages-Bridging-Header.h */,
+				5E223E631B2086340044F57C /* UIView+PopScrollView.h */,
+				5E223E641B2086340044F57C /* UIView+PopScrollView.m */,
 			);
 			path = RestaurantPages;
 			sourceTree = "<group>";
@@ -365,6 +372,7 @@
 				5EBB8F891B20209D009710F3 /* UIViewExtentsions.swift in Sources */,
 				5EBB8F841B20209D009710F3 /* UIColorExtensions.swift in Sources */,
 				5EBB8F851B20209D009710F3 /* UIConstants.swift in Sources */,
+				5E223E651B2086340044F57C /* UIView+PopScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +500,7 @@
 			baseConfigurationReference = E2B8822CB79835BA5EA428DC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,6 +509,8 @@
 				INFOPLIST_FILE = RestaurantPages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RestaurantPages/RestaurantPages-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -508,6 +519,7 @@
 			baseConfigurationReference = 24735E03E7A83FE88481B432 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,6 +528,7 @@
 				INFOPLIST_FILE = RestaurantPages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RestaurantPages/RestaurantPages-Bridging-Header.h";
 			};
 			name = Release;
 		};
