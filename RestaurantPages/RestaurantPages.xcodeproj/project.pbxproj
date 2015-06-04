@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E223E5B1B2084610044F57C /* PanGestureScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E223E5A1B2084610044F57C /* PanGestureScrollView.swift */; };
+		5E223E5D1B20849A0044F57C /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E223E5C1B20849A0044F57C /* pop.framework */; };
+		5E223E5E1B2084A60044F57C /* pop.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E223E5C1B20849A0044F57C /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5EBB8F511B201EFA009710F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB8F501B201EFA009710F3 /* AppDelegate.swift */; };
 		5EBB8F531B201EFA009710F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB8F521B201EFA009710F3 /* ViewController.swift */; };
 		5EBB8F561B201EFA009710F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBB8F541B201EFA009710F3 /* Main.storyboard */; };
@@ -46,6 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5E223E5E1B2084A60044F57C /* pop.framework in CopyFiles */,
 				5EBB8F8D1B2020B2009710F3 /* Cartography.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		24735E03E7A83FE88481B432 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5E223E5A1B2084610044F57C /* PanGestureScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGestureScrollView.swift; sourceTree = "<group>"; };
+		5E223E5C1B20849A0044F57C /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = ../RestaurantEvent/Carthage/pop.framework; sourceTree = "<group>"; };
 		5EBB8F4B1B201EFA009710F3 /* RestaurantPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBB8F4F1B201EFA009710F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EBB8F501B201EFA009710F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 			files = (
 				5EBB8F8B1B2020A8009710F3 /* Cartography.framework in Frameworks */,
 				72CFC636AB0611BE711F5DC6 /* libPods.a in Frameworks */,
+				5E223E5D1B20849A0044F57C /* pop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +130,7 @@
 		5EBB8F4D1B201EFA009710F3 /* RestaurantPages */ = {
 			isa = PBXGroup;
 			children = (
+				5E223E5A1B2084610044F57C /* PanGestureScrollView.swift */,
 				5EBB8F7D1B20209D009710F3 /* UIKit */,
 				5EBB8F701B201F17009710F3 /* Resources */,
 				5EBB8F501B201EFA009710F3 /* AppDelegate.swift */,
@@ -190,6 +198,7 @@
 		5EBB8F8E1B2020D3009710F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E223E5C1B20849A0044F57C /* pop.framework */,
 				5EBB8F8A1B2020A8009710F3 /* Cartography.framework */,
 				CFF4F4D7C49600ACC9C7C36E /* libPods.a */,
 			);
@@ -349,6 +358,7 @@
 				5EBB8F7A1B201FA2009710F3 /* PagesCollectionViewController.swift in Sources */,
 				5EBB8F861B20209D009710F3 /* UIControlExtensions.swift in Sources */,
 				5EBB8F881B20209D009710F3 /* UITableViewExtensions.swift in Sources */,
+				5E223E5B1B2084610044F57C /* PanGestureScrollView.swift in Sources */,
 				5EBB8F531B201EFA009710F3 /* ViewController.swift in Sources */,
 				5EBB8F511B201EFA009710F3 /* AppDelegate.swift in Sources */,
 				5EBB8F7C1B202010009710F3 /* PageCollectionViewCell.swift in Sources */,

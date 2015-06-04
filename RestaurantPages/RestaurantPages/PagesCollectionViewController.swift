@@ -10,7 +10,11 @@ import UIKit
 
 let reuseIdentifier = "PageCollectionViewCell"
 
-class PagesCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
+class PagesCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout,UIGestureRecognizerDelegate {
+    
+    @IBOutlet var collectionPanGesture: UIPanGestureRecognizer!
+    
+    
     class func instance() -> PagesCollectionViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PagesCollectionViewController") as! PagesCollectionViewController
     }
@@ -47,6 +51,8 @@ class PagesCollectionViewController: UICollectionViewController,UICollectionView
         
         // Do any additional setup after loading the view.
         setupCollectionView()
+        
+        self.collectionPanGesture.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -158,10 +164,17 @@ class PagesCollectionViewController: UICollectionViewController,UICollectionView
         println("scale is \(recognizer.scale), velocity is \(recognizer.velocity)")
     }
     
-    @IBAction func handlePan(sender: AnyObject) {
+    @IBAction func handlePan(sender: UIPanGestureRecognizer) {
         let x = 0
+
     }
     
+    // MARK: UIGestureRecognizerDelegate
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool{
+        
+        
+        return false
+    }
     
     
 }

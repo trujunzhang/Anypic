@@ -8,7 +8,7 @@
         <scene sceneID="nqd-kp-wLZ">
             <objects>
                 <collectionViewController storyboardIdentifier="PagesCollectionViewController" id="X2Z-XM-kIp" customClass="PagesCollectionViewController" customModule="RestaurantPages" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YcF-Hi-kpk">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="YcF-Hi-kpk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -92,10 +92,19 @@
                         <connections>
                             <outlet property="dataSource" destination="X2Z-XM-kIp" id="BlV-Kt-xzh"/>
                             <outlet property="delegate" destination="X2Z-XM-kIp" id="uJC-K6-rNi"/>
+                            <outletCollection property="gestureRecognizers" destination="mDf-oB-Qaf" appends="YES" id="VnX-GB-7Ov"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <outlet property="collectionPanGesture" destination="mDf-oB-Qaf" id="ICy-Od-JUd"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E68-D7-MFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="mDf-oB-Qaf">
+                    <connections>
+                        <action selector="handlePan:" destination="X2Z-XM-kIp" id="5mg-cm-W8A"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-830" y="163"/>
         </scene>
