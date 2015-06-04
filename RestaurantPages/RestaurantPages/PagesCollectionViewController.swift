@@ -32,7 +32,7 @@ class PagesCollectionViewController: UICollectionViewController,UICollectionView
         flowLayout.minimumInteritemSpacing = 0.0
         flowLayout.minimumLineSpacing = 0.0
         
-        self.collectionView?.pagingEnabled = true
+//        self.collectionView?.pagingEnabled = true
         self.collectionView?.collectionViewLayout = flowLayout
     }
     
@@ -143,7 +143,7 @@ class PagesCollectionViewController: UICollectionViewController,UICollectionView
     //
     //        CGFloat delta = (self.frame.size.width - new_size)/2;
     //        self.frame = CGRectMake(self.frame.origin.x + delta, self.frame.origin.y + delta, new_size, new_size);
-
+    
     
     // MARK: Pinch gesture recognizer for CollectionView
     @IBAction func handlePinch(recognizer: UIPinchGestureRecognizer) {
@@ -153,12 +153,14 @@ class PagesCollectionViewController: UICollectionViewController,UICollectionView
         }else{
             new_size = recognizer.velocity
         }
-//        var delta:CGFloat = new_size
+        //        var delta:CGFloat = new_size
         
         println("scale is \(recognizer.scale), velocity is \(recognizer.velocity)")
-        
     }
     
+    @IBAction func handlePan(sender: AnyObject) {
+        let x = 0
+    }
     
     
     

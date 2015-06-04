@@ -39,6 +39,33 @@ class ViewController: UIViewController {
     }
     
     
+    
+    //        CGFloat new_size;
+    //        if (self.pinchRecognizer.scale < 1.0) {
+    //            new_size = self.frame.size.width + (self.pinchRecognizer.velocity / self.pinchRecognizer.scale);
+    //        } else {
+    //
+    //            new_size = self.frame.size.width + self.pinchRecognizer.velocity;
+    //        }
+    //
+    //        CGFloat delta = (self.frame.size.width - new_size)/2;
+    //        self.frame = CGRectMake(self.frame.origin.x + delta, self.frame.origin.y + delta, new_size, new_size);
+    
+    
+    // MARK: Pinch gesture recognizer for CollectionView
+    @IBAction func handlePinch(recognizer: UIPinchGestureRecognizer) {
+        var new_size:CGFloat
+        if(recognizer.scale < 1.0){
+            new_size = recognizer.velocity/recognizer.scale
+        }else{
+            new_size = recognizer.velocity
+        }
+        //        var delta:CGFloat = new_size
+        
+        println("scale is \(recognizer.scale), velocity is \(recognizer.velocity)")
+    }
+
+    
 
 }
 
