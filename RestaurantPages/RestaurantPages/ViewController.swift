@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var pageContainer: UIView!
     
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    
+    
     let pagesCollectionViewController: PagesCollectionViewController = PagesCollectionViewController.instance()
     
     override func viewDidLoad() {
@@ -28,6 +31,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func moveTapped(sender: AnyObject) {
+        let last = self.heightConstraint.constant
+        self.heightConstraint.constant = last + 20
+        
+        self.pagesCollectionViewController.collectionView?.reloadData()
+    }
+    
+    
 
 }
 

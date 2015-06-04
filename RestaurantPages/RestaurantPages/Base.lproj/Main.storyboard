@@ -12,6 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xWg-Cj-JZ1">
                             <size key="itemSize" width="328" height="236"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -91,10 +92,16 @@
                         <connections>
                             <outlet property="dataSource" destination="X2Z-XM-kIp" id="BlV-Kt-xzh"/>
                             <outlet property="delegate" destination="X2Z-XM-kIp" id="uJC-K6-rNi"/>
+                            <outletCollection property="gestureRecognizers" destination="2uo-uy-yqK" appends="YES" id="V6S-Rh-B0x"/>
                         </connections>
                     </collectionView>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E68-D7-MFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="2uo-uy-yqK">
+                    <connections>
+                        <action selector="handlePinch:" destination="X2Z-XM-kIp" id="exK-SU-y8Z"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-830" y="163"/>
         </scene>
@@ -117,15 +124,27 @@
                                     <constraint firstAttribute="height" constant="200" id="0bw-4l-wkU"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-Vu-5g1">
+                                <rect key="frame" x="281" y="46" width="38" height="30"/>
+                                <state key="normal" title="Move">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZTe-sd-DGO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JN5-6S-Kzx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3Mh-Pg-Y9r"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JN5-6S-Kzx" secondAttribute="bottom" id="LXG-MW-LE6"/>
+                            <constraint firstAttribute="centerX" secondItem="A9H-Vu-5g1" secondAttribute="centerX" id="VqK-I5-fH6"/>
                             <constraint firstAttribute="trailing" secondItem="JN5-6S-Kzx" secondAttribute="trailing" id="ZmZ-Bn-Uax"/>
+                            <constraint firstItem="A9H-Vu-5g1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="26" id="qFW-Dm-CWT"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="heightConstraint" destination="0bw-4l-wkU" id="eoU-2T-TX7"/>
                         <outlet property="pageContainer" destination="JN5-6S-Kzx" id="rAU-kS-riH"/>
                     </connections>
                 </viewController>
