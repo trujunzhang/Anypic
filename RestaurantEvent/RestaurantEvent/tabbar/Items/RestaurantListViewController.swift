@@ -138,11 +138,11 @@ class RestaurantListViewController: PFQueryTableViewController,UIScrollViewDeleg
     // MARK: Sticky User Header view on the top of the screen
     
     override func scrollViewDidScroll(scrollView: UIScrollView) {
-        positionCells(scrollView)
+//        positionCells(scrollView)
     }
     
     override func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        positionCells(scrollView)
+//        positionCells(scrollView)
     }
     
     

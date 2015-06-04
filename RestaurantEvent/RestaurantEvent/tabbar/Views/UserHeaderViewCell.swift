@@ -17,13 +17,9 @@ class UserHeaderViewCell: ParseAbstractTableCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.titleLabel.font = UIFont.applicationUserTitleFont()
+        self.detailLabel.font = UIFont.applicationUserDetailFont()
     }
-
-//    override func setSelected(selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
     
     // MARK: Setup table cell by object instanced PFObject
     override func setCell(object:PFObject){

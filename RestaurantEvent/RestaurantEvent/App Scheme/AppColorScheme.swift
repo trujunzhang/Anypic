@@ -53,6 +53,24 @@ extension UIColor {
     class func applicationAddEventButtonColor() -> UIColor {
         return UIColor(red: 232/255, green: 64/255, blue: 121/255, alpha:1)
     }
+    
+    // MARK: UserHeaderViewCell
+    class func applicationUserTitleColor() -> UIColor {
+        return UIColor.blackColor()
+    }
+    class func applicationUserDetailColor() -> UIColor {
+        return UIColor.darkGrayColor()
+    }
+}
+
+extension UIFont {
+    // MARK: UserHeaderViewCell
+    class func applicationUserTitleFont() -> UIFont {
+        return UIFont(name: "Ubuntu-Light", size: 14) ?? UIFont.systemFontOfSize(14)
+    }
+    class func applicationUserDetailFont() -> UIFont {
+        return UIFont(name: "Ubuntu", size: 12) ?? UIFont.systemFontOfSize(12)
+    }
 }
 
 extension UILabel {
