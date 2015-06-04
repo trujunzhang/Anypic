@@ -97,16 +97,16 @@ class RestaurantCollectionViewController : PFQueryCollectionViewController,UIScr
         return 1 + 1 + photos.count
     }
     
-//    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFCollectionViewCell? {
-//        
-//        let identify = RestaurantTableUtils.getTableCellIdentify(indexPath.row)
-//        
-//        var cell:ParseAbstractTableCell = self.collectionView?.dequeueReusableCellWithReuseIdentifier(identify, forIndexPath: indexPath) as! ParseAbstractTableCell
-//        
-//        configureCell(cell, forRowAtIndexPath: indexPath)
-//        
-//        return cell
-//    }
+    //    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFCollectionViewCell? {
+    //
+    //        let identify = RestaurantTableUtils.getTableCellIdentify(indexPath.row)
+    //
+    //        var cell:ParseAbstractTableCell = self.collectionView?.dequeueReusableCellWithReuseIdentifier(identify, forIndexPath: indexPath) as! ParseAbstractTableCell
+    //
+    //        configureCell(cell, forRowAtIndexPath: indexPath)
+    //
+    //        return cell
+    //    }
     
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         
@@ -172,24 +172,27 @@ class RestaurantCollectionViewController : PFQueryCollectionViewController,UIScr
     }
     
     func positionCells(scrollView: UIScrollView) {
-        let cells = self.collectionView!.visibleCells()
+        
         let scrollOffset = scrollView.contentOffset.y
-//        println("\(scrollOffset)")
+        //        println("\(scrollOffset)")
         
         println("++++++++++++++++++++")
-        for cell in cells as! [ParseAbstractTableCell] {
-            println("\(cell)")
-            
-            let cellOffset = cell.frame.origin.y
-            let headerOffset = scrollOffset - cellOffset
-            if headerOffset >= 0 {
-                //                cell.headerTop?.constant = headerOffset
-            } else {
-                //                cell.headerTop?.constant = 0
+        if let cells = self.collectionView!.visibleCells() as? [ParseAbstractTableCell]{
+            for cell in cells {
+                println("\(cell)")
+                
+                let cellOffset = cell.frame.origin.y
+                let headerOffset = scrollOffset - cellOffset
+                if headerOffset >= 0 {
+                    //                cell.headerTop?.constant = headerOffset
+                } else {
+                    //                cell.headerTop?.constant = 0
+                }
             }
         }
+        
     }
     
-
+    
     
 }

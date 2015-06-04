@@ -145,33 +145,27 @@ class RestaurantListViewController: PFQueryTableViewController,UIScrollViewDeleg
         positionCells(scrollView)
     }
     
+    
     func positionCells(scrollView: UIScrollView) {
-        let cells = self.tableView.visibleCells()
+        
         let scrollOffset = scrollView.contentOffset.y
         //        println("\(scrollOffset)")
         
-        for cell in cells as! [ParseAbstractTableCell] {
-            let indexPath = self.tableView.indexPathForCell(cell)
-            let row = indexPath?.row
-            
-            if(row != 0){
-                continue
-            }
-            self.topIndexPath = indexPath
-            
-            let cellOffset = cell.frame.origin.y
-            let headerOffset = scrollOffset - cellOffset
-            if headerOffset >= 0 {
-                self.topHeight = headerOffset
-                self.tableView.reloadRowsAtIndexPaths([indexPath!], withRowAnimation: UITableViewRowAnimation.None)
+        println("++++++++++++++++++++")
+        if let cells = self.tableView!.visibleCells() as? [ParseAbstractTableCell]{
+            for cell in cells {
+                println("\(cell)")
                 
-//                self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
-                //                            println("\(indexPath?.row)")
-                //                cell.headerTop?.constant = headerOffset
-            } else {
-                //                cell.headerTop?.constant = 0
+                let cellOffset = cell.frame.origin.y
+                let headerOffset = scrollOffset - cellOffset
+                if headerOffset >= 0 {
+                    //                cell.headerTop?.constant = headerOffset
+                } else {
+                    //                cell.headerTop?.constant = 0
+                }
             }
         }
+        
     }
     
     
