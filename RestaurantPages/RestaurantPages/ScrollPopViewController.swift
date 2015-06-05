@@ -28,6 +28,7 @@ class ScrollPopViewController: UIViewController {
         self.scrollView.backgroundColor = UIColor.redColor()
         self.scrollView.LayoutFullView()
         
+        self.scrollView.contentSize = CGSizeMake(1000, self.scrollContainer.frame.size.height)
         self.setupScrollItems()
     }
     
