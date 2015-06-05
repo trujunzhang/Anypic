@@ -13,6 +13,7 @@
 		5E223E651B2086340044F57C /* UIView+PopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E223E641B2086340044F57C /* UIView+PopScrollView.m */; };
 		5E71F80A1B21F19E004B3152 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71F8091B21F19E004B3152 /* TwitterViewController.swift */; };
 		5E71F80C1B21F200004B3152 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71F80B1B21F200004B3152 /* MeViewController.swift */; };
+		5E71F8101B21F534004B3152 /* IMG_0016.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E71F80F1B21F534004B3152 /* IMG_0016.jpg */; };
 		5E7E9B181B21774E0052930F /* SPCellGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7E9B171B21774E0052930F /* SPCellGenerator.swift */; };
 		5E892BC41B211D58001BD556 /* CollectionViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E892BC21B211D58001BD556 /* CollectionViews.storyboard */; };
 		5E892BC71B211DD3001BD556 /* RecipePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E892BC61B211DD3001BD556 /* RecipePhotoViewController.swift */; };
@@ -72,6 +73,7 @@
 		5E223E641B2086340044F57C /* UIView+PopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopScrollView.m"; sourceTree = "<group>"; };
 		5E71F8091B21F19E004B3152 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterViewController.swift; path = Twitter/TwitterViewController.swift; sourceTree = "<group>"; };
 		5E71F80B1B21F200004B3152 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeViewController.swift; path = Twitter/MeViewController.swift; sourceTree = "<group>"; };
+		5E71F80F1B21F534004B3152 /* IMG_0016.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0016.jpg; sourceTree = "<group>"; };
 		5E7E9B171B21774E0052930F /* SPCellGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPCellGenerator.swift; path = ../generator/SPCellGenerator.swift; sourceTree = "<group>"; };
 		5E892BC31B211D58001BD556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../RestaurantEvent/RestaurantEvent/Base.lproj/CollectionViews.storyboard; sourceTree = "<group>"; };
 		5E892BC61B211DD3001BD556 /* RecipePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipePhotoViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		5EBB8F4D1B201EFA009710F3 /* RestaurantPages */ = {
 			isa = PBXGroup;
 			children = (
+				5E71F80F1B21F534004B3152 /* IMG_0016.jpg */,
 				5E71F8081B21F16A004B3152 /* Twitter */,
 				5E892BC51B211D89001BD556 /* CollectionViewControllers */,
 				5EBB8F7D1B20209D009710F3 /* UIKit */,
@@ -344,6 +347,7 @@
 				5EBB8F771B201F17009710F3 /* recipe03.jpg in Resources */,
 				5EBB8F751B201F17009710F3 /* recipe01.jpg in Resources */,
 				5E892BC41B211D58001BD556 /* CollectionViews.storyboard in Resources */,
+				5E71F8101B21F534004B3152 /* IMG_0016.jpg in Resources */,
 				5EBB8F561B201EFA009710F3 /* Main.storyboard in Resources */,
 				5EBB8F5B1B201EFA009710F3 /* LaunchScreen.xib in Resources */,
 				5EBB8F761B201F17009710F3 /* recipe02.jpg in Resources */,

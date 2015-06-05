@@ -9,6 +9,14 @@
 import UIKit
 
 class TwitterViewController: UIViewController {
+    
+    @IBOutlet weak var infoContainer: UIView!
+
+    @IBOutlet weak var infoContainerHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
