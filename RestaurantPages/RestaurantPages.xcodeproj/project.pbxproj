@@ -11,6 +11,9 @@
 		5E223E5D1B20849A0044F57C /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E223E5C1B20849A0044F57C /* pop.framework */; };
 		5E223E5E1B2084A60044F57C /* pop.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E223E5C1B20849A0044F57C /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E223E651B2086340044F57C /* UIView+PopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E223E641B2086340044F57C /* UIView+PopScrollView.m */; };
+		5E892BC41B211D58001BD556 /* CollectionViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E892BC21B211D58001BD556 /* CollectionViews.storyboard */; };
+		5E892BC71B211DD3001BD556 /* RecipePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E892BC61B211DD3001BD556 /* RecipePhotoViewController.swift */; };
+		5E892BC91B211EDB001BD556 /* ScrollPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E892BC81B211EDB001BD556 /* ScrollPopViewController.swift */; };
 		5EBB8F511B201EFA009710F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB8F501B201EFA009710F3 /* AppDelegate.swift */; };
 		5EBB8F531B201EFA009710F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB8F521B201EFA009710F3 /* ViewController.swift */; };
 		5EBB8F561B201EFA009710F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBB8F541B201EFA009710F3 /* Main.storyboard */; };
@@ -64,6 +67,9 @@
 		5E223E5F1B2085B30044F57C /* RestaurantPages-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestaurantPages-Bridging-Header.h"; sourceTree = "<group>"; };
 		5E223E631B2086340044F57C /* UIView+PopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopScrollView.h"; sourceTree = "<group>"; };
 		5E223E641B2086340044F57C /* UIView+PopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopScrollView.m"; sourceTree = "<group>"; };
+		5E892BC31B211D58001BD556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../RestaurantEvent/RestaurantEvent/Base.lproj/CollectionViews.storyboard; sourceTree = "<group>"; };
+		5E892BC61B211DD3001BD556 /* RecipePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipePhotoViewController.swift; sourceTree = "<group>"; };
+		5E892BC81B211EDB001BD556 /* ScrollPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollPopViewController.swift; sourceTree = "<group>"; };
 		5EBB8F4B1B201EFA009710F3 /* RestaurantPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBB8F4F1B201EFA009710F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EBB8F501B201EFA009710F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E892BC51B211D89001BD556 /* CollectionViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E892BC61B211DD3001BD556 /* RecipePhotoViewController.swift */,
+			);
+			name = CollectionViewControllers;
+			path = ../../RestaurantEvent/RestaurantEvent/tabbar/CollectionViewControllers;
+			sourceTree = "<group>";
+		};
 		5EBB8F421B201EFA009710F3 = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +149,7 @@
 		5EBB8F4D1B201EFA009710F3 /* RestaurantPages */ = {
 			isa = PBXGroup;
 			children = (
-				5E223E5A1B2084610044F57C /* PanGestureScrollView.swift */,
+				5E892BC51B211D89001BD556 /* CollectionViewControllers */,
 				5EBB8F7D1B20209D009710F3 /* UIKit */,
 				5EBB8F701B201F17009710F3 /* Resources */,
 				5EBB8F501B201EFA009710F3 /* AppDelegate.swift */,
@@ -142,12 +157,15 @@
 				5EBB8F541B201EFA009710F3 /* Main.storyboard */,
 				5EBB8F571B201EFA009710F3 /* Images.xcassets */,
 				5EBB8F591B201EFA009710F3 /* LaunchScreen.xib */,
+				5E892BC21B211D58001BD556 /* CollectionViews.storyboard */,
 				5EBB8F4E1B201EFA009710F3 /* Supporting Files */,
 				5EBB8F791B201FA2009710F3 /* PagesCollectionViewController.swift */,
 				5EBB8F7B1B202010009710F3 /* PageCollectionViewCell.swift */,
 				5E223E5F1B2085B30044F57C /* RestaurantPages-Bridging-Header.h */,
 				5E223E631B2086340044F57C /* UIView+PopScrollView.h */,
 				5E223E641B2086340044F57C /* UIView+PopScrollView.m */,
+				5E223E5A1B2084610044F57C /* PanGestureScrollView.swift */,
+				5E892BC81B211EDB001BD556 /* ScrollPopViewController.swift */,
 			);
 			path = RestaurantPages;
 			sourceTree = "<group>";
@@ -308,6 +326,7 @@
 				5EBB8F781B201F17009710F3 /* recipe04.jpg in Resources */,
 				5EBB8F771B201F17009710F3 /* recipe03.jpg in Resources */,
 				5EBB8F751B201F17009710F3 /* recipe01.jpg in Resources */,
+				5E892BC41B211D58001BD556 /* CollectionViews.storyboard in Resources */,
 				5EBB8F561B201EFA009710F3 /* Main.storyboard in Resources */,
 				5EBB8F5B1B201EFA009710F3 /* LaunchScreen.xib in Resources */,
 				5EBB8F761B201F17009710F3 /* recipe02.jpg in Resources */,
@@ -365,11 +384,13 @@
 				5EBB8F7A1B201FA2009710F3 /* PagesCollectionViewController.swift in Sources */,
 				5EBB8F861B20209D009710F3 /* UIControlExtensions.swift in Sources */,
 				5EBB8F881B20209D009710F3 /* UITableViewExtensions.swift in Sources */,
+				5E892BC71B211DD3001BD556 /* RecipePhotoViewController.swift in Sources */,
 				5E223E5B1B2084610044F57C /* PanGestureScrollView.swift in Sources */,
 				5EBB8F531B201EFA009710F3 /* ViewController.swift in Sources */,
 				5EBB8F511B201EFA009710F3 /* AppDelegate.swift in Sources */,
 				5EBB8F7C1B202010009710F3 /* PageCollectionViewCell.swift in Sources */,
 				5EBB8F891B20209D009710F3 /* UIViewExtentsions.swift in Sources */,
+				5E892BC91B211EDB001BD556 /* ScrollPopViewController.swift in Sources */,
 				5EBB8F841B20209D009710F3 /* UIColorExtensions.swift in Sources */,
 				5EBB8F851B20209D009710F3 /* UIConstants.swift in Sources */,
 				5E223E651B2086340044F57C /* UIView+PopScrollView.m in Sources */,
@@ -395,6 +416,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5E892BC21B211D58001BD556 /* CollectionViews.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E892BC31B211D58001BD556 /* Base */,
+			);
+			name = CollectionViews.storyboard;
+			sourceTree = "<group>";
+		};
 		5EBB8F541B201EFA009710F3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

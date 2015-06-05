@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Recipe Photo View Controller-->
+        <scene sceneID="XGy-Df-xyN">
+            <objects>
+                <viewController storyboardIdentifier="RecipePhotoViewController" id="7QL-Y3-QjM" customClass="RecipePhotoViewController" customModule="RestaurantPages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X3G-FS-ogw"/>
+                        <viewControllerLayoutGuide type="bottom" id="DkZ-5v-INx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u5f-jx-KEj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4BS-oU-ZAI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4BS-oU-ZAI" secondAttribute="trailing" id="IWC-GA-gPk"/>
+                            <constraint firstItem="4BS-oU-ZAI" firstAttribute="top" secondItem="u5f-jx-KEj" secondAttribute="top" id="VPf-0Y-UyD"/>
+                            <constraint firstItem="DkZ-5v-INx" firstAttribute="top" secondItem="4BS-oU-ZAI" secondAttribute="bottom" id="nct-ag-RLb"/>
+                            <constraint firstItem="4BS-oU-ZAI" firstAttribute="leading" secondItem="u5f-jx-KEj" secondAttribute="leading" id="rOF-Xr-Y0D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="4BS-oU-ZAI" id="8Ig-xe-4mt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUV-7R-6Wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="226"/>
+        </scene>
+    </scenes>
+</document>
