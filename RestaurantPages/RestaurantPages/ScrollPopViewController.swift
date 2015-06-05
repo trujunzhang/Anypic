@@ -18,40 +18,44 @@ class ScrollPopViewController: UIViewController {
         view.scrollVertical = false
         return view
         }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         self.scrollContainer.addSubview(self.scrollView)
         self.scrollView.backgroundColor = UIColor.redColor()
         self.scrollView.LayoutFullView()
         
-        self.scrollView.contentSize = CGSizeMake(1000, self.scrollContainer.frame.size.height)
         self.setupScrollItems()
+        self.scrollView.contentSize = SPCellGenerator.getCellsContentSize(self.scrollContainer.frame.size.height, count: 4)
     }
     
     func setupScrollItems(){
+        for x in 0...3{
+            
+        }
+
         var viewController = RecipePhotoViewController.instance()
         self.scrollView.addSubview(viewController.view)
         viewController.view.LayoutFullView()
         viewController.configureCell(1)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
     
@@ -62,5 +66,5 @@ class ScrollPopViewController: UIViewController {
     }
     
     
-
+    
 }
