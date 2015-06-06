@@ -37,6 +37,7 @@
 		5EBB8F891B20209D009710F3 /* UIViewExtentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB8F831B20209D009710F3 /* UIViewExtentsions.swift */; };
 		5EBB8F8B1B2020A8009710F3 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBB8F8A1B2020A8009710F3 /* Cartography.framework */; };
 		5EBB8F8D1B2020B2009710F3 /* Cartography.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5EBB8F8A1B2020A8009710F3 /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EF168601B228F5200032B92 /* UIViewController+TwitterPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF1685F1B228F5200032B92 /* UIViewController+TwitterPop.m */; };
 		72CFC636AB0611BE711F5DC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF4F4D7C49600ACC9C7C36E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,8 @@
 		5EBB8F821B20209D009710F3 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		5EBB8F831B20209D009710F3 /* UIViewExtentsions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtentsions.swift; sourceTree = "<group>"; };
 		5EBB8F8A1B2020A8009710F3 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = ../RestaurantEvent/Carthage/Cartography.framework; sourceTree = "<group>"; };
+		5EF1685E1B228F5200032B92 /* UIViewController+TwitterPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TwitterPop.h"; path = "Twitter/UIViewController+TwitterPop.h"; sourceTree = "<group>"; };
+		5EF1685F1B228F5200032B92 /* UIViewController+TwitterPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TwitterPop.m"; path = "Twitter/UIViewController+TwitterPop.m"; sourceTree = "<group>"; };
 		CFF4F4D7C49600ACC9C7C36E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8822CB79835BA5EA428DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +133,8 @@
 			children = (
 				5E71F8091B21F19E004B3152 /* TwitterViewController.swift */,
 				5E71F80B1B21F200004B3152 /* MeViewController.swift */,
+				5EF1685E1B228F5200032B92 /* UIViewController+TwitterPop.h */,
+				5EF1685F1B228F5200032B92 /* UIViewController+TwitterPop.m */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 				5EBB8F841B20209D009710F3 /* UIColorExtensions.swift in Sources */,
 				5E71F80A1B21F19E004B3152 /* TwitterViewController.swift in Sources */,
 				5EBB8F851B20209D009710F3 /* UIConstants.swift in Sources */,
+				5EF168601B228F5200032B92 /* UIViewController+TwitterPop.m in Sources */,
 				5E223E651B2086340044F57C /* UIView+PopScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

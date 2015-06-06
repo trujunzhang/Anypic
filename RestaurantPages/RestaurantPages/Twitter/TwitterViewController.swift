@@ -96,21 +96,6 @@ class TwitterViewController: UIViewController ,UITableViewDelegate,UITableViewDa
             infoContainerHeightConstraint.constant = last  - scrollOffset
         }
         
-        //        println("++++++++++++++++++++")
-        //        if let cells = self.tableView!.visibleCells() as? [ParseAbstractTableCell]{
-        //            for cell in cells {
-        //                println("\(cell)")
-        //
-        //                let cellOffset = cell.frame.origin.y
-        //                let headerOffset = scrollOffset - cellOffset
-        //                if headerOffset >= 0 {
-        //                    //                cell.headerTop?.constant = headerOffset
-        //                } else {
-        //                    //                cell.headerTop?.constant = 0
-        //                }
-        //            }
-        //        }
-        
     }
     
     
