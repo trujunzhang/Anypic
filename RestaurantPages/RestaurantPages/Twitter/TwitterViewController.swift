@@ -16,6 +16,8 @@ class TwitterViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     
     @IBOutlet weak var tableView: UITableView!
     
+    var infoDefaultHeightConstraint:CGFloat = 200
+    
     lazy var meViewController:MeViewController = {return MeViewController.instance()}()
     
     override func viewDidLoad() {
@@ -71,7 +73,16 @@ class TwitterViewController: UIViewController ,UITableViewDelegate,UITableViewDa
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-//        positionCells(scrollView)
+        let scrollOffset = scrollView.contentOffset.y
+        println("\(scrollOffset)")
+    }
+    
+    func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>){
+        infoContainerHeightConstraint.constant = infoDefaultHeightConstraint
+    }
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool){
+//        infoContainerHeightConstraint.constant = infoDefaultHeightConstraint
     }
     
     
@@ -79,6 +90,11 @@ class TwitterViewController: UIViewController ,UITableViewDelegate,UITableViewDa
         
         let scrollOffset = scrollView.contentOffset.y
         println("\(scrollOffset)")
+        
+        let last = infoContainerHeightConstraint.constant
+        if(scrollOffset<=0){
+            infoContainerHeightConstraint.constant = last  - scrollOffset
+        }
         
         //        println("++++++++++++++++++++")
         //        if let cells = self.tableView!.visibleCells() as? [ParseAbstractTableCell]{
