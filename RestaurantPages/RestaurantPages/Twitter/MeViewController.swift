@@ -9,6 +9,10 @@
 import UIKit
 
 class MeViewController: UIViewController {
+    class func instance() -> MeViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MeViewController") as! MeViewController
+    }
+    
     
     @IBOutlet weak var infoContainerHeightConstraint: NSLayoutConstraint!
     
@@ -25,5 +29,6 @@ class MeViewController: UIViewController {
     }
     
 
+    
 
 }

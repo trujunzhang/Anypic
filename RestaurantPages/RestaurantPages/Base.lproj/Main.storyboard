@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IcJ-Xu-K5Y">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Pages Collection View Controller-->
@@ -177,24 +178,24 @@
                                 <rect key="frame" x="0.0" y="200" width="600" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cells" textLabel="lma-Jv-ePq" detailTextLabel="8Ca-dI-lOA" style="IBUITableViewCellStyleSubtitle" id="Lcs-5V-jUG">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cells" rowHeight="290" id="Lcs-5V-jUG">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lcs-5V-jUG" id="ags-Ee-A2g">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lma-Jv-ePq">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Ca-dI-lOA">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipe01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="l8j-xC-BmS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="343"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="l8j-xC-BmS" secondAttribute="height" multiplier="507:290" id="8po-dN-5Je"/>
+                                                        <constraint firstAttribute="width" constant="600" id="fRN-Da-9RB"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="l8j-xC-BmS" firstAttribute="leading" secondItem="ags-Ee-A2g" secondAttribute="leading" id="F3k-Gk-y7z"/>
+                                                <constraint firstItem="l8j-xC-BmS" firstAttribute="top" secondItem="ags-Ee-A2g" secondAttribute="top" id="tHx-Fm-EAK"/>
+                                                <constraint firstAttribute="trailing" secondItem="l8j-xC-BmS" secondAttribute="trailing" id="wiG-ux-Pzz"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -274,7 +275,7 @@
         <!--Me View Controller-->
         <scene sceneID="SEn-5H-DHw">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="so1-4Y-VdD" customClass="MeViewController" customModule="RestaurantPages" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeViewController" automaticallyAdjustsScrollViewInsets="NO" id="so1-4Y-VdD" customClass="MeViewController" customModule="RestaurantPages" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tyr-WG-Khs"/>
                         <viewControllerLayoutGuide type="bottom" id="6ld-t1-gVp"/>
@@ -313,5 +314,6 @@
     </scenes>
     <resources>
         <image name="IMG_0016.jpg" width="960" height="640"/>
+        <image name="recipe01.jpg" width="560" height="350"/>
     </resources>
 </document>
